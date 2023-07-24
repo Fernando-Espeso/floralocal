@@ -1,0 +1,46 @@
+  {%- for block in section.blocks -%}
+    {%- assign _block = block.settings -%}
+    {%- assign block_archive = _block.item -%}
+
+	{% style %}
+      @media (min-width: 1024px){
+		#block-{{ block.id }} img{
+		  width: fit-content;
+          height: calc({{ _block.height | default: 75 }}vh - 75px);
+		  display: inline-block;
+        }
+      }
+	{% endstyle %}
+      <div id="block-{{ block.id }}" class="home_img">
+      {{ block_archive | img_url: 'master' | img_tag: block_archive.alt }}
+      </div>
+  {%- endfor -%}
+{% schema %}
+{
+  "name": "RANDMON",
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "item",
+		
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "item",
+          "label": "Image"
+        },
+		{
+          "type": "range",
+          "id": "height",
+          "label": "Image Height",
+		  "min": 50,
+          "max": 100,
+          "step": 5,
+          "default": 75,
+		  "unit": "%"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

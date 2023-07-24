@@ -1,0 +1,12 @@
+Blog
+
+{% for article in blog.articles %}
+{% if article.image %}
+<!--Article Image-->
+<img class="lazy" src="{{ article | img_url: 'thumb' }}" data-src="{{ article | img_url: 'master' }}" alt="{{ article.title }}" /> 
+{% endif %}
+<!--Article Link-->
+<a href="{{ article.url }}">
+  {{ article.title }}      
+</a>
+{% endfor %}

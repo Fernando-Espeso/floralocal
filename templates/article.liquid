@@ -1,0 +1,16 @@
+Article
+
+{% if article.image.size > 0 %}
+<!--Featured Image-->
+<img class="lazy" src="{{ article | img_url: 'thumb' }}" data-src="{{ article | img_url: 'master' }}" alt="{{ article.title }}" /> 
+{% endif %}
+
+{% if article.content != blank %}
+<!--Content-->
+{{ article.content | replace: '_16x16', '' | replace: '_32x32', '' | replace: '_50x50', '' | replace: '_100x100', '' | replace: '_160x160', '' | replace: '_240x240', '' | replace: '_480x480', '' | replace: '_600x600', '' | replace: '_1024x1024', '' }}
+{% endif %}
+
+{% if article.excerpt != blank %}
+<!--Excerpt-->
+{{ article.excerpt }}
+{% endif %}

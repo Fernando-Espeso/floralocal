@@ -1,0 +1,60 @@
+  {%- for block in section.blocks -%}
+      <div class="about">
+        
+       <div class="back">
+         <a onclick="history.back()">go back</a>
+       </div> 
+          {%- assign _block = block.settings -%}
+          {%- assign block_archive = _block.item -%}
+              <div class="bio">{{ block.settings.bio }}</div>
+              <div class="contact_inside">
+              <a href="mailto:info@mattostudio.com">info@mattostudio.com</a>
+                <br>  <br>
+                {{ block.settings.street }}
+                <br>
+                {{ block.settings.instagram }}
+                
+    
+              
+              </div>
+        
+      </div> 
+{%- endfor -%}
+{% schema %}
+{
+  "name": "ABOUT",
+  "class": "ABOUT",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "ABOUT"
+    }
+  ],
+  "blocks": [
+     {
+       "name": "item",
+       "type": "item",
+       "settings": [
+ 		 {
+           "type": "richtext",
+           "id": "bio",
+           "label": "bio"
+         }, 
+         {
+           "type": "richtext",
+           "id": "street",
+           "label": "street"
+         }
+          , 
+         {
+           "type": "richtext",
+           "id": "instagram",
+           "label": "instagram"
+         }
+
+       ]
+     }
+   ]
+}
+{% endschema %}

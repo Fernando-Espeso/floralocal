@@ -1,0 +1,13 @@
+{% if search.performed and search.results_count > 0 %} 
+
+  {{ search.results_count }} item{% if search.results_count != 1 %}s{% endif %} found for {{ search.terms | escape }}   
+  
+  {% for product in search.results limit:100 %}
+	{% include 'product-body' %}
+  {% endfor %}
+
+{% else %}
+
+  No items for {{ search.terms | escape }}
+   
+{% endif %} 

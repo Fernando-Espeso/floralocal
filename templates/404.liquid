@@ -1,0 +1,13 @@
+<script type="text/javascript">
+    var thecookie = readCookie('doRedirect');
+    if(!thecookie){
+      createCookie('doRedirect','true','1');
+      window.location = '{{ shop.url }}';
+    };
+    function createCookie(name,value,days){
+      // do work
+    }
+    function readCookie(name){
+      // do work
+    }
+</script>

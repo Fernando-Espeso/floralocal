@@ -1,0 +1,31 @@
+  {%- for block in section.blocks -%}
+    {%- assign _block = block.settings -%}
+    {%- assign block_archive = _block.item -%}
+  <div class="footer_randmon">
+    <a>{{ block_archive | img_url: 'master' | img_tag: block_archive.alt}}</a>
+  </div>
+  {%- endfor -%}
+{% schema %}
+{
+  "name": "RANDMON",
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "item",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+"presets":[
+      {
+      "category":"RANDMON",
+      "name":"RANDOM"
+      }
+	]
+}
+{% endschema %}

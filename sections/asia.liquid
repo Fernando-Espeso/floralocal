@@ -1,0 +1,50 @@
+  {%- for block in section.blocks -%}
+  <div class="subsection">
+   
+    {%- assign _block = block.settings -%}
+    {%- assign block_archive = _block.item -%}
+      <div class="sub_title">{{ block.settings.country }}</div>
+        <div class="city">{{ block.settings.city }}</div>
+        <div class="shop">{{ block.settings.shop }}</div>
+     		</div> 
+  {%- endfor -%}
+ 
+
+{% schema %}
+{
+  "name": "ASIA",
+  "tag": "section",
+  "class": "ASIA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "ASIA"
+    }
+  ],
+  "blocks": [
+     {
+       "name": "item",
+       "type": "item",
+       "settings": [
+         {
+           "type": "text",
+           "id": "country",
+           "label": "country"
+         },
+ 		 {
+           "type": "text",
+           "id": "city",
+           "label": "city"
+         },
+		 {
+           "type": "richtext",
+           "id": "shop",
+           "label": "shop"
+         }
+
+       ]
+     }
+   ]
+}
+{% endschema %}

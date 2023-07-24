@@ -1,0 +1,53 @@
+<div class="gallery"> 
+    {% for block in section.blocks %}
+          <div class="slider">
+              {% if block.type == 'block-1' %}
+              {%- assign _block = block.settings -%}
+             	<div class="slide">
+                    {%- assign block_archive = _block.image -%}
+                     <a>{{ block_archive | img_url: 'master' | img_tag: block_archive.alt}}</a>
+              	</div>
+          	  {% endif %}
+        </div>
+    {% endfor %}
+  {% for block in section.blocks %}
+  {% if block.type == 'block-2' %}
+ 		<div class="info">{{ block.settings.title }}</div>
+  {% endif %}
+{% endfor %}
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "project",
+	"class":"project",
+    "blocks":[
+      {
+        "type": "block-1",
+        "name": "image",
+        "settings": [
+		  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "image"
+          }
+        ]
+      },
+      {
+        "type": "block-2",
+        "name": "Information",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "title"
+          }
+        ]
+
+      }
+    ]
+  }
+{% endschema %}
+

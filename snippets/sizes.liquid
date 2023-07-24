@@ -1,0 +1,57 @@
+<style>
+
+
+
+</style>
+
+{% assign variantCount = product.variants | size %}
+{% if product.available and variantCount > 0 %}
+<div class="product-grid-options-size">
+ 
+{% for option in product.options %}
+{% assign is_size = false %}
+{% assign downcased_option = option | downcase %}
+
+{% if downcased_option contains 'size' %}
+{% assign option_index = forloop.index0 %}
+{% assign option_count = 0 %}
+{% assign values = '' %}
+  CHOOSE SIZE:
+{% for variant in product.variants %}
+{% assign value = variant.options[option_index] %}
+{% unless values contains value %}
+
+{% if option_count > 0 %}
+{% assign values = values | join: '|' | append: '|' %}
+{% endif %}
+{% assign values = values | append: value %}
+{% assign values = values | split: '|' | sort %}
+{% assign option_count = values | size %}
+
+{% if variant.available %}
+{% if option_count <= 6 %}
+
+<div class="altli {% unless variant.available %}soldout{% endunless %}">
+<a title="{{value}}" href="{{ product.url}}?variant={{ variant.id }}">
+{{ value }}
+</a>
+{% assign option_count = option_count | plus : 1 %}
+</div>
+{% endif %}
+{% endif %}
+
+{% endunless %}
+{% endfor %}
+
+{% if values.size >= 6 %}
+<div class="altli">
+<a title="More" href="{{ product.url}}">...</a>
+</div>
+{% endif %}
+
+{% endif %}
+
+
+{% endfor %}
+</div>
+{% endif %}

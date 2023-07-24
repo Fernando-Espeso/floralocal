@@ -1,0 +1,66 @@
+{% if cart.item_count > 0 %}
+<form id="cart-wrapper" action="/cart" method="post">
+     {% for item in cart.items %} 
+
+    <div class="item">  
+                <div  class="thumb" >
+                                <div class="item-title">
+                                    <a class="product-title">{{ item.product.title }}</a>
+                                 <div> {{ item.price | money }} </div>                         </div>
+                          </div>
+            {% unless item.product.options contains 'Title' %}
+                  <!--Variations-->
+                  <div class="item-variations">
+                    {%- for option_title in item.product.options -%}
+                    {{ item.variant.options[forloop.index0] }}{% unless forloop.last  %}, {% endunless %}
+                    {%- endfor -%} 
+                  </div>
+                      {% endunless %}
+          
+   <div class="item-quantity">
+                  <span data-field="updates" class="quantity-button minus">
+                    <span>[ – ]</span>
+                  </span>
+                  <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
+                      <span class="quantity-wrap"></span>
+                      <span data-field="updates" class="quantity-button plus">
+                            <span class="addmore">[ + ]</span>  
+                            {% if cart.items.available %}
+                            {% else %}
+                            {% endif %}
+                      </span>
+                </div>
+                 <div class="tot"> {{ item.line_price | money }} </div>
+               </div> 
+        
+            {% endfor %} 
+ 
+
+       
+
+      
+    <div class="total">
+      <div>Subtotal</div>
+      <div class="pri">{{ cart.total_price | money }}</div>
+    </div>
+      <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
+
+    <div class="total">
+      <button id="checkout" type="submit" name="checkout">
+            CHECK OUT
+     </button>
+    </div>
+  <div class="total"> <a href="/cart/clear"class="clear">
+            REMOVE
+     </a></div>
+	
+</form>    
+
+{% else %}
+<div class="main">
+  <!--Empty Bag-->
+  <div class="empty">
+    your cart is currently empty
+  </div>
+</div>
+{% endif %}

@@ -1,0 +1,92 @@
+ <link rel="preload" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+ <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+{% style %}
+  @media (min-width: 1024px) {
+    .slick-slide:not(.slick-current) video{
+      visibility: hidden;
+    }
+  }
+{% endstyle %}  
+
+<section id="{{ section.id }}" class="gallery mob"> 
+  <div class="slider" style="cursor: none !important;">
+  	{% for block in section.blocks %}
+      {%- assign _block = block.settings -%}
+      <div class="slide">
+        {% case block.type %}
+        {% when 'video' %}
+            <video
+                  {% if _block.controls %} controls="true"{% endif %}
+                  playsinline autoplay muted loop>
+              <source src="{{ _block.video_url }}" type="video/mp4" />
+            </video>
+        {% when 'image' %}
+          <a>{{ _block.image | img_url: 'master' | img_tag: _block.image.alt}}</a>
+             
+        {% endcase %}
+      </div>
+  	{% endfor %}  
+  </div>
+ 
+  
+{% unless section.settings.title == blank %}
+	<div class="info">{{ section.settings.title }}</div>
+{% endunless %}
+</section>
+
+
+{% schema %}
+  {
+    "name": "Project Slideshow mobile",
+	"class":"project", 
+	"settings": [
+	  {
+        "type": "richtext",
+        "id": "title",
+        "label": "Title",
+		"default": "<p>Heading</p>"
+      }
+	],
+    "blocks":[
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+		  {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      },
+	  {
+        "type": "video",
+        "name": "Video",
+        "settings": [
+		  {
+            "type": "text",
+            "id": "video_url",
+            "label": "Video link"
+          },
+		  {
+            "type": "header",
+            "content": "Video Settings"
+          },
+		  {
+            "type": "checkbox",
+            "id": "controls",
+            "label": "Show controls",
+            "default": false
+          }
+        ]
+      }
+    ],
+	"presets":[
+      {
+      "category":"PROJECT",
+      "name":"Project Slideshow_mobile"
+      }
+	]
+  }
+{% endschema %}

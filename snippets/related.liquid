@@ -1,0 +1,17 @@
+<div id="related">
+        <div>YOU MIGHT ALSO LIKE</div>
+                 <div class="grid_related">
+                      {%- assign current_product = product.id -%}
+                        {%- for product in collections.all.products -%}    
+                          {%- if product.id != current_product and product.available -%}
+
+                                {% include 'normal' %}
+
+            			   {%- endif -%}  
+            			 {%- endfor -%} 
+                 </div>
+</div>
+
+
+
+

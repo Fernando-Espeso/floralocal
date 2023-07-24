@@ -1,0 +1,121 @@
+<div id="main-product" class="main">
+    <div class="product_info">
+          <!--PRODUCT INFO-->
+          <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+          
+          {%- if product.has_only_default_variant -%}
+          class="product-simple"
+          {%- elsif variants > 1 -%}
+          class="product-variants"
+          {%- endif -%}>
+            
+          <div id="bag" >
+            <div class="title">
+              <div>{{ product.title }}</div>
+              {% unless product.metafields.descriptors.subtitle == blank %}
+                <div class="subtitle">
+                    {{ product.metafields.descriptors.subtitle }}
+                </div>
+              {% endunless %}
+			</div>
+            <div class="information">
+                <div class="project_info">
+                  <span> {{ product.content | replace: '_16x16', '' | replace: '_32x32', '' | replace: '_50x50', '' | replace: '_100x100', '' | replace: '_160x160', '' | replace: '_240x240', '' | replace: '_480x480', '' | replace: '_600x600', '' | replace: '_1024x1024', '' }}</span>
+                </div> 
+            </div> 
+         
+            <div id="product-price"></div>
+                       {% if product.compare_at_price > product.price %}
+                          <span class="sale">ON SALE</span>
+                       {% else %}
+                       {% endif %}
+               {% if product.available %}
+                        {% else %}
+             <div class="sale">out of stock</div>        
+                        {% endif %}
+            <div class="variations"> 
+                        <select id="product-select" name="id">
+                          {% for variant in product.variants %}
+                          <option value="{{ variant.id }}">CHOOSE SIZE:</option>
+                          {% endfor %}
+                        </select>  
+                        {% if product.available %}
+                            <button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button> 
+                        {% else %}    
+                        {% endif %}
+            </div>
+             {% unless product.metafields.custom.extra == blank %}
+                <div class="extra">
+                    {{ product.metafields.custom.extra }}
+                </div>
+              {% endunless %}
+            
+          </div>
+
+    </form>
+    </div>
+    <!--GALLERY-->
+    <div class="slider">
+             {% for media in product.media %}
+          <div class="slide">
+                  {% case media.media_type %}
+                      {% when 'video' %}
+                      {{ media | video_tag:loop: true, autoplay: true, muted:true}}
+                  {% endcase %}
+                  {% case media.media_type %}
+                      {% when 'image' %}
+                      <img class="lazy" src="{{ media | product_img_url: 'thumb' }}" data-src="{{ media | product_img_url: 'master' }}" alt="{{ media.alt }}"/>
+                  {% endcase %}
+           </div> 
+              {% endfor %}
+              {% for media in product.media %}
+              {% endfor %}
+    </div>
+</div>
+{% assign variants = 0 %}        
+{% for option in product.options %}
+{% if product.options.first != 'Title' %}
+{% assign variants = variants | plus: 1 %}
+{% endif %}
+{% endfor %}
+
+<script>
+  //PRODUCT FUNCTIONS
+  var selectCallback = function(variant, selector){
+    if(variant){
+      if(variant.available){   
+        jQuery('#add-to-cart').prop('disabled', false).text('ADD TO CART');      
+      }else{
+        jQuery('#add-to-cart').prop('disabled', true).text('SOLD OUT');      
+      }
+      if( variant.compare_at_price > variant.price ) {
+        {% if variant.price < variant.compare_at_price %} {{ variant.compare_at_price | money }}{% endif %}
+        jQuery('#product-price').html(Shopify.formatMoney(variant.price, "<span>{{ shop.money_format }}</span>") + " <s>" + Shopify.formatMoney(variant.compare_at_price, "{{ shop.money_format }}") + "</s>");
+      }else{
+        jQuery('#product-price').html(Shopify.formatMoney(variant.price, "{{ shop.money_format }}"));
+      }  
+    }else{
+      jQuery('#product-price').empty();
+      jQuery('#add-to-cart').prop('disabled', true).text('ADD TO CART');
+      {% if product.price_varies %}
+        jQuery('#product-price').html('{{ product.price_min | money }} – {{ product.price_max | money }}' );
+      {% else %}
+        jQuery('#product-price').html('{{ product.price | money }}');
+      {% endif %}                         
+    }
+  };
+                                      
+  jQuery(function($) {
+    new Shopify.OptionSelectors('product-select', {
+      product: {{ product | json }},
+      onVariantSelected: selectCallback
+    });  
+    {% assign count = -1 %}                                    
+    {% for option in product.options %}
+    {% if product.options.first != 'Title' %}
+      {% assign count = count | plus: 1 %}
+      $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }}</option>");                        
+    {% endif %}
+    {% endfor %}
+  });
+</script>

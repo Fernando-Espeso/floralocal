@@ -1,0 +1,44 @@
+<div id="main-collection" class="main">
+  <div class="all_products">
+  {% for product in collection.products %}   
+		{% include 'product-body' %}
+  {% endfor %}
+  </div>
+  <div class="stockist" style="margin-bottom:0px!important;">
+    <span class="main-title">STOCKISTS</span>
+    <div class="sections">
+      <div class="section">
+       <div class="title">EUROPE</div>
+          {% section 'europe' %}
+      </div>
+      <div class="section">
+        <div class="title">ASIA</div>
+       {% section 'asia' %}
+      </div>
+      <div class="section">
+        <div class="title">AMERICAS</div>
+  {% section 'america' %}
+      <div class="section australia">
+        <div class="title">AUSTRALIA</div>
+  {% section 'australia' %}
+      </div>
+      </div>
+    </div>
+  </div> 
+  {% section 'random_middle' %}  
+  <div class="events">
+    <span class="main-title">EVENTS</span>
+    <div class="section">
+      {% section 'events' %}
+    </div>
+  </div> 
+  {% section 'random_footer' %}
+</div>
+
+
+
+
+
+
+
+
