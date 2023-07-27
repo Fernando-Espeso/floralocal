@@ -1,1 +1,32 @@
-{"sections":{"home-news":{"type":"home_news","blocks":{"270dcd2c-5927-4d94-b511-defa0e750a6e":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/WEB_02_680f8c0b-3493-49b6-8007-26dd4c274c20.jpg","height":75}},"321726ed-6998-4ee0-a314-56a8c210ab31":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/000005880013_ret.jpg","height":75}},"faa4b2d2-671a-477f-8814-8d67819be6bf":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/000068920032.jpg","height":80}},"1608590f-aebd-4063-90f5-1942055bd97c":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/3608_-_26_V2_f9ddf7ba-c88b-43cb-978f-234cd264d3f7.jpg","height":65}},"114b14f1-0f40-43c6-8cf9-ecdea9579a36":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/8883-37_363f2a17-33d1-4b98-be5e-606b64b5166e.jpg","height":60}},"0197d36e-9830-4676-aef4-12f84a120c6e":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/000016570016.jpg","height":70}},"99ea2159-b7b4-4f01-b418-0e526ab20069":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/000005880022_ret.jpg","height":75}},"a1721d7f-903f-4f02-b9cd-676d46c51532":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/000007860010.jpg","height":75}},"c894fdc1-340b-4070-aebb-93ecd5a7630e":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/000008860013_ret.jpg","height":65}},"dfe8ad19-ef97-4928-8e67-f89f5ddef719":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/19600034.jpg","height":65}}},"block_order":["270dcd2c-5927-4d94-b511-defa0e750a6e","321726ed-6998-4ee0-a314-56a8c210ab31","faa4b2d2-671a-477f-8814-8d67819be6bf","1608590f-aebd-4063-90f5-1942055bd97c","114b14f1-0f40-43c6-8cf9-ecdea9579a36","0197d36e-9830-4676-aef4-12f84a120c6e","99ea2159-b7b4-4f01-b418-0e526ab20069","a1721d7f-903f-4f02-b9cd-676d46c51532","c894fdc1-340b-4070-aebb-93ecd5a7630e","dfe8ad19-ef97-4928-8e67-f89f5ddef719"],"settings":{}}},"order":["home-news"]}
+{
+  "sections": {
+    "home-news": {
+      "type": "home_news",
+      "blocks": {
+        "270dcd2c-5927-4d94-b511-defa0e750a6e": {
+          "type": "logo",
+          "settings": {
+            "item": "shopify:\/\/shop_images\/Screenshot_2023-06-02_at_00.29.14.png",
+            "height": 75
+          }
+        },
+        "321726ed-6998-4ee0-a314-56a8c210ab31": {
+          "type": "logo",
+          "settings": {
+            "item": "shopify:\/\/shop_images\/darker.jpg",
+            "height": 70
+          }
+        }
+      },
+      "block_order": [
+        "270dcd2c-5927-4d94-b511-defa0e750a6e",
+        "321726ed-6998-4ee0-a314-56a8c210ab31"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "home-news"
+  ]
+}
