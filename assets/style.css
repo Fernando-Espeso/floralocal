@@ -17,7 +17,7 @@
 }
 
 :root{
-  --main:"helvetica";
+  --main:"UniversLTStd";
   --M: 14px;
 }
 
@@ -95,7 +95,7 @@ html {
 input,
 button,
 select {
-  font-family: 'NimbusSansExtdDBlack';
+  font-family: var(--main);
   font-size: 100%;
   padding: 0;
   margin: 0;
@@ -171,6 +171,7 @@ select:disabled {
 }
 
 body {
+  font-family:var(--main);
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -227,6 +228,11 @@ footer {
   color: black;
   position: sticky;
   top: 0px;
+  color: white;
+}
+
+.floralokal{
+  margin-bottom: 20px;
 }
 
 /* SHOP */
@@ -282,14 +288,19 @@ button#checkout:focus {}
 /* RANDMON */
 
 .home_img {
-  top: 0;
-  background-color: white;
+  z-index: 0;
+  height: 100vh;
+  background-color: #fff;
   position: fixed;
-  width: 80vw;
+  width: 100vw;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  height: 60vh;
+  transform: translate(-50%,-50%);
+}
+.home_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* FOOTER */
@@ -335,8 +346,8 @@ footer {}
 /* FONTS */
 
 @font-face {
-  font-family: 'MinionPro-Medium';
-  src: url('MinionPro-Medium.woff') format('woff');
+  font-family: 'UniversLTStd';
+  src: url('UniversLTStd.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
