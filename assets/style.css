@@ -138,7 +138,9 @@ select:disabled {
   pointer-events: none;
   opacity: 1;
 }
-
+a.active{
+  color: red;
+}
 ::-webkit-input-placeholder,
 ::placeholder {
   color: inherit;
@@ -228,6 +230,9 @@ footer {
   color: black;
   position: sticky;
   top: 0px;
+  color: black;
+}
+#white{
   color: white;
 }
 
@@ -302,7 +307,12 @@ button#checkout:focus {}
   height: 100%;
   object-fit: cover;
 }
-
+.grid_info{
+  text-transform: uppercase;
+  padding: 10px;
+  position: absolute;
+  left: 300px;
+}
 /* FOOTER */
 
 footer {}
