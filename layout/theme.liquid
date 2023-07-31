@@ -83,12 +83,12 @@ Design by Matto studio
   <header>
 	<div class="menu"  {%- if template == 'index' -%}id="white"{%- endif -%}>
       <div class="center">
-        <div class="floralokal"><a href="../pages/about" {% if current_url == 'page.about' %}class="active"{% endif %}>FLORAL LOKAL</a></div>
+        <div class="floralokal"><a href="../pages/about" {% if template == 'page.about' %}class="active" {% endif %}>FLORAL LOKAL</a></div>
         <div><a href="../index" {% if template == 'index' %}class="active" {% endif %} >Strauss bestellen</a></div>
-        <div><a href="../pages/fest/hochzeit" {% if template == 'page.fest-hochzeit' %}class="active" {% endif %} >fest/hochzeit</a></div>
+        <div><a href="../pages/fest-hochzeit" {% if template == 'page.fest-hochzeit' %}class="active" {% endif %} >fest/hochzeit</a></div>
         <div><a href="../pages/kranz" {% if template == 'page.kranz' %}class="active" {% endif %} >Kranz</a></div>
-        <div><a href="../pages/gastro" {% if template == 'gastro' %}class="active" {% endif %} >Gastro</a></div>
-        <div><a href="../pages/crone" {% if template == 'page.crone' %}class="active" {% endif %} >Crone</a></div>
+        <div><a href="../pages/gastro" {% if template == 'page.gastro' %}class="active" {% endif %} >Gastro</a></div>
+        <div><a href="../pages/Krone" {% if template == 'page.crone' %}class="active" {% endif %} >Krone</a></div>
         <div><a href="../pages/brubpimärt" {% if template == 'page.brubpimärt' %}class="active" {% endif %} >Brubpimärt</a></div>
         <div><a href="../pages/kontakt" {% if template == 'page.kontakt' %}class="active" {% endif %} >Kontakt</a></div>
 
