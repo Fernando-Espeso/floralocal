@@ -252,12 +252,34 @@ footer {
   display: grid;
   grid-template-columns: repeat(15, 1fr);
 }
+span.cart-total {
+    margin-left: 10px;
+}
 .gallery {
-    margin-left: 300px;
-    padding: 10px;
+    padding: 0px;
     grid-gap: 20px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+}
+.title{
+  margin-bottom: 40px;
+}
+.empty {
+    left: 300px;
+    top: 10px;
+    position: fixed;
+    text-transform: uppercase;
+}
+.afrange{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  width: 300px;
 }
 #main-collection.main>div:not(.events) {}
 
