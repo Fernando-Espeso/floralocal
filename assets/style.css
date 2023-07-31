@@ -141,6 +141,11 @@ select:disabled {
 a.active{
   color: red;
 }
+strong {
+    line-height: 24px;
+    font-size: 24px!important;
+}
+
 ::-webkit-input-placeholder,
 ::placeholder {
   color: inherit;
@@ -247,7 +252,13 @@ footer {
   display: grid;
   grid-template-columns: repeat(15, 1fr);
 }
-
+.gallery {
+    margin-left: 300px;
+    padding: 10px;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 #main-collection.main>div:not(.events) {}
 
 .main .main-title {}
