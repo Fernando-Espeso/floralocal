@@ -1,29 +1,33 @@
-<div id="main-product" class="main">
-    <div class="product_info">
-          <!--PRODUCT INFO-->
-          <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+<style>
+.gallery {
+    width: calc(100% - 320px);
+    margin-top: 10px;
+    padding: 0;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+</style>
+<div class="grid_info">
+<div class="title">
+  <div>{{ product.title }}</div>
+</div>
+<div class="information">
+    <div class="project_info">
+      <span> {{ product.content | replace: '_16x16', '' | replace: '_32x32', '' | replace: '_50x50', '' | replace: '_100x100', '' | replace: '_160x160', '' | replace: '_240x240', '' | replace: '_480x480', '' | replace: '_600x600', '' | replace: '_1024x1024', '' }}</span>
+    </div>
+</div>
 
+
+    <div class="product_info">
+      <div class="besttelen">BESTELLEN</div>
+      <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
           {%- if product.has_only_default_variant -%}
           class="product-simple"
           {%- elsif variants > 1 -%}
           class="product-variants"
           {%- endif -%}>
-
           <div id="bag" >
-            <div class="title">
-              <div>{{ product.title }}</div>
-              {% unless product.metafields.descriptors.subtitle == blank %}
-                <div class="subtitle">
-                    {{ product.metafields.descriptors.subtitle }}
-                </div>
-              {% endunless %}
-			</div>
-            <div class="information">
-                <div class="project_info">
-                  <span> {{ product.content | replace: '_16x16', '' | replace: '_32x32', '' | replace: '_50x50', '' | replace: '_100x100', '' | replace: '_160x160', '' | replace: '_240x240', '' | replace: '_480x480', '' | replace: '_600x600', '' | replace: '_1024x1024', '' }}</span>
-                </div>
-            </div>
-
             <div id="product-price"></div>
                        {% if product.compare_at_price > product.price %}
                           <span class="sale">ON SALE</span>
@@ -31,34 +35,46 @@
                        {% endif %}
                {% if product.available %}
                         {% else %}
-             <div class="sale">out of stock</div>
+             <div class="sold-out">SOLD OUT</div>
                         {% endif %}
             <div class="variations">
                         <select id="product-select" name="id">
                           {% for variant in product.variants %}
-                          <option value="{{ variant.id }}">CHOOSE SIZE:</option>
+                          <option value="{{ variant.id }}"></option>
                           {% endfor %}
                         </select>
+
+                        <p class="cart-attribute__field">
+                          <label  class="show" for="your-name">Your name</label>
+                          <input placeholder="REQUEST COLOR" required class="required" id="your-name" name="attributes[Your name]">{{ cart.attributes["Your name"] }}</input>
+                        </p>
+                        <p class="cart-attribute__field">
+                          <label  class="show" for="your-name">Your name</label>
+                          <textarea placeholder="ADRESS"  required class="required" id="your-name" name="attributes[Your name]">{{ cart.attributes["Your name"] }}</textarea>
+                        </p>
+
+
+                        Personal Info
+                        <p class="cart-attribute__field">
+                          <label  class="show" for="your-name">Your name</label>
+                          <input placeholder="NAME" required class="required" id="your-name" name="attributes[Your name]">{{ cart.attributes["Your name"] }}</input>
+                        </p>
+                        <p class="cart-attribute__field">
+                          <label  class="show"  for="your-name">Your name</label>
+                          <input  placeholder="PHONE NUMBER" required class="required" id="your-name" name="attributes[Your name]">{{ cart.attributes["Your name"] }}</input>
+                        </p>
                         {% if product.available %}
-                            <button id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
+                            <button class="besttelen" id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
                         {% else %}
                         {% endif %}
             </div>
-             {% unless product.metafields.custom.extra == blank %}
-                <div class="extra">
-                    {{ product.metafields.custom.extra }}
-                </div>
-              {% endunless %}
 
           </div>
-          <p class="cart-attribute__field">
-            <label for="your-name">Your name</label>
-            <textarea required class="required" id="your-name" name="attributes[Your name]">{{ cart.attributes["Your name"] }}</textarea>
-          </p>
+
     </form>
     </div>
-    <!--GALLERY-->
-    <div class="slider">
+
+    <div class="gallery">
              {% for media in product.media %}
           <div class="slide">
                   {% case media.media_type %}

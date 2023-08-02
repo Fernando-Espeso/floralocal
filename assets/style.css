@@ -57,7 +57,9 @@ label {
   border: 0;
   font-size: 100%;
 }
-
+html{
+  padding-bottom: 0px!important;
+}
 ol,
 ul,
 li {
@@ -88,8 +90,6 @@ td {
 }
 
 html {
-  font-size: 2px;
-  padding-bottom: 0px !important;
 }
 
 input,
@@ -107,7 +107,6 @@ select {
   -moz-border-radius: 0;
   border-radius: 0;
   border: 0;
-  font-size: 11px !important;
   color: inherit;
   background: transparent;
   background-color: transparent;
@@ -123,9 +122,12 @@ button,
 select {
   display: block;
   cursor: pointer;
+  font-size: 14px !important;
+  line-height: 15.4px;
 }
 
 * {
+    font-family:var(--main);
   font-size: 14px !important;
   line-height: 15.4px;
   box-sizing: border-box;
@@ -160,7 +162,9 @@ strong {
 :focus {
   outline: none !important;
 }
-
+.info_content {
+    width: 70%;
+}
 :focus::-ms-value {
   background-color: none;
   color: inherit;
@@ -218,13 +222,25 @@ header {
   width: fit-content;
   z-index: 1000;
   top: 0px;
-  position: sticky;
+  left: 0px;
+  position: fixed;
 }
-
+.baggie{
+  margin-bottom: 10px;
+}
 footer {
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
+  font-size: 10px!important;
+}
+footer span{
+    font-size: 10px!important;
+}
+.logo svg {
+    height: fit-content;
+    width: 100px;
+    margin-bottom: 10px;
 }
 
 .menu {
@@ -242,7 +258,7 @@ footer {
 }
 
 .floralokal{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* SHOP */
@@ -256,8 +272,9 @@ span.cart-total {
     margin-left: 10px;
 }
 .gallery {
+    margin-top: 10px;
     padding: 0px;
-    grid-gap: 20px;
+    grid-gap: 10px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
@@ -270,16 +287,63 @@ span.cart-total {
     position: fixed;
     text-transform: uppercase;
 }
-.afrange{
+.afrange {
+    z-index: 1000;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding-bottom: 5px!important;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    width: 155px;
+}
+.all_products {
+    grid-column: span 15;
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    padding: 10px;
+}
+.besttelen {
+    z-index: 1000;
+    padding-bottom: 5px!important;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}select {
+    width: 100%;
+    /* padding-top: 5px;
+    padding-bottom: 5px; */
+    font-size: 14px!important;
+}
+label {
+    display: none;
+}
+span#grey{
+  color:grey!important;
+}
+textarea#your-name {
+  border: none;
+ overflow: auto;
+ outline: none;
+  resize: none;
+    width: 100%;
+    padding: 0px;
+    border-radius: 0px!important;
+}
+.product_info{
   position: fixed;
+  width: 300px;
   top: 10px;
   right: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: red;
-  color: white;
-  text-align: center;
-  width: 300px;
+}
+div#bag {
+    padding:10px 0px;
 }
 #main-collection.main>div:not(.events) {}
 
@@ -356,7 +420,10 @@ footer {}
 
 .product-title:hover {}
 
-#cart-wrapper {}
+#cart-wrapper {
+  padding: 10px;
+margin-left: 300px;
+}
 
 #cart-wrapper .item {}
 
@@ -423,7 +490,53 @@ footer {}
 @media (max-width: 812px) {}
 
 /*IPAD PORTRAIT*/
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .grid_info {
+    text-transform: uppercase;
+    padding: 10px;
+    position: relative;
+    left: 0px;
+}
+.main{
+  padding: 0px;
+}
+.empty {
+  width: 300px;
+  text-transform: uppercase;
+  padding: 0px;
+  position: relative;
+  left: 10px;
+}
+footer{
+  margin-top: auto;
+position: relative;
+bottom: 10px;
+padding-top: 20px;
+left: 10px;
+font-size: 10px!important;
+}
+.info_content {
+    width: 100%;
+}
+header{
+  position: relative;
+}.product_info {
+    position: sticky;
+    width: 100%;
+    top: 10px;
+    background-color: white;
+}
+div#bag {
+    padding: 10px 0px 5px 0px;
+}
+.gallery {
+    margin-top: 10px;
+    padding: 0;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+}
 
 /*SMALL TABLET*/
 @media (max-width: 600px) {}
