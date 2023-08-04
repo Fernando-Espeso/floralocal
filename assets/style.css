@@ -91,7 +91,12 @@ td {
 
 html {
 }
-
+input{
+  padding: 5px 5px 5px 0px!important;
+}
+select{
+    padding: 5px 5px 5px 0px!important;
+}
 input,
 button,
 select {
@@ -128,8 +133,8 @@ select {
 
 * {
     font-family:var(--main);
-  font-size: 14px !important;
-  line-height: 15.4px;
+  font-size: 16px !important;
+  line-height: 18.4px;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
@@ -141,11 +146,11 @@ select:disabled {
   opacity: 1;
 }
 a.active{
-  color: red;
+  color: #ff004b;
 }
 strong {
-    line-height: 24px;
-    font-size: 24px!important;
+    line-height: 12px;
+    font-size: 12px!important;
 }
 
 ::-webkit-input-placeholder,
@@ -229,6 +234,7 @@ header {
   margin-bottom: 10px;
 }
 footer {
+  color: #ff004b;
   position: fixed;
   bottom: 10px;
   left: 10px;
@@ -274,9 +280,11 @@ span.cart-total {
 .gallery {
     margin-top: 10px;
     padding: 0px;
-    grid-gap: 10px;
+    column-gap: 100px;
+    row-gap: 10px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+        max-width: 1200px;
 }
 .title{
   margin-bottom: 40px;
@@ -289,16 +297,24 @@ span.cart-total {
 }
 .afrange {
     z-index: 1000;
-    position: fixed;
-    top: 10px;
-    right: 10px;
+
     padding-bottom: 5px!important;
     padding: 10px;
-    border-radius: 10px;
-    background-color: red;
+    background-color:  #ff004b;
     color: #fff;
-    text-align: center;
-    width: 155px;
+    width: 300px;
+}
+.under{
+      color:  #ff004b;
+      padding: 5px 0px;
+      font-size: 12px!important;
+
+}
+.comentar{
+  z-index: 10000000;
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
 .all_products {
     grid-column: span 15;
@@ -306,14 +322,23 @@ span.cart-total {
     display: grid;
     padding: 10px;
 }
+.clear{
+  margin-top: 5px;
+  z-index: 1000;
+  padding-bottom: 5px!important;
+  padding: 10px;
+  background-color:  black;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+}
 .besttelen {
     z-index: 1000;
     padding-bottom: 5px!important;
     padding: 10px;
-    border-radius: 10px;
-    background-color: red;
+    background-color:  #ff004b;
     color: #fff;
-    text-align: center;
+    text-align: left;
     width: 100%;
 }select {
     width: 100%;
@@ -336,6 +361,9 @@ textarea#your-name {
     padding: 0px;
     border-radius: 0px!important;
 }
+.info-text{
+  font-size: 10px!important;
+}
 .product_info{
   position: fixed;
   width: 300px;
@@ -343,7 +371,11 @@ textarea#your-name {
   right: 10px;
 }
 div#bag {
+      display: none;
     padding:10px 0px;
+}
+.open span{
+  float: right;
 }
 #main-collection.main>div:not(.events) {}
 
@@ -409,6 +441,10 @@ button#checkout:focus {}
   padding: 10px;
   position: absolute;
   left: 300px;
+  width: auto;
+}
+div#product-price {
+    padding-bottom: 5px;
 }
 /* FOOTER */
 
@@ -422,7 +458,9 @@ footer {}
 
 #cart-wrapper {
   padding: 10px;
-margin-left: 300px;
+  width: 300px;
+  position: fixed;
+  right: 10px;
 }
 
 #cart-wrapper .item {}
@@ -487,7 +525,12 @@ margin-left: 300px;
 @media (max-width: 812px) and (orientation: landscape) {}
 
 /*MOBILE LANDSCAPE*/
-@media (max-width: 812px) {}
+@media (max-width: 1200px) {
+
+  .info_content {
+    width: 100%;
+}
+}
 
 /*IPAD PORTRAIT*/
 @media (max-width: 768px) {
@@ -496,6 +539,20 @@ margin-left: 300px;
     padding: 10px;
     position: relative;
     left: 0px;
+}
+.comentar {
+    z-index: 10000000;
+    position: sticky;
+    padding-left: 10px;
+    top: 10px;
+    right: 10px;
+}
+#cart-wrapper {
+  padding: 10px;
+  width: 100%;
+  padding-left: 10px;
+  position: relative;
+  left: 0px;
 }
 .main{
   padding: 0px;
@@ -526,8 +583,22 @@ header{
     top: 10px;
     background-color: white;
 }
+.product_info {
+    position: sticky;
+    top: 10px;
+    width: 100%!important;
+    top: 10px;
+    right: 10px;
+}
 div#bag {
-    padding: 10px 0px 5px 0px;
+    display: none;
+    padding: 10px 0px 0px 0px;
+}
+.open span{
+  float: right;
+}
+.besttelen.open{
+      margin-top: 20px;
 }
 .gallery {
     margin-top: 10px;
@@ -535,6 +606,7 @@ div#bag {
     grid-gap: 10px;
     display: grid;
     grid-template-columns: repeat(1,1fr);
+
 }
 }
 

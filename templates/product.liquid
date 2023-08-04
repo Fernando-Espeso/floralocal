@@ -1,11 +1,33 @@
 <style>
 .gallery {
-    width: calc(100% - 320px);
+    width: calc(100% - 310px);
     margin-top: 10px;
     padding: 0;
     grid-gap: 10px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+}
+@media (max-width: 1200px) {
+
+  .gallery {
+      width: 100%;
+      margin-top: 10px;
+      padding: 0;
+      grid-gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+  }
+  .project_info {
+    width:100%;
+}
+.product_info {
+  position: sticky;
+  top: 10px;
+    width: 300px;
+    top: 10px;
+    right: 10px;
+}
+
 }
 </style>
 <div class="grid_info">
@@ -20,7 +42,7 @@
 
 
     <div class="product_info">
-      <div class="besttelen">BESTELLEN</div>
+      <div class="besttelen open">BESTELLEN <span>+</span></div>
       <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
           {%- if product.has_only_default_variant -%}
           class="product-simple"
@@ -45,23 +67,27 @@
                         </select>
 
                         <p class="cart-attribute__field">
-                          <label  class="show" for="your-name">Your name</label>
-                          <input placeholder="REQUEST COLOR" required class="required" id="your-name" name="attributes[Your name]">{{ cart.attributes["Your name"] }}</input>
+                          <label  class="show" for="color">Color</label>
+                          <input placeholder="REQUEST COLOR" required class="required" id="color" name="properties[color]"></input>
                         </p>
                         <p class="cart-attribute__field">
-                          <label  class="show" for="your-name">Your name</label>
-                          <textarea placeholder="ADRESS"  required class="required" id="your-name" name="attributes[Your name]">{{ cart.attributes["Your name"] }}</textarea>
+                          <label  class="show" for="adress">Adress</label>
+                          <input placeholder="ADRESS"  required class="required" id="adress" name="properties[adress]"></input>
+                        </p>
+                        <div class="info-text">cHOOSE A DATE FOR date for pick up/delivery</div>
+                        <p class="cart-attribute__field">
+                          <label  class="show" for="date">Date</label>
+                          <input type="date" id="date" name="properties[date]" value="2023-07-22" min="2023-01-01" max="2028-12-31" /></input>
                         </p>
 
-
-                        Personal Info
+                        <div class="info-text">Personal Info</div>
                         <p class="cart-attribute__field">
-                          <label  class="show" for="your-name">Your name</label>
-                          <input placeholder="NAME" required class="required" id="your-name" name="attributes[Your name]">{{ cart.attributes["Your name"] }}</input>
+                          <label  class="show" for="name">Your name</label>
+                          <input placeholder="NAME" required class="required" id="name" name="properties[name]">{{ cart.attributes["name"] }}</input>
                         </p>
                         <p class="cart-attribute__field">
-                          <label  class="show"  for="your-name">Your name</label>
-                          <input  placeholder="PHONE NUMBER" required class="required" id="your-name" name="attributes[Your name]">{{ cart.attributes["Your name"] }}</input>
+                          <label  class="show"  for="phone">Phone</label>
+                          <input  placeholder="PHONE NUMBER" required class="required" id="phone" name="properties[phone]"></input>
                         </p>
                         {% if product.available %}
                             <button class="besttelen" id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>

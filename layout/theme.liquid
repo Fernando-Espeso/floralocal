@@ -84,7 +84,9 @@ Design by Matto studio
 	<div class="menu"  {%- if template == 'index' -%}id="white"{%- endif -%}>
       <div class="center">
         <div class="floralokal"><a href="../pages/about" {% if template == 'page.about' %}class="active" {% endif %}>FLORAL LOKAL</a></div>
-        <div><a href="../products/straus-bestellen" {% if template == 'collection' %}class="active" {% endif %}  >Strauss bestellen</a></div>
+        <div><a href="../products/straus-bestellen"    {% if product.handle == 'straus-bestellen' %}
+      class="active"
+    {% endif %} >Strauss bestellen</a></div>
 
                 <div class="baggie" id="cart"{% if template == 'cart' %}class="active" {% endif %} class="c"> <a href="/cart">cart<span class="cart-total">
 
@@ -120,7 +122,7 @@ Design by Matto studio
     {%- else -%}
 
     .uuid-3361e336-8078-4db6-bb7b-f3ef83770f72 {
-      fill: red!important;
+      fill:  #ff004b!important;
     }
           {%- endif -%}
 
