@@ -3,24 +3,16 @@
     "home-news": {
       "type": "home_news",
       "blocks": {
-        "270dcd2c-5927-4d94-b511-defa0e750a6e": {
-          "type": "logo",
-          "settings": {
-            "item": "shopify:\/\/shop_images\/Screenshot_2023-06-02_at_00.29.14.png",
-            "height": 75
-          }
-        },
-        "321726ed-6998-4ee0-a314-56a8c210ab31": {
+        "3a8d34a0-157b-4adc-9792-d112bd4248a9": {
           "type": "logo",
           "settings": {
             "item": "shopify:\/\/shop_images\/darker.jpg",
-            "height": 70
+            "height": 75
           }
         }
       },
       "block_order": [
-        "270dcd2c-5927-4d94-b511-defa0e750a6e",
-        "321726ed-6998-4ee0-a314-56a8c210ab31"
+        "3a8d34a0-157b-4adc-9792-d112bd4248a9"
       ],
       "settings": {
       }

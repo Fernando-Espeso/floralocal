@@ -1,1 +1,451 @@
-{"current":{"favicon":"shopify:\/\/shop_images\/Matto_logo_black_775352c8-4f8a-4d94-82f9-10163a309835.png","sections":{"home_news":{"type":"home_news","blocks":{"d495bea6-9dec-4090-9bb4-c4cfce0748df":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.46.png"}},"9f7f27c7-8c99-4438-ae7b-ddf5c65e6fa7":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.36.png"}},"413402ab-6c76-4dac-80e6-65c629796f82":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.36.png"}}},"block_order":["d495bea6-9dec-4090-9bb4-c4cfce0748df","9f7f27c7-8c99-4438-ae7b-ddf5c65e6fa7","413402ab-6c76-4dac-80e6-65c629796f82"],"settings":{}},"random_footer":{"type":"random_footer","blocks":{"e0c1fd7f-2ed7-4f98-b2e2-973b201fd52f":{"type":"logo","disabled":true,"settings":{}},"8d8ac0aa-7db0-4899-9b27-bcc2aef7e476":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/000017410002.jpg"}}},"block_order":["e0c1fd7f-2ed7-4f98-b2e2-973b201fd52f","8d8ac0aa-7db0-4899-9b27-bcc2aef7e476"],"settings":{}},"europe":{"type":"europe","blocks":{"57754db6-7ff0-4241-bad5-5cd9535cb78a":{"type":"item","settings":{"country":"Austria","city":"Vienna","shop":"<p>SONG Concept Store<\/p><p><\/p>"}},"101ff4a6-b65d-49eb-abdf-4989f6322a61":{"type":"item","settings":{"country":"Belgium","city":"Brussels","shop":"<p>WIELS, le centre d'art contemporain<\/p>"}},"bb770aa1-e432-43c4-b246-fa72a92a9d7a":{"type":"item","settings":{"country":"THE CZECH REPUBLIC","city":"Prague","shop":"<p>Page Five<\/p>"}},"45235c20-03b5-43a1-8b78-7d0d33b65dee":{"type":"item","settings":{"country":"Denmark","city":"COPENHAGEN","shop":"<p>Le Petit Voyeur<\/p>"}},"da107991-1840-43aa-ab3d-161f5c08b582":{"type":"item","settings":{"country":"France","city":"Paris","shop":"<p>Palais de Tokyo<\/p><p>Bourse de Commerce <\/p><p>Lafayette Anticipations<\/p><p>Yvon Lambert Bookshop<\/p><p>0fr. Bookstore<\/p><p>Galleria Continua<\/p><p>Maison Européenne de la Phot.<\/p><p>Les Mots à la Bouche<\/p><p>The Next Door<\/p><p>Monsieur Caramel<\/p><p>Archive 18-20<\/p><p>Cahier Central<\/p><p>Jeu de Paume<\/p><p>Librarie sans titre <\/p><p>After 8 Books<\/p>"}},"55527ec3-b1a2-44c5-a376-7b0b7a2efb91":{"type":"item","settings":{"country":"Germany","city":"Berlin","shop":"<p>do you read me?!<\/p><p>Rosa Wolf Magazines<\/p><p>C\/O Berlin<\/p><p>Bücherbogen am Savignyplatz<\/p>"}},"0d8ec0a1-1d73-437c-8d34-40447dd35e84":{"type":"item","settings":{"country":"","city":"MUNICH","shop":"<p>Soda Books<\/p>"}},"d39d7d0d-51d2-4f4a-9b5f-1d4473ae2797":{"type":"item","settings":{"country":"","city":"Hamburg","shop":"<p>the Internet Shop<\/p>"}},"e43b7590-db4a-4ace-b201-31b40e4cf37a":{"type":"item","settings":{"country":"","city":"Leipzig","shop":"<p>mzin<\/p>"}},"e5eb8fe8-1d6e-4153-8285-c5618e2ef623":{"type":"item","settings":{"country":"Greece","city":"Athens","shop":"<p>Foyer Espresso Bar <\/p><p>Adad Books<\/p><p>Hyper Hypo <\/p><p>Anana Coffee <\/p><p>Minu cafe<\/p><p>Fotagogos Bookstore<\/p>"}},"60401641-8989-476d-8c0a-6f5f0b360ca1":{"type":"item","settings":{"country":"","city":"","shop":""}},"e44d6444-3624-48c4-9e4b-920b606a116b":{"type":"item","settings":{"country":"Italy","city":"Florence","shop":"<p>Bjørk<\/p><p>Todo Modo bookstore<\/p>"}},"dfc6e880-8c0c-4dfc-a457-e57c79f532a6":{"type":"item","settings":{"country":"","city":"Venice","shop":"<p>bruno<\/p>"}},"fb41d3a9-d060-43e5-9286-7984abf6a895":{"type":"item","settings":{"country":"","city":"Perugia","shop":"<p>Edicola 518<\/p>"}},"a976b77c-585b-419c-b8a0-2e8e3b4e11e4":{"type":"item","settings":{"country":"","city":"Forli","shop":"<p>Frab’s magazines <\/p>"}},"ab8c2eff-4a7d-4e20-ba69-12a45c34ed60":{"type":"item","settings":{"country":"","city":"Milano","shop":"<p>Pirelli HangarBicocca<\/p><p>Reading Room<\/p><p>Armani\/Libri<\/p><p>Serendeepity<\/p><p>the Cloister<\/p>"}},"c72b5771-1728-47c8-b77b-e87022b1537c":{"type":"item","settings":{"country":"","city":"TURIN","shop":"<p>Paint It Black<\/p>"}},"09dd7f41-9385-457f-b544-8ec525d40179":{"type":"item","settings":{"country":"SPAIN","city":"Madrid","shop":"<p>The Magazine Club<\/p>"}},"3c0b618c-6f45-433e-9ea0-6c70c3c6a825":{"type":"item","settings":{"country":"Sweden","city":"Stockholm","shop":"<p>Konst-ig<\/p><p>Moderna Museet<\/p><p>Papercut AB<\/p>"}},"6775cf24-5f91-4d50-a511-fed18da02309":{"type":"item","settings":{"country":"Switzerland","city":"Zürich","shop":"<p>Schauspielhaus Zürich: Pfauen<\/p><p>Lorem (not Ipsum)<\/p>"}},"42e5be11-518a-4c60-9606-61082e70e306":{"type":"item","settings":{"country":"UNITED KINGDOM – ENGLAND","city":"London","shop":"<p>ICA, Centre for Contemp. Arts<\/p><p>magCulture<\/p><p>Magma<\/p><p>Serpentine Galleries<\/p><p>Tenderbooks<\/p><p>White Cube, gallery<\/p>"}},"1bf3132b-2b9b-481d-acff-64bb89ff200a":{"type":"item","settings":{"country":"UNITED KINGDOM – SCOTLAND","city":"Glasgow","shop":"<p>Good Press<\/p><p>Ripe magazines <\/p>"}},"bf3b931f-d51b-4ca2-9bd3-137dccaef4d2":{"type":"item","settings":{"country":"Ukraine","city":"Kyiv","shop":"<p>Readellion<\/p>"}},"fdaf6fa3-40ae-4c23-a713-30e362fd83d2":{"type":"item","settings":{"country":"– ONLINE –","city":"","shop":"<p>Soul Studio ( Italy )<\/p><p>Stack ( UK )<\/p>"}}},"block_order":["57754db6-7ff0-4241-bad5-5cd9535cb78a","101ff4a6-b65d-49eb-abdf-4989f6322a61","bb770aa1-e432-43c4-b246-fa72a92a9d7a","45235c20-03b5-43a1-8b78-7d0d33b65dee","da107991-1840-43aa-ab3d-161f5c08b582","55527ec3-b1a2-44c5-a376-7b0b7a2efb91","0d8ec0a1-1d73-437c-8d34-40447dd35e84","d39d7d0d-51d2-4f4a-9b5f-1d4473ae2797","e43b7590-db4a-4ace-b201-31b40e4cf37a","e5eb8fe8-1d6e-4153-8285-c5618e2ef623","60401641-8989-476d-8c0a-6f5f0b360ca1","e44d6444-3624-48c4-9e4b-920b606a116b","dfc6e880-8c0c-4dfc-a457-e57c79f532a6","fb41d3a9-d060-43e5-9286-7984abf6a895","a976b77c-585b-419c-b8a0-2e8e3b4e11e4","ab8c2eff-4a7d-4e20-ba69-12a45c34ed60","c72b5771-1728-47c8-b77b-e87022b1537c","09dd7f41-9385-457f-b544-8ec525d40179","3c0b618c-6f45-433e-9ea0-6c70c3c6a825","6775cf24-5f91-4d50-a511-fed18da02309","42e5be11-518a-4c60-9606-61082e70e306","1bf3132b-2b9b-481d-acff-64bb89ff200a","bf3b931f-d51b-4ca2-9bd3-137dccaef4d2","fdaf6fa3-40ae-4c23-a713-30e362fd83d2"],"settings":{"title":""}},"asia":{"type":"asia","blocks":{"4f010556-d66f-475d-9726-963d26002370":{"type":"item","settings":{"country":"China","city":"CHONGQING","shop":"<p>Super Normal Dept<\/p>"}},"2540de8c-29f3-4c8f-bb53-21c502b58d8c":{"type":"item","settings":{"country":"","city":"Beijing","shop":"<p>M Woods Museum<\/p>"}},"43cd79d2-3ba3-4d81-9ec0-74276b4fb5e9":{"type":"item","settings":{"country":"","city":"Hangzhou","shop":"<p>DorBeetle Store<\/p>"}},"a20dfaf3-1ed8-4d07-9389-f65c91c72829":{"type":"item","settings":{"country":"","city":"Shenzhen","shop":"<p>Super Normal Dept<\/p>"}},"1d145187-2b9b-4fce-8908-482129588f56":{"type":"item","settings":{"country":"","city":"Shanghai","shop":"<p>Super Normal Dept<\/p>"}},"832eb17f-e89a-4f1c-a8d2-c3d81fb87a00":{"type":"item","settings":{"country":"","city":"XIAMEN","shop":"<p>Bathroom Store<\/p>"}},"99c70abc-bc2e-4fc5-962f-9cd34363552e":{"type":"item","settings":{"country":"Japan","city":"MATSUYAMA","shop":"<p>Rasen Books<\/p>"}},"e25f87d3-42b3-4832-ae3b-d10b7e9747e7":{"type":"item","settings":{"country":"","city":"OSAKA","shop":"<p>LVDB Books<\/p>"}},"952234e0-fc02-47f2-a0fd-5110bcd38feb":{"type":"item","settings":{"country":"","city":"TOKYO","shop":"<p>G \/ P Gallery<\/p><p>Tsutaya Daikanyama<\/p>"}},"62655e33-b345-47db-accd-caa3b961064d":{"type":"item","settings":{"country":"South Korea","city":"Seoul","shop":"<p>mirabelle x 0fr. Séoul<\/p>"}},"2f928dea-c15e-402d-afe8-111ab5e37bd8":{"type":"item","settings":{"country":"SINGAPORE","city":"","shop":"<p>Basheer Graphic Books<\/p>"}}},"block_order":["4f010556-d66f-475d-9726-963d26002370","2540de8c-29f3-4c8f-bb53-21c502b58d8c","43cd79d2-3ba3-4d81-9ec0-74276b4fb5e9","a20dfaf3-1ed8-4d07-9389-f65c91c72829","1d145187-2b9b-4fce-8908-482129588f56","832eb17f-e89a-4f1c-a8d2-c3d81fb87a00","99c70abc-bc2e-4fc5-962f-9cd34363552e","e25f87d3-42b3-4832-ae3b-d10b7e9747e7","952234e0-fc02-47f2-a0fd-5110bcd38feb","62655e33-b345-47db-accd-caa3b961064d","2f928dea-c15e-402d-afe8-111ab5e37bd8"],"settings":{"title":""}},"america":{"type":"america","blocks":{"afac6ffe-7f84-424e-88ab-0ed6ff5bb9b5":{"type":"item","settings":{"country":"The United States","city":"LOS ANGELES","shop":"<p>MOCA – The Museum of Contemporary Art<\/p><p>Hennessy + Ingalls<\/p>"}},"1e9389ba-46fd-40e1-9769-e0162204840c":{"type":"item","settings":{"country":"","city":"NEW YORK","shop":"<p>MOMA PS1<\/p><p>McNally Jackson Books<br\/><\/p>"}},"19a0fa46-0aae-4775-8e0f-58a0f0177634":{"type":"item","settings":{"country":"","city":"OAKLAND","shop":"<p>BOOK\/SHOP<\/p>"}},"847fda1e-e567-414c-9d87-2543f71fa512":{"type":"item","settings":{"country":"MEXICO","city":"MEXICO CITY","shop":"<p>Casa Bosques<\/p>"}}},"block_order":["afac6ffe-7f84-424e-88ab-0ed6ff5bb9b5","1e9389ba-46fd-40e1-9769-e0162204840c","19a0fa46-0aae-4775-8e0f-58a0f0177634","847fda1e-e567-414c-9d87-2543f71fa512"],"settings":{"title":""}},"events":{"type":"events","blocks":{"14550f1e-84c8-4390-9629-905b7a3b237f":{"type":"item","settings":{"date":"10 November 2022","city":"PARIS","location":"<p>LAFAYETTE ANTICIPATIONS<\/p><p>9 Rue du Plâtre, 75004<\/p>"}},"bc57b277-e0f9-4147-9468-1e137a252226":{"type":"item","settings":{"date":"2 December 2021","city":"PARIS","location":"<p>LAFAYETTE ANTICIPATIONS<\/p><p>9 Rue du Plâtre, 75004<\/p>"}},"47372c41-d0b0-4521-a06b-5ac2541c0ce2":{"type":"item","settings":{"date":"17 June 2021","city":"Paris","location":"<p>GALERIE VARIATION<\/p><p>26 rue Duperré, 75009<\/p>"}},"5d672f2c-ff3d-40fd-bb4c-03c5846b1220":{"type":"item","settings":{"date":"23 September 2020","city":"Paris","location":"<p>GALERIE VARIATION<\/p><p>26 rue Duperré, 75009<\/p>"}},"9e76726f-affa-4680-9182-2d2ebd2043f2":{"type":"item","settings":{"date":"19 December 2019","city":"MILANO","location":"<p>READING ROOM<\/p><p>Via Mincio, 10, 20139<\/p>"}},"9b2d9a38-ca9d-44b9-9d6a-b2fe3247f8dd":{"type":"item","settings":{"date":"18 December 2019","city":"BERLIN","location":"<p>DO YOU READ ME?!<\/p><p>Auguststraße 28, 10117<\/p>"}},"1b83f1c4-ebaa-49ae-83be-01819fea39ed":{"type":"item","settings":{"date":"13 December 2019","city":"PARIS","location":"<p>CLUB La Toilette x MATTO<\/p><p>Sierra Neon<\/p>"}},"66c8c5ca-e72c-4e33-afa7-9c96b886437f":{"type":"item","settings":{"date":"28 November 2019","city":"Paris","location":"<p>SUZANNE TARASIEVE <\/p><p>7 Rue Pastourelle, 75003<\/p><p><\/p>"}},"fefbc054-a65e-481d-b631-0ad9e7a4a51e":{"type":"item","settings":{"date":"06 September 2019","city":"Copenhagen","location":"<p>ELEVEN O BOOKSHOP<\/p><p><\/p>"}},"ddf96255-d60d-4ce0-bf9a-314585ff7bff":{"type":"item","settings":{"date":"05 September 2019","city":"Athens","location":"<p>LATRAAC <\/p><p>Leonidou 63-65, 104 35<\/p>"}},"6163ef2d-c918-472e-bd14-19f9c6283615":{"type":"item","settings":{"date":"22 June 2019","city":"Paris","location":"<p>CLUB La Toilette x MATTO<\/p><p>Le Dépôt<\/p>"}},"f48bb590-6f87-42ee-8eae-3297bb47382a":{"type":"item","settings":{"date":"12 December 2018","city":"Paris","location":"<p>CLUB La Toilette x MATTO<\/p><p>Les Étoiles<\/p>"}},"c3bf0af7-6548-473e-b08a-d50d037b4125":{"type":"item","settings":{"date":"12 December 2018","city":"Paris","location":"<p>0FR BOOKSHOP<\/p><p>20 Rue Dupetit-Thouars, 75003<\/p>"}}},"block_order":["14550f1e-84c8-4390-9629-905b7a3b237f","bc57b277-e0f9-4147-9468-1e137a252226","47372c41-d0b0-4521-a06b-5ac2541c0ce2","5d672f2c-ff3d-40fd-bb4c-03c5846b1220","9e76726f-affa-4680-9182-2d2ebd2043f2","9b2d9a38-ca9d-44b9-9d6a-b2fe3247f8dd","1b83f1c4-ebaa-49ae-83be-01819fea39ed","66c8c5ca-e72c-4e33-afa7-9c96b886437f","fefbc054-a65e-481d-b631-0ad9e7a4a51e","ddf96255-d60d-4ce0-bf9a-314585ff7bff","6163ef2d-c918-472e-bd14-19f9c6283615","f48bb590-6f87-42ee-8eae-3297bb47382a","c3bf0af7-6548-473e-b08a-d50d037b4125"],"settings":{"title":""}},"studio":{"type":"studio","blocks":{"3ee21459-0def-435c-b221-22e044c01a17":{"type":"block-2","settings":{"title":"GIVENCHY, photography, Show Collections Automne – Hiver 2022"}},"836a4f07-f52b-4e14-9c05-d7d158cfcb94":{"type":"block-1","settings":{"image":"shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.36.png"}},"93554b5c-ac40-4244-bbc7-f60910f45d4b":{"type":"block-1","settings":{"image":"shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.46.png"}},"51b4d3c0-e885-44d0-a0db-5cf29d2525f6":{"type":"block-1","settings":{"image":"shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.46.png"}}},"block_order":["3ee21459-0def-435c-b221-22e044c01a17","836a4f07-f52b-4e14-9c05-d7d158cfcb94","93554b5c-ac40-4244-bbc7-f60910f45d4b","51b4d3c0-e885-44d0-a0db-5cf29d2525f6"],"settings":{}},"16547705855a53eaac":{"type":"studio","blocks":{"0042198f-8ae7-44f3-b68d-081a01ee9ec8":{"type":"block-1","settings":{"image":"shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.36.png"}},"1b61e431-f8fd-480d-bab6-8cd55f39d2ed":{"type":"block-2","settings":{"title":"GIVENCHY, photography, Show Collections Automne – Hiver 2022"}}},"block_order":["0042198f-8ae7-44f3-b68d-081a01ee9ec8","1b61e431-f8fd-480d-bab6-8cd55f39d2ed"],"settings":{}},"16547706424a93cd52":{"type":"studio","blocks":{"a3125772-fe0e-49fe-bca9-edb4cc82444d":{"type":"block-1","settings":{"image":"shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.36.png"}},"78896c56-97cd-4b82-95cb-b9dc17c16818":{"type":"block-2","settings":{"title":"GIVENCHY, photography, Show Collections Automne – Hiver 2022"}},"83334659-e188-4477-98f9-b644bfcfc383":{"type":"block-1","settings":{"image":"shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.46.png"}}},"block_order":["a3125772-fe0e-49fe-bca9-edb4cc82444d","78896c56-97cd-4b82-95cb-b9dc17c16818","83334659-e188-4477-98f9-b644bfcfc383"],"settings":{}},"random_middle":{"type":"random_middle","blocks":{"96a0e55c-6f0f-4d2b-92e5-96a5acda30d9":{"type":"logo","settings":{"item":"shopify:\/\/shop_images\/IMG_0710.jpg"}}},"block_order":["96a0e55c-6f0f-4d2b-92e5-96a5acda30d9"],"settings":{}},"about":{"type":"about","blocks":{"44a99b21-2855-4d85-8900-48fe84906724":{"type":"item","settings":{"bio":"<p>Dominika Hadelova and Aldo Buscalferri<br\/><\/p>","street":"<p>138 rue La Fayette, 75010 Paris<br\/>phone +33 6 25865594 \/ +33 7 68289865<br\/><\/p>","instagram":"<p><a href=\"https:\/\/www.instagram.com\/mattostudioparis\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/mattostudioparis\/\">instagram<\/a><\/p>"}}},"block_order":["44a99b21-2855-4d85-8900-48fe84906724"],"settings":{"title":""}},"australia":{"type":"australia","blocks":{"de388493-90e8-4c5d-a606-851e18528094":{"type":"item","settings":{"country":"QUEENSLAND","city":"BURLEIGH","shop":"<p>Love Connection<\/p>"}}},"block_order":["de388493-90e8-4c5d-a606-851e18528094"],"settings":{"title":""}}},"content_for_index":["16547705855a53eaac","16547706424a93cd52"]}}
+{
+  "current": {
+    "favicon": "shopify:\/\/shop_images\/Matto_logo_black_775352c8-4f8a-4d94-82f9-10163a309835.png",
+    "sections": {
+      "home_news": {
+        "type": "home_news",
+        "blocks": {
+          "d495bea6-9dec-4090-9bb4-c4cfce0748df": {
+            "type": "logo",
+            "settings": {
+              "item": "shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.46.png"
+            }
+          },
+          "9f7f27c7-8c99-4438-ae7b-ddf5c65e6fa7": {
+            "type": "logo",
+            "settings": {
+              "item": "shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.36.png"
+            }
+          },
+          "413402ab-6c76-4dac-80e6-65c629796f82": {
+            "type": "logo",
+            "settings": {
+              "item": "shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.36.png"
+            }
+          }
+        },
+        "block_order": [
+          "d495bea6-9dec-4090-9bb4-c4cfce0748df",
+          "9f7f27c7-8c99-4438-ae7b-ddf5c65e6fa7",
+          "413402ab-6c76-4dac-80e6-65c629796f82"
+        ],
+        "settings": {
+        }
+      },
+      "asia": {
+        "type": "asia",
+        "blocks": {
+          "4f010556-d66f-475d-9726-963d26002370": {
+            "type": "item",
+            "settings": {
+              "country": "China",
+              "city": "CHONGQING",
+              "shop": "<p>Super Normal Dept<\/p>"
+            }
+          },
+          "2540de8c-29f3-4c8f-bb53-21c502b58d8c": {
+            "type": "item",
+            "settings": {
+              "country": "",
+              "city": "Beijing",
+              "shop": "<p>M Woods Museum<\/p>"
+            }
+          },
+          "43cd79d2-3ba3-4d81-9ec0-74276b4fb5e9": {
+            "type": "item",
+            "settings": {
+              "country": "",
+              "city": "Hangzhou",
+              "shop": "<p>DorBeetle Store<\/p>"
+            }
+          },
+          "a20dfaf3-1ed8-4d07-9389-f65c91c72829": {
+            "type": "item",
+            "settings": {
+              "country": "",
+              "city": "Shenzhen",
+              "shop": "<p>Super Normal Dept<\/p>"
+            }
+          },
+          "1d145187-2b9b-4fce-8908-482129588f56": {
+            "type": "item",
+            "settings": {
+              "country": "",
+              "city": "Shanghai",
+              "shop": "<p>Super Normal Dept<\/p>"
+            }
+          },
+          "832eb17f-e89a-4f1c-a8d2-c3d81fb87a00": {
+            "type": "item",
+            "settings": {
+              "country": "",
+              "city": "XIAMEN",
+              "shop": "<p>Bathroom Store<\/p>"
+            }
+          },
+          "99c70abc-bc2e-4fc5-962f-9cd34363552e": {
+            "type": "item",
+            "settings": {
+              "country": "Japan",
+              "city": "MATSUYAMA",
+              "shop": "<p>Rasen Books<\/p>"
+            }
+          },
+          "e25f87d3-42b3-4832-ae3b-d10b7e9747e7": {
+            "type": "item",
+            "settings": {
+              "country": "",
+              "city": "OSAKA",
+              "shop": "<p>LVDB Books<\/p>"
+            }
+          },
+          "952234e0-fc02-47f2-a0fd-5110bcd38feb": {
+            "type": "item",
+            "settings": {
+              "country": "",
+              "city": "TOKYO",
+              "shop": "<p>G \/ P Gallery<\/p><p>Tsutaya Daikanyama<\/p>"
+            }
+          },
+          "62655e33-b345-47db-accd-caa3b961064d": {
+            "type": "item",
+            "settings": {
+              "country": "South Korea",
+              "city": "Seoul",
+              "shop": "<p>mirabelle x 0fr. Séoul<\/p>"
+            }
+          },
+          "2f928dea-c15e-402d-afe8-111ab5e37bd8": {
+            "type": "item",
+            "settings": {
+              "country": "SINGAPORE",
+              "city": "",
+              "shop": "<p>Basheer Graphic Books<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "4f010556-d66f-475d-9726-963d26002370",
+          "2540de8c-29f3-4c8f-bb53-21c502b58d8c",
+          "43cd79d2-3ba3-4d81-9ec0-74276b4fb5e9",
+          "a20dfaf3-1ed8-4d07-9389-f65c91c72829",
+          "1d145187-2b9b-4fce-8908-482129588f56",
+          "832eb17f-e89a-4f1c-a8d2-c3d81fb87a00",
+          "99c70abc-bc2e-4fc5-962f-9cd34363552e",
+          "e25f87d3-42b3-4832-ae3b-d10b7e9747e7",
+          "952234e0-fc02-47f2-a0fd-5110bcd38feb",
+          "62655e33-b345-47db-accd-caa3b961064d",
+          "2f928dea-c15e-402d-afe8-111ab5e37bd8"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "america": {
+        "type": "america",
+        "blocks": {
+          "afac6ffe-7f84-424e-88ab-0ed6ff5bb9b5": {
+            "type": "item",
+            "settings": {
+              "country": "The United States",
+              "city": "LOS ANGELES",
+              "shop": "<p>MOCA – The Museum of Contemporary Art<\/p><p>Hennessy + Ingalls<\/p>"
+            }
+          },
+          "1e9389ba-46fd-40e1-9769-e0162204840c": {
+            "type": "item",
+            "settings": {
+              "country": "",
+              "city": "NEW YORK",
+              "shop": "<p>MOMA PS1<\/p><p>McNally Jackson Books<br\/><\/p>"
+            }
+          },
+          "19a0fa46-0aae-4775-8e0f-58a0f0177634": {
+            "type": "item",
+            "settings": {
+              "country": "",
+              "city": "OAKLAND",
+              "shop": "<p>BOOK\/SHOP<\/p>"
+            }
+          },
+          "847fda1e-e567-414c-9d87-2543f71fa512": {
+            "type": "item",
+            "settings": {
+              "country": "MEXICO",
+              "city": "MEXICO CITY",
+              "shop": "<p>Casa Bosques<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "afac6ffe-7f84-424e-88ab-0ed6ff5bb9b5",
+          "1e9389ba-46fd-40e1-9769-e0162204840c",
+          "19a0fa46-0aae-4775-8e0f-58a0f0177634",
+          "847fda1e-e567-414c-9d87-2543f71fa512"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "events": {
+        "type": "events",
+        "blocks": {
+          "14550f1e-84c8-4390-9629-905b7a3b237f": {
+            "type": "item",
+            "settings": {
+              "date": "10 November 2022",
+              "city": "PARIS",
+              "location": "<p>LAFAYETTE ANTICIPATIONS<\/p><p>9 Rue du Plâtre, 75004<\/p>"
+            }
+          },
+          "bc57b277-e0f9-4147-9468-1e137a252226": {
+            "type": "item",
+            "settings": {
+              "date": "2 December 2021",
+              "city": "PARIS",
+              "location": "<p>LAFAYETTE ANTICIPATIONS<\/p><p>9 Rue du Plâtre, 75004<\/p>"
+            }
+          },
+          "47372c41-d0b0-4521-a06b-5ac2541c0ce2": {
+            "type": "item",
+            "settings": {
+              "date": "17 June 2021",
+              "city": "Paris",
+              "location": "<p>GALERIE VARIATION<\/p><p>26 rue Duperré, 75009<\/p>"
+            }
+          },
+          "5d672f2c-ff3d-40fd-bb4c-03c5846b1220": {
+            "type": "item",
+            "settings": {
+              "date": "23 September 2020",
+              "city": "Paris",
+              "location": "<p>GALERIE VARIATION<\/p><p>26 rue Duperré, 75009<\/p>"
+            }
+          },
+          "9e76726f-affa-4680-9182-2d2ebd2043f2": {
+            "type": "item",
+            "settings": {
+              "date": "19 December 2019",
+              "city": "MILANO",
+              "location": "<p>READING ROOM<\/p><p>Via Mincio, 10, 20139<\/p>"
+            }
+          },
+          "9b2d9a38-ca9d-44b9-9d6a-b2fe3247f8dd": {
+            "type": "item",
+            "settings": {
+              "date": "18 December 2019",
+              "city": "BERLIN",
+              "location": "<p>DO YOU READ ME?!<\/p><p>Auguststraße 28, 10117<\/p>"
+            }
+          },
+          "1b83f1c4-ebaa-49ae-83be-01819fea39ed": {
+            "type": "item",
+            "settings": {
+              "date": "13 December 2019",
+              "city": "PARIS",
+              "location": "<p>CLUB La Toilette x MATTO<\/p><p>Sierra Neon<\/p>"
+            }
+          },
+          "66c8c5ca-e72c-4e33-afa7-9c96b886437f": {
+            "type": "item",
+            "settings": {
+              "date": "28 November 2019",
+              "city": "Paris",
+              "location": "<p>SUZANNE TARASIEVE <\/p><p>7 Rue Pastourelle, 75003<\/p><p><\/p>"
+            }
+          },
+          "fefbc054-a65e-481d-b631-0ad9e7a4a51e": {
+            "type": "item",
+            "settings": {
+              "date": "06 September 2019",
+              "city": "Copenhagen",
+              "location": "<p>ELEVEN O BOOKSHOP<\/p><p><\/p>"
+            }
+          },
+          "ddf96255-d60d-4ce0-bf9a-314585ff7bff": {
+            "type": "item",
+            "settings": {
+              "date": "05 September 2019",
+              "city": "Athens",
+              "location": "<p>LATRAAC <\/p><p>Leonidou 63-65, 104 35<\/p>"
+            }
+          },
+          "6163ef2d-c918-472e-bd14-19f9c6283615": {
+            "type": "item",
+            "settings": {
+              "date": "22 June 2019",
+              "city": "Paris",
+              "location": "<p>CLUB La Toilette x MATTO<\/p><p>Le Dépôt<\/p>"
+            }
+          },
+          "f48bb590-6f87-42ee-8eae-3297bb47382a": {
+            "type": "item",
+            "settings": {
+              "date": "12 December 2018",
+              "city": "Paris",
+              "location": "<p>CLUB La Toilette x MATTO<\/p><p>Les Étoiles<\/p>"
+            }
+          },
+          "c3bf0af7-6548-473e-b08a-d50d037b4125": {
+            "type": "item",
+            "settings": {
+              "date": "12 December 2018",
+              "city": "Paris",
+              "location": "<p>0FR BOOKSHOP<\/p><p>20 Rue Dupetit-Thouars, 75003<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "14550f1e-84c8-4390-9629-905b7a3b237f",
+          "bc57b277-e0f9-4147-9468-1e137a252226",
+          "47372c41-d0b0-4521-a06b-5ac2541c0ce2",
+          "5d672f2c-ff3d-40fd-bb4c-03c5846b1220",
+          "9e76726f-affa-4680-9182-2d2ebd2043f2",
+          "9b2d9a38-ca9d-44b9-9d6a-b2fe3247f8dd",
+          "1b83f1c4-ebaa-49ae-83be-01819fea39ed",
+          "66c8c5ca-e72c-4e33-afa7-9c96b886437f",
+          "fefbc054-a65e-481d-b631-0ad9e7a4a51e",
+          "ddf96255-d60d-4ce0-bf9a-314585ff7bff",
+          "6163ef2d-c918-472e-bd14-19f9c6283615",
+          "f48bb590-6f87-42ee-8eae-3297bb47382a",
+          "c3bf0af7-6548-473e-b08a-d50d037b4125"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "studio": {
+        "type": "studio",
+        "blocks": {
+          "3ee21459-0def-435c-b221-22e044c01a17": {
+            "type": "block-2",
+            "settings": {
+              "title": "GIVENCHY, photography, Show Collections Automne – Hiver 2022"
+            }
+          },
+          "836a4f07-f52b-4e14-9c05-d7d158cfcb94": {
+            "type": "block-1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.36.png"
+            }
+          },
+          "93554b5c-ac40-4244-bbc7-f60910f45d4b": {
+            "type": "block-1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.46.png"
+            }
+          },
+          "51b4d3c0-e885-44d0-a0db-5cf29d2525f6": {
+            "type": "block-1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.46.png"
+            }
+          }
+        },
+        "block_order": [
+          "3ee21459-0def-435c-b221-22e044c01a17",
+          "836a4f07-f52b-4e14-9c05-d7d158cfcb94",
+          "93554b5c-ac40-4244-bbc7-f60910f45d4b",
+          "51b4d3c0-e885-44d0-a0db-5cf29d2525f6"
+        ],
+        "settings": {
+        }
+      },
+      "16547705855a53eaac": {
+        "type": "studio",
+        "blocks": {
+          "0042198f-8ae7-44f3-b68d-081a01ee9ec8": {
+            "type": "block-1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.36.png"
+            }
+          },
+          "1b61e431-f8fd-480d-bab6-8cd55f39d2ed": {
+            "type": "block-2",
+            "settings": {
+              "title": "GIVENCHY, photography, Show Collections Automne – Hiver 2022"
+            }
+          }
+        },
+        "block_order": [
+          "0042198f-8ae7-44f3-b68d-081a01ee9ec8",
+          "1b61e431-f8fd-480d-bab6-8cd55f39d2ed"
+        ],
+        "settings": {
+        }
+      },
+      "16547706424a93cd52": {
+        "type": "studio",
+        "blocks": {
+          "a3125772-fe0e-49fe-bca9-edb4cc82444d": {
+            "type": "block-1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.36.png"
+            }
+          },
+          "78896c56-97cd-4b82-95cb-b9dc17c16818": {
+            "type": "block-2",
+            "settings": {
+              "title": "GIVENCHY, photography, Show Collections Automne – Hiver 2022"
+            }
+          },
+          "83334659-e188-4477-98f9-b644bfcfc383": {
+            "type": "block-1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screenshot_2022-06-07_at_18.07.46.png"
+            }
+          }
+        },
+        "block_order": [
+          "a3125772-fe0e-49fe-bca9-edb4cc82444d",
+          "78896c56-97cd-4b82-95cb-b9dc17c16818",
+          "83334659-e188-4477-98f9-b644bfcfc383"
+        ],
+        "settings": {
+        }
+      },
+      "about": {
+        "type": "about",
+        "blocks": {
+          "44a99b21-2855-4d85-8900-48fe84906724": {
+            "type": "item",
+            "settings": {
+              "bio": "<p>Dominika Hadelova and Aldo Buscalferri<br\/><\/p>",
+              "street": "<p>138 rue La Fayette, 75010 Paris<br\/>phone +33 6 25865594 \/ +33 7 68289865<br\/><\/p>",
+              "instagram": "<p><a href=\"https:\/\/www.instagram.com\/mattostudioparis\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/mattostudioparis\/\">instagram<\/a><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "44a99b21-2855-4d85-8900-48fe84906724"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "australia": {
+        "type": "australia",
+        "blocks": {
+          "de388493-90e8-4c5d-a606-851e18528094": {
+            "type": "item",
+            "settings": {
+              "country": "QUEENSLAND",
+              "city": "BURLEIGH",
+              "shop": "<p>Love Connection<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "de388493-90e8-4c5d-a606-851e18528094"
+        ],
+        "settings": {
+          "title": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "16547705855a53eaac",
+      "16547706424a93cd52"
+    ]
+  }
+}
