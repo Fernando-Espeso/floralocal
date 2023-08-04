@@ -5,7 +5,7 @@
               <div class="item">
                 <div  class="thumb" >
                                 <div class="item-title">
-                                    <a class="product-title">WHAT YOU HAVE ORDER</a><BR>
+                                    <a class="info-text">WHAT YOU HAVE ORDER</a><BR>
                                                  </div>
                 </div>
                 {% unless item.product.options contains 'Title' %}
@@ -45,7 +45,8 @@
   </div>
   {% endfor %}
     <div class="total">
-      <div>Subtotal</div>
+
+      <div class="info-text" >SUBTOTAL</div>
       <div class="pri">{{ cart.total_price | money }}</div>
     </div>
       <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
