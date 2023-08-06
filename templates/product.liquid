@@ -39,8 +39,6 @@
       <span> {{ product.content | replace: '_16x16', '' | replace: '_32x32', '' | replace: '_50x50', '' | replace: '_100x100', '' | replace: '_160x160', '' | replace: '_240x240', '' | replace: '_480x480', '' | replace: '_600x600', '' | replace: '_1024x1024', '' }}</span>
     </div>
 </div>
-
-
     <div class="product_info">
       <div class="besttelen open">BESTELLEN <span>+</span></div>
       <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
@@ -68,15 +66,15 @@
                         <div class="info-text">Type some Information for your card</div>
                         <p class="cart-attribute__field">
                           <label  class="show" for="date">Sentence</label>
-                          <textarea  id="sentence" name="properties[sentence]" disabled></textarea>
+                          <textarea  id="sentence" name="properties[sentence]" disabled autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
                         </p>
                         <p class="cart-attribute__field">
                           <label  class="show" for="color">Color</label>
-                          <input placeholder="REQUEST COLOR" class="required" id="color" name="properties[color]"></input>
+                          <input placeholder="REQUEST COLOR" class="required" id="color" name="properties[color]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></input>
                         </p>
-                        <p class="cart-attribute__field">
+                        <p style="order:-1"class="cart-attribute__field">
                           <label  class="show" for="adress">Adress</label>
-                          <input placeholder="ADRESS"  required class="required" id="adress" name="properties[adress]"></input>
+                          <input id="adress" placeholder="ADRESS" disabled  required class="required" id="adress" name="properties[adress]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></input>
                         </p>
 
 
@@ -89,11 +87,11 @@
                         <div class="info-text">Personal Info</div>
                         <p class="cart-attribute__field">
                           <label  class="show" for="name">Your name</label>
-                          <input placeholder="NAME" required class="required" id="name" name="properties[name]">{{ cart.attributes["name"] }}</input>
+                          <input placeholder="NAME" required class="required" id="name" name="properties[name]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{ cart.attributes["name"] }}</input>
                         </p>
                         <p class="cart-attribute__field">
                           <label  class="show"  for="phone">Phone</label>
-                          <input  placeholder="PHONE NUMBER" required class="required" id="phone" name="properties[phone]"></input>
+                          <input  placeholder="PHONE NUMBER" required class="required" id="phone" name="properties[phone]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></input>
                         </p>
                         {% if product.available %}
                             <button class="besttelen" id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ADD TO CART</button>
@@ -182,5 +180,18 @@
       textarea.prop('disabled', true);
     }
   });
+});
+
+$(document).ready(function() {
+const selectors = $('#product-select-option-1');
+const textareas = $('#adress');
+
+selectors.on('change', function() {
+  if (selectors.val() === 'DELIVERY') {
+    textareas.prop('disabled', false);
+  } else {
+    textareas.prop('disabled', true);
+  }
+});
 });
 </script>
