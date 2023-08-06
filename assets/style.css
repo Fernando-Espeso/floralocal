@@ -92,6 +92,7 @@ td {
 html {
 }
 input{
+  background-color: transparent!important;
   padding: 5px 5px 5px 0px!important;
 }
 select{
@@ -347,6 +348,7 @@ li {
     text-align: left;
     width: 100%;
 }select {
+      text-transform: uppercase;
     width: 100%;
     /* padding-top: 5px;
     padding-bottom: 5px; */
@@ -496,7 +498,11 @@ footer {}
 .checkout {}
 
 .empty {}
-
+textarea{
+  width: 100%;
+  resize: none;
+  border:0px;
+}
 /* FONTS */
 
 @font-face {

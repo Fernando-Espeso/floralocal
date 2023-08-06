@@ -68,11 +68,11 @@
                         <div class="info-text">Type some Information for your card</div>
                         <p class="cart-attribute__field">
                           <label  class="show" for="date">Sentence</label>
-                          <textarea disabled type="date" id="sentence" name="properties[sentence]" value="2023-07-22" min="2023-01-01" max="2038-12-31" /></textarea>
+                          <textarea  id="sentence" name="properties[sentence]" disabled></textarea>
                         </p>
                         <p class="cart-attribute__field">
                           <label  class="show" for="color">Color</label>
-                          <input placeholder="REQUEST COLOR" required class="required" id="color" name="properties[color]"></input>
+                          <input placeholder="REQUEST COLOR" class="required" id="color" name="properties[color]"></input>
                         </p>
                         <p class="cart-attribute__field">
                           <label  class="show" for="adress">Adress</label>
@@ -129,19 +129,7 @@
 {% assign variants = variants | plus: 1 %}
 {% endif %}
 {% endfor %}
-<script>
-const selector = document.getElementById('product-select-option-2');
-const textarea = document.getElementById('sentence');
 
-selector.addEventListener('change', function() {
-  if (selector.value === 'SILVERCARD' || selector.value === 'RED CARD') {
-    textarea.removeAttribute('disabled');
-  } else {
-    textarea.setAttribute('disabled', 'disabled');
-  }
-});
-
-</script>
 <script>
   //PRODUCT FUNCTIONS
   var selectCallback = function(variant, selector){
@@ -181,4 +169,18 @@ selector.addEventListener('change', function() {
     {% endif %}
     {% endfor %}
   });
+
+
+  $(document).ready(function() {
+  const selector = $('#product-select-option-2');
+  const textarea = $('#sentence');
+
+  selector.on('change', function() {
+    if (selector.val() === 'silver' || selector.val() === 'red') {
+      textarea.prop('disabled', false);
+    } else {
+      textarea.prop('disabled', true);
+    }
+  });
+});
 </script>

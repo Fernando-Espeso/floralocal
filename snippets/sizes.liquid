@@ -1,13 +1,7 @@
-<style>
-
-
-
-</style>
-
 {% assign variantCount = product.variants | size %}
 {% if product.available and variantCount > 0 %}
 <div class="product-grid-options-size">
- 
+
 {% for option in product.options %}
 {% assign is_size = false %}
 {% assign downcased_option = option | downcase %}
@@ -18,7 +12,6 @@
 {% assign values = '' %}
   CHOOSE SIZE:
 {% for variant in product.variants %}
-{% assign value = variant.options[option_index] %}
 {% unless values contains value %}
 
 {% if option_count > 0 %}

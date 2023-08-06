@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 /* RANDMON LOCATION */
 $(document).ready(function(){
+
+
 $('.home_img img').each(function( index ) {
   $(this).css({
     left : Math.random() * ($('.home_img').width() - $(this).width()),
@@ -164,6 +166,7 @@ slickSlide.on('init reInit afterChange', function (event, slick, currentSlide, n
          $(this).css('height', `calc(100vh - ${height}px - 50px)`)
        })
      })
+
 
 
 });
