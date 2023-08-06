@@ -145,6 +145,7 @@ button:disabled,
 select:disabled {
   pointer-events: none;
   opacity: 1;
+  color: lightgray;
 }
 a.active{
   color: #ff004b;
