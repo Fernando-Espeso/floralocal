@@ -242,6 +242,7 @@ header {
   margin-bottom: 10px;
 }
 footer {
+  width: calc(100% - 10px);
   color: #ff004b;
   position: fixed;
   bottom: 10px;
@@ -301,8 +302,8 @@ order: -1;
     column-gap: 100px;
     row-gap: 10px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-        max-width: 1200px;
+    width: calc(100% - 410px);
+    max-width: 1200px;
 }
 .title{
   margin-bottom: 40px;
@@ -571,10 +572,28 @@ textarea{
 .under{
   width:300px;
 }
+.gallery {
+    width: 100%;
+}
+.comentar {
+  padding: 0px;
+  padding-left: 0px!important;
+    z-index: 10000000;
+    position: sticky;
+    top: 10px;
+    right: 10px;
+}
 }
 
 /*IPAD PORTRAIT*/
 @media (max-width: 768px) {
+  .gallery {
+    margin-top: 10px;
+    padding: 0;
+    grid-gap: 10px;
+    display: grid;
+    width: 100%;
+}
   .grid_info {
     text-transform: uppercase;
     padding: 10px;
@@ -582,11 +601,10 @@ textarea{
     left: 0px;
 }
 .comentar {
+  margin-top: 20px;
     z-index: 10000000;
     position: sticky;
-    padding-left: 10px;
-    top: 10px;
-    right: 10px;
+width: 100%;
 }
 #cart-wrapper {
   padding: 10px;
@@ -642,14 +660,7 @@ div#bag {
 .besttelen.open{
       margin-top: 20px;
 }
-.gallery {
-    margin-top: 10px;
-    padding: 0;
-    grid-gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
 
-}
 }
 
 /*SMALL TABLET*/
@@ -660,7 +671,7 @@ div#bag {
 
 
   .afrange{
-    width: calc(100% - 10px);
+    width: 100%;
   }
 }
 
