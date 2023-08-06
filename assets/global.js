@@ -51,6 +51,9 @@ $('.open').click(function() {
   }
 });
 
+
+
+
 /* GENERAL CLICKS */
  var elems = $(".home_img, .footer_randmon");
 	if (elems.length) {
