@@ -302,6 +302,7 @@ order: -1;
     column-gap: 100px;
     row-gap: 10px;
     display: grid;
+      grid-template-columns: repeat(2,1fr);
     width: calc(100% - 410px);
     max-width: 1200px;
 }
