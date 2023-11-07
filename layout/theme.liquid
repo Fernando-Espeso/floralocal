@@ -88,17 +88,7 @@ Design by Matto studio
       class="active"
     {% endif %} >Strauss bestellen</a></div>
 
-                <div class="baggie" id="cart"{% if template == 'cart' %}class="active" {% endif %} class="c"> <a href="/cart">Warenkorb<span class="cart-total">
-
-                {%- if cart.item_count == 0 -%}
-              	0
-                {%- else -%}
-
-                {{- cart.item_count -}}
-
-                {%- endif -%}
-
-              </span></a></div>
+            
         <div><a href="../pages/fest-hochzeit" {% if template == 'page.fest' %}class="active" {% endif %} >fest/hochzeit</a></div>
         <div><a href="../pages/kranz" {% if template == 'page.kranz' %}class="active" {% endif %} >Kranz</a></div>
         <div><a href="../pages/gastro" {% if template == 'page.gastro' %}class="active" {% endif %} >Gastro</a></div>
