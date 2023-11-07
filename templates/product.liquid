@@ -33,6 +33,17 @@
     </div>
 </div>
     <div class="product_info">
+          <div class="baggie" id="cart"{% if template == 'cart' %}class="active" {% endif %} class="c"> <a href="/cart">Warenkorb<span class="cart-total">
+
+                {%- if cart.item_count == 0 -%}
+              	0
+                {%- else -%}
+
+                {{- cart.item_count -}}
+
+                {%- endif -%}
+
+              </span></a></div>
       <div class="besttelen open">BESTELLEN <span>+</span></div>
       <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
           {%- if product.has_only_default_variant -%}
