@@ -464,6 +464,9 @@ button#checkout:focus {}
   top: 50%;
   transform: translate(-50%,-50%);
 }
+.home_img.mobile{
+  display:none;
+}
 .home_img img{
   width: 100%;
   height: 100%;
