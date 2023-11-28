@@ -469,6 +469,10 @@ button#checkout:focus {}
   display:none;
   z-index:100;
 }
+.home_img.desktop{
+  display:block;
+  z-index:100;
+}
 .home_img img{
   width: 100%;
   height: 100%;

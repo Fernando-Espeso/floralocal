@@ -1,7 +1,7 @@
   {%- for block in section.blocks -%}
     {%- assign _block = block.settings -%}
     {%- assign block_archive = _block.item -%}
-      <div id="block-{{ block.id }}" class="home_img">
+      <div id="block-{{ block.id }}" class="home_img desktop">
       {{ block_archive | img_url: 'master' | img_tag: block_archive.alt }}
       </div>
   {%- endfor -%}
