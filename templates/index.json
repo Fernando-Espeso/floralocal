@@ -1,17 +1,17 @@
 {
   "sections": {
-    "home-news": {
-      "type": "home_news",
+    "f3677727-7734-4a5a-b6fb-0904a0d82222": {
+      "type": "desktop_cover",
       "blocks": {
-        "3a8d34a0-157b-4adc-9792-d112bd4248a9": {
+        "371a327d-2c4a-4747-86fd-7df37a7007d4": {
           "type": "logo",
           "settings": {
-            "item": "shopify:\/\/shop_images\/floral_lokal_cosmea_stillife.jpg"
+            "item": "shopify:\/\/shop_images\/floral_lokal_cosmea_stillife_3df958a8-adfa-468d-b905-623f732c6a71.jpg"
           }
         }
       },
       "block_order": [
-        "3a8d34a0-157b-4adc-9792-d112bd4248a9"
+        "371a327d-2c4a-4747-86fd-7df37a7007d4"
       ],
       "settings": {
       }
@@ -34,7 +34,7 @@
     }
   },
   "order": [
-    "home-news",
+    "f3677727-7734-4a5a-b6fb-0904a0d82222",
     "875521d7-209f-47ae-9fdb-ddcee548dcd0"
   ]
 }
