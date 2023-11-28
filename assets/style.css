@@ -261,6 +261,9 @@ footer span{
     margin-bottom: 10px;
 }
 
+.logo{
+  z-index:1000;
+}
 .menu {
   text-transform: uppercase;
   align-items: center;
