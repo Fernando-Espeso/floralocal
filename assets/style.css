@@ -470,7 +470,7 @@ button#checkout:focus {}
   z-index:100;
 }
 .home_img.desktop{
-  display:block;
+  display:block!important;
   z-index:100;
 }
 .home_img img{
