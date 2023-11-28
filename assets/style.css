@@ -462,6 +462,7 @@ button#checkout:focus {}
   width: 100vw;
   left: 50%;
   top: 50%;
+  display:block;
   transform: translate(-50%,-50%);
 }
 .home_img.mobile{
