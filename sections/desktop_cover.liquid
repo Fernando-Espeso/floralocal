@@ -1,12 +1,34 @@
+  {%- for block in section.blocks -%}
+    {%- assign _block = block.settings -%}
+    {%- assign block_archive = _block.item -%}
+      <div id="block-{{ block.id }}" class="home_img mobile">
+      {{ block_archive | img_url: 'master' | img_tag: block_archive.alt }}
+      </div>
+  {%- endfor -%}
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "cover_desktop",
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "item",
+
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "item",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  	"presets":[
+      {
+      "category":"home",
+      "name":"mobile"
+      }
+	],
+    "max_blocks": 1
+
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
