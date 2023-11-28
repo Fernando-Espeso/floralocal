@@ -641,6 +641,7 @@ width: 100%;
 }
 
 footer{
+  z-index:100000;
   margin-top: auto;
 position: relative;
 bottom: 10px;
