@@ -466,6 +466,7 @@ button#checkout:focus {}
 }
 .home_img.mobile{
   display:none;
+  z-index:100;
 }
 .home_img img{
   width: 100%;
@@ -667,7 +668,10 @@ div#bag {
 .besttelen.open{
       margin-top: 20px;
 }
-
+.home_img.mobile{
+  display:block;
+  z-index:100;
+}
 }
 
 /*SMALL TABLET*/
