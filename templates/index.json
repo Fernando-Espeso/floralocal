@@ -6,8 +6,7 @@
         "3a8d34a0-157b-4adc-9792-d112bd4248a9": {
           "type": "logo",
           "settings": {
-            "item": "shopify:\/\/shop_images\/floral_lokal_cosmea_stillife.jpg",
-            "height": 70
+            "item": "shopify:\/\/shop_images\/floral_lokal_cosmea_stillife.jpg"
           }
         }
       },
@@ -16,9 +15,26 @@
       ],
       "settings": {
       }
+    },
+    "875521d7-209f-47ae-9fdb-ddcee548dcd0": {
+      "type": "home_news_mobile",
+      "blocks": {
+        "28493e08-7aff-44f5-97c7-84387e263be5": {
+          "type": "logo",
+          "settings": {
+            "item": "shopify:\/\/shop_images\/floral_lokal_kranz_trockenblumen_giga.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "28493e08-7aff-44f5-97c7-84387e263be5"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "home-news"
+    "home-news",
+    "875521d7-209f-47ae-9fdb-ddcee548dcd0"
   ]
 }
