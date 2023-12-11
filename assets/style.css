@@ -693,7 +693,9 @@ div#bag {
 /*MOBILE*/
 @media (max-width: 414px) {
 
-
+.gallery {
+      width: auto;
+}
   .afrange{
     width: 100%;
   }
