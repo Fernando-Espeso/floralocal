@@ -179,8 +179,10 @@ strong {
     width:calc(100% - 420px);
 }
 .project_info {
-    width: calc(100% - 00px);
+    width: 60%;
+    /* width: calc(100% + 0px); */
 }
+
 :focus::-ms-value {
   background-color: none;
   color: inherit;
