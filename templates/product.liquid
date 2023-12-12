@@ -89,15 +89,15 @@
 
                         <p class="cart-attribute__field">
                           <label  class="show" for="name">Your name</label>
-                          <input placeholder="NAME VON DIR" class="required" id="name" name="properties[name]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{ cart.attributes["name"] }}</input>
+                          <input placeholder="NAME VON DIR"  id="name" name="properties[name]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{ cart.attributes["name"] }}</input>
                         </p>
                         <p class="cart-attribute__field">
                           <label  class="show" for="name">Your name</label>
-                          <input placeholder="EMAIL VON DIR"  class="required" id="name" name="properties[name]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{ cart.attributes["name"] }}</input>
+                          <input placeholder="EMAIL VON DIR"  id="name" name="properties[name]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{ cart.attributes["name"] }}</input>
                         </p>
                         <p class="cart-attribute__field">
                           <label  class="show"  for="phone">Phone</label>
-                          <input  placeholder="TEL VON DIR" class="required" id="phone" name="properties[phone]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></input>
+                          <input  placeholder="TEL VON DIR" id="phone" name="properties[phone]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></input>
                         </p>
                         {% if product.available %}
                             <button class="besttelen" id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ZUM WARENKORB</button>
