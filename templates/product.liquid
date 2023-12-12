@@ -88,15 +88,15 @@
 
   <p class="cart-attribute__field">
     <label class="show" for="name">Your name</label>
-    <textarea  placeholder="NAME VON DIR" id="name" name="properties[name]" spellcheck="false">{{ cart.attributes["name"] }}></textarea>
+    <textarea  placeholder="NAME VON DIR" id="name" name="properties[name]" spellcheck="false" {{ cart.attributes["name"] }}> </textarea>
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="email">Your email</label>
-    <textarea  placeholder="EMAIL VON DIR" id="email" name="properties[email]" spellcheck="false">{{ cart.attributes["email"] }}></textarea>
+    <textarea  placeholder="EMAIL VON DIR" id="email" name="properties[email]" spellcheck="false" {{ cart.attributes["email"] }}> </textarea>
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="phone">Phone</label>
-    <textarea  placeholder="TEL VON DIR" id="phone" name="properties[phone]"  spellcheck="false">{{ cart.attributes["name"] }}></textarea>
+    <textarea  placeholder="TEL VON DIR" id="phone" name="properties[phone]"  spellcheck="false" {{ cart.attributes["name"] }}> </textarea>
   </p>
 
   {% if product.available %}
