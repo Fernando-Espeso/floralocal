@@ -69,7 +69,7 @@
                         <div class="info-text">GEBEN SIE EINIGE INFORMATIONEN FÜR IHRE KARTE EIN</div>
                         <p class="cart-attribute__field">
                           <label  class="show" for="date">Sentence</label>
-                          <textarea  placeholder="TYPENSATZ" id="sentence" name="properties[sentence]" disabled autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+                          <textarea  placeholder="TYPENSATZ" id="sentence" name="properties[sentence]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
                         </p>
                         <p class="cart-attribute__field">
                           <label  class="show" for="color">FARBWUNSCH</label>
@@ -77,7 +77,7 @@
                         </p>
                         <p style="order:-1"class="cart-attribute__field">
                           <label  class="show" for="adress">LIEFERADRESSE</label>
-                          <input id="adress" placeholder="LIEFERADRESSE" disabled   class="required" id="adress" name="properties[adress]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></input>
+                          <input id="adress" placeholder="LIEFERADRESSE"   id="adress" name="properties[adress]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></input>
                         </p>
 
 
@@ -89,15 +89,15 @@
 
                         <p class="cart-attribute__field">
                           <label  class="show" for="name">Your name</label>
-                          <input placeholder="NAME VON DIR" required class="required" id="name" name="properties[name]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{ cart.attributes["name"] }}</input>
+                          <input placeholder="NAME VON DIR" class="required" id="name" name="properties[name]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{ cart.attributes["name"] }}</input>
                         </p>
                         <p class="cart-attribute__field">
                           <label  class="show" for="name">Your name</label>
-                          <input placeholder="EMAIL VON DIR" required class="required" id="name" name="properties[name]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{ cart.attributes["name"] }}</input>
+                          <input placeholder="EMAIL VON DIR"  class="required" id="name" name="properties[name]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{ cart.attributes["name"] }}</input>
                         </p>
                         <p class="cart-attribute__field">
                           <label  class="show"  for="phone">Phone</label>
-                          <input  placeholder="TEL VON DIR" required class="required" id="phone" name="properties[phone]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></input>
+                          <input  placeholder="TEL VON DIR" class="required" id="phone" name="properties[phone]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></input>
                         </p>
                         {% if product.available %}
                             <button class="besttelen" id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ZUM WARENKORB</button>
