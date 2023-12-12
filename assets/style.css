@@ -685,6 +685,13 @@ div#bag {
   display:block;
   z-index:100;
 }
+  
+  textarea{height: 20px;
+resize: none;
+border: 0px;
+padding: 0px;
+margin-left: 0px;
+}
 }
 
 /*SMALL TABLET*/
