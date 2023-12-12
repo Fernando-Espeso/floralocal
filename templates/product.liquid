@@ -97,7 +97,7 @@
                         </p>
                         <p class="cart-attribute__field">
                           <label  class="show"  for="phone">Phone</label>
-                          <input  placeholder="TEL VON DIR" id="phone" name="properties[phone]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></input>
+                          <input  placeholder="TEL VON DIR" id="phone" name="properties[phone]" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">{{ cart.attributes["name"] }}</input>
                         </p>
                         {% if product.available %}
                             <button class="besttelen" id="produ" {% unless product.available %}disabled{% endunless %} type="submit" name="add">ZUM WARENKORB</button>
