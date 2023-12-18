@@ -19,15 +19,15 @@
     "e50731cb-a7ad-4618-be08-da0e069cd8fc": {
       "type": "desktop_cover",
       "blocks": {
-        "28dcbc8e-cce2-458d-a3c2-0d6f73269e1a": {
+        "aabf2dbb-622a-4915-b67b-e45cf0df4645": {
           "type": "logo",
           "settings": {
-            "item": "shopify:\/\/shop_images\/floral_lokal_cosmea_zigi.jpg"
+            "item": "shopify:\/\/shop_images\/floral_lokal_cosmea_stillife_3df958a8-adfa-468d-b905-623f732c6a71.jpg"
           }
         }
       },
       "block_order": [
-        "28dcbc8e-cce2-458d-a3c2-0d6f73269e1a"
+        "aabf2dbb-622a-4915-b67b-e45cf0df4645"
       ],
       "settings": {
       }
