@@ -19,15 +19,15 @@
     "875521d7-209f-47ae-9fdb-ddcee548dcd0": {
       "type": "home_news_mobile",
       "blocks": {
-        "28493e08-7aff-44f5-97c7-84387e263be5": {
+        "354a8001-b312-499f-9ac7-4ba98e92f62f": {
           "type": "logo",
           "settings": {
-            "item": "shopify:\/\/shop_images\/floral_lokal_kranz_trockenblumen_giga.jpg"
+            "item": "shopify:\/\/shop_images\/floral_lokal_cosmea_zigi.jpg"
           }
         }
       },
       "block_order": [
-        "28493e08-7aff-44f5-97c7-84387e263be5"
+        "354a8001-b312-499f-9ac7-4ba98e92f62f"
       ],
       "settings": {
       }
