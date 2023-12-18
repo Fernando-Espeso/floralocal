@@ -16,22 +16,6 @@
       "settings": {
       }
     },
-    "875521d7-209f-47ae-9fdb-ddcee548dcd0": {
-      "type": "home_news_mobile",
-      "blocks": {
-        "354a8001-b312-499f-9ac7-4ba98e92f62f": {
-          "type": "logo",
-          "settings": {
-            "item": "shopify:\/\/shop_images\/floral_lokal_cosmea_zigi.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "354a8001-b312-499f-9ac7-4ba98e92f62f"
-      ],
-      "settings": {
-      }
-    },
     "e50731cb-a7ad-4618-be08-da0e069cd8fc": {
       "type": "desktop_cover",
       "blocks": {
@@ -51,7 +35,6 @@
   },
   "order": [
     "f3677727-7734-4a5a-b6fb-0904a0d82222",
-    "875521d7-209f-47ae-9fdb-ddcee548dcd0",
     "e50731cb-a7ad-4618-be08-da0e069cd8fc"
   ]
 }
