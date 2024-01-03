@@ -522,6 +522,7 @@ footer {}
   width:400px;
   position: fixed;
   right: 10px;
+  bottom: 130px;
 }
 
 #cart-wrapper .item {}
