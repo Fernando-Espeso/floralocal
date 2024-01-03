@@ -1,0 +1,119 @@
+<script>
+window.onload = function() {
+  /**
+   * Module to ajaxify all add to cart forms on the page.
+   *
+   * Copyright (c) 2015 Caroline Schnapp (11heavens.com)
+   * Dual licensed under the MIT and GPL licenses:
+   * http://www.opensource.org/licenses/mit-license.php
+   * http://www.gnu.org/licenses/gpl.html
+   *
+   */
+  Shopify.AjaxifyCart = (function($) {
+
+    // Some configuration options.
+    // I have separated what you will never need to change from what
+    // you might change.
+
+    var _config = {
+      addToCartBtnLabel:             'ADD TO CART',
+      addedToCartBtnLabel:           'ADD TO CART',
+      addingToCartBtnLabel:          'ADD TO CART',
+      soldOutBtnLabel:               'EMPTY',
+      cartCountSelector:             '#cart',
+      cartTotalSelector:             '#cart-price',
+      addToCartBtnSelector:          '[type="submit"]',
+      addToCartFormSelector:         'form[action="/cart/add"]',
+      shopifyAjaxAddURL:             '/cart/add.js',
+      shopifyAjaxCartURL:            '/cart.js'
+    };
+
+    var _setText = function($button, label) {
+      if ($button.children().length) {
+        $button.children().each(function() {
+          if ($.trim($(this).text()) !== '') {
+            $(this).text(label);
+          }
+        });
+      }
+      else {
+        $button.val(label).text(label);
+      }
+    };
+    var _init = function() {   
+      $(document).ready(function() { 
+        $(_config.addToCartFormSelector).submit(function(e) {          
+          /*Only in desktop*/
+          if ($(window).width() > 600) {
+            console.log("now");
+            e.preventDefault();
+            var $addToCartForm = $(this);
+            var $addToCartBtn = $addToCartForm.find(_config.addToCartBtnSelector);
+            _setText($addToCartBtn, _config.addingToCartBtnLabel);
+            $addToCartBtn.addClass('disabled').prop('disabled', true);
+            // Add to cart.
+            $.ajax({
+              url: _config.shopifyAjaxAddURL,
+              dataType: 'json',
+              type: 'post',
+              data: $addToCartForm.serialize(),
+              success: function(itemData) {
+                // Re-enable add to cart button.
+                window.setTimeout(function(){
+                  $addToCartBtn.prop('disabled', false).removeClass('disabled');
+                  //_setText($addToCartBtn,_config.addToCartBtnLabel);
+                }, 500);
+                // Update cart count and show cart link.
+                $.getJSON(_config.shopifyAjaxCartURL, function(cart) {
+                  if (_config.cartCountSelector && $(_config.cartCountSelector).length) {
+                    //Update count of items in the cart
+                    var value = $(_config.cartCountSelector).html() || '0';
+                    if(cart.item_count != 1){
+                        var items = '';
+                    }else{
+                        var items = '';
+                    }
+                    $('.cart-total').html(cart.item_count + items);
+                  }
+                });        
+              }, 
+              error: function(XMLHttpRequest) {
+                var response = eval('(' + XMLHttpRequest.responseText + ')');
+                response = response.description;
+                if (response.slice(0,4) === 'All ') {                  
+                  $addToCartBtn.prop('disabled', false);
+                  _setText($addToCartBtn, _config.soldOutBtnLabel);
+                  $addToCartBtn.prop('disabled',true);
+                }
+                else {                  
+                  $addToCartBtn.prop('disabled', false).removeClass('disabled');
+                  //_setText($addToCartBtn, _config.addToCartBtnLabel);
+                } 
+
+              }
+            });   
+            return false;
+          }
+          /*Only in desktop ENDS*/  
+        });
+      });
+    };
+    return {
+      init: function(params) {
+          // Configuration
+          params = params || {};
+          // Merging with defaults.
+          $.extend(_config, params);
+          // Action
+          $(function() {
+            _init();
+          });
+      },    
+      getConfig: function() {
+        return _config;
+      }
+    }  
+  })(jQuery);
+  Shopify.AjaxifyCart.init();
+}
+</script>
