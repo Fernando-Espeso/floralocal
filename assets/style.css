@@ -533,6 +533,7 @@ footer {}
   }
   .info-text {
     display: block;
+    margin-bottom: 0rem;
   }
   .item + .item {
     .info-text {
