@@ -73,30 +73,30 @@
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="color">FARBWUNSCH</label>
-    <textarea placeholder="FARBWUNSCH" id="color" name="properties[LIEFERADRESSE]"  spellcheck="false"></textarea>
+    <textarea required placeholder="FARBWUNSCH" id="color" name="properties[LIEFERADRESSE]"  spellcheck="false"></textarea>
   </p>
   <p style="order:-1" class="cart-attribute__field">
     <label class="show" for="address">LIEFERADRESSE</label>
-    <textarea  id="address" placeholder="LIEFERADRESSE" name="properties[address]"   spellcheck="false"></textarea>
+    <textarea required id="address" placeholder="LIEFERADRESSE" name="properties[address]"   spellcheck="false"></textarea>
   </p>
 
   <div class="info-text">DATUM DER LIEFERUNG/ABHOLUNG</div>
   <p class="cart-attribute__field">
     <label class="show" for="delivery-date">Date</label>
-    <input  type="date" id="delivery-date" name="properties[DATUM]" value="2023-07-22" min="2023-01-01" max="2028-12-31">
+    <input required type="date" id="delivery-date" name="properties[DATUM]" value="2023-07-22" min="2023-01-01" max="2028-12-31">
   </p>
 
   <p class="cart-attribute__field">
     <label class="show" for="NAME VON DIR">NAME VON DIR</label>
-    <textarea  placeholder="NAME VON DIR" id="name" name="properties[NAME VON DIR]" spellcheck="false" {{ cart.attributes["NAME VON DIR"] }}></textarea>
+    <textarea required placeholder="NAME VON DIR" id="name" name="properties[NAME VON DIR]" spellcheck="false" {{ cart.attributes["NAME VON DIR"] }}></textarea>
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="email">EMAIL VON DIR</label>
-    <textarea  placeholder="EMAIL VON DIR" id="email" name="properties[EMAIL VON DIR]" spellcheck="false" {{ cart.attributes["email"] }}></textarea>
+    <textarea required placeholder="EMAIL VON DIR" id="email" name="properties[EMAIL VON DIR]" spellcheck="false" {{ cart.attributes["email"] }}></textarea>
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="phone">TEL VON DIR</label>
-    <textarea id="phone" placeholder="TEL VON DIR" name="properties[TEL VON DIR]"  spellcheck="false" {{ cart.attributes["name"] }}></textarea>
+    <textarea required id="phone" placeholder="TEL VON DIR" name="properties[TEL VON DIR]"  spellcheck="false" {{ cart.attributes["name"] }}></textarea>
   </p>
   {% if product.available %}
   <button class="besttelen" id="produ" disabled type="submit" name="add">ZUM WARENKORB</button>
