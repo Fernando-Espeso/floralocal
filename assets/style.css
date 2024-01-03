@@ -542,6 +542,7 @@ footer {}
     }
   }
   .total {
+    margin-bottom: 1rem;
     .info-text {
       margin-top: 1rem;
     }
