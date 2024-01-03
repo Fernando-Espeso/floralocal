@@ -137,6 +137,7 @@
   //PRODUCT FUNCTIONS
   var selectCallback = function(variant, selector){
     if(variant){
+      jQuery('#produ').prop('disabled', false);
       if(variant.available){
         jQuery('#add-to-cart').prop('disabled', false).text('ADD TO CART');
       }else{
@@ -149,6 +150,7 @@
         jQuery('#product-price').html(Shopify.formatMoney(variant.price, "{{ shop.money_format }}"));
       }
     }else{
+      jQuery('#produ').prop('disabled', true);
       jQuery('#product-price').empty();
       jQuery('#add-to-cart').prop('disabled', true).text('ADD TO CART');
       {% if product.price_varies %}
