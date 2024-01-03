@@ -134,7 +134,7 @@
 {% endif %}
 {% endfor %}
 
-{{ 'ajaxify-cart.js' | asset_url | script_tag }}
+{% include 'ajaxify-cart' %}
 
 <script>
   //PRODUCT FUNCTIONS
