@@ -45,6 +45,7 @@ window.onload = function() {
         $(_config.addToCartFormSelector).submit(function(e) {          
           /*Only in desktop*/
           if ($(window).width() > 600) {
+            console.log("now");
             e.preventDefault();
             var $addToCartForm = $(this);
             var $addToCartBtn = $addToCartForm.find(_config.addToCartBtnSelector);
