@@ -98,7 +98,7 @@
     <label class="show" for="phone">TEL VON DIR</label>
     <textarea id="phone" placeholder="TEL VON DIR" name="properties[TEL VON DIR]"  spellcheck="false" {{ cart.attributes["name"] }}></textarea>
   </p>
-
+  {{ product.variants.size }}
   {% if product.available %}
   <button class="besttelen" id="produ" {% unless product.available or product.variants.size < 2 %}disabled{% endunless %} type="submit" name="add">ZUM WARENKORB</button>
   {% else %}
