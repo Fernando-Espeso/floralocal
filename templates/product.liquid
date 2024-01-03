@@ -61,7 +61,7 @@
              <div class="sold-out">SOLD OUT</div>
                         {% endif %}
            <div class="variations">
-  <select required id="product-select" name="id">
+  <select id="product-select" class="oi" name="id">
     {% for variant in product.variants %}
     <option value="{{ variant.id }}"></option>
     {% endfor %}
