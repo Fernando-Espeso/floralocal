@@ -395,6 +395,10 @@ li {
     5px 5px,
     1.5em 1.5em;
   background-repeat: no-repeat;
+  &:after {
+    content: "+";
+    display: inline;
+  }
 }
 label {
     display: none;
