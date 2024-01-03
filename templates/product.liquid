@@ -148,6 +148,7 @@
       }else{
         jQuery('#product-price').html(Shopify.formatMoney(variant.price, "{{ shop.money_format }}"));
       }
+      jQuery('#add-to-cart').prop('disabled', false);
     }else{
       jQuery('#product-price').empty();
       jQuery('#add-to-cart').prop('disabled', true).text('ADD TO CART');
