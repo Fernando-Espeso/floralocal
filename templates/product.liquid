@@ -100,7 +100,7 @@
   </p>
 
   {% if product.available %}
-  <button class="besttelen" id="produ" {% unless product.available or product.variants %}disabled{% endunless %} type="submit" name="add">ZUM WARENKORB</button>
+  <button class="besttelen" id="produ" {% unless product.available or product.variants.size %}disabled{% endunless %} type="submit" name="add">ZUM WARENKORB</button>
   {% else %}
   {% endif %}
 </div>
