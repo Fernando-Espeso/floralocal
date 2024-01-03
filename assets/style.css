@@ -150,6 +150,9 @@ select:disabled {
   opacity: 1;
   color: lightgray;
 }
+textarea:disabled {
+  background: white;
+}
 a.active{
   color: #ff004b;
 }
