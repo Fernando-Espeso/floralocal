@@ -531,6 +531,9 @@ footer {}
       right: auto;
       bottom: auto;
   }
+  .info-text {
+    display: block;
+  }
   .item + .item {
     .info-text {
       margin-top: 1rem;
