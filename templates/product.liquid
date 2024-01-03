@@ -183,7 +183,7 @@
   selector.on('change', function() {
     if (selector.val() === 'KEINE') {
       textarea.prop('disabled', true);
-      textarea.value('');
+      textarea.val('');
     } else {
       textarea.prop('disabled', false);
     }
