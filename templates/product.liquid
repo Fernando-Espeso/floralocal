@@ -24,7 +24,7 @@
 </style>
 <div class="grid_info">
 <div class="title">
-  <div>{{ product.title }}test</div>
+  <div>{{ product.title }}</div>
 </div>
 <div class="information">
     <div class="project_info">
@@ -49,7 +49,7 @@
           class="product-simple"
           {%- elsif variants > 1 -%}
           class="product-variants"
-          {%- endif -%}>
+          {%- endif -%}>test
           <div id="bag" >
             <div id="product-price"></div>
                        {% if product.compare_at_price > product.price %}
