@@ -134,6 +134,8 @@
 {% endif %}
 {% endfor %}
 
+{{ 'ajaxify-cart.js' | asset_url | script_tag }}
+
 <script>
   //PRODUCT FUNCTIONS
   var selectCallback = function(variant, selector){
