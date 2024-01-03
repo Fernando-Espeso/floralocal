@@ -421,7 +421,7 @@ textarea#your-name {
   right: 10px;
   background-color: white;
   padding-bottom: 0px;
-  z-index: 10;
+  z-index:1000001;
 }
 div#bag {
       display: none;
@@ -683,7 +683,6 @@ header{
     width: 100%;
     top: 10px;
     background-color: white;
-    z-index:1000001;
 }
 .product_info {
     position: sticky;
