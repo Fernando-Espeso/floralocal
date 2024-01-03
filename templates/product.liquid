@@ -181,10 +181,10 @@
   const textarea = $('#sentence');
 
   selector.on('change', function() {
-    if (selector.val() === 'silver' || selector.val() === 'red') {
-      textarea.prop('disabled', false);
-    } else {
+    if (selector.val() === 'KEINE') {
       textarea.prop('disabled', true);
+    } else {
+      textarea.prop('disabled', false);
     }
   });
 });
