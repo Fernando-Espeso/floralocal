@@ -165,7 +165,7 @@ strong {
 ::placeholder {
   color: inherit;
   line-height: normal !important;
-  opacity: 1;
+  opacity: 0.6;
 }
 
 ::-webkit-scrollbar {
@@ -708,3 +708,5 @@ margin-left: 0px;
 
 /*SMALL MOBILE*/
 @media (max-width: 320px) {}
+
+
