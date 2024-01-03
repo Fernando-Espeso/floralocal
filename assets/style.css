@@ -525,6 +525,7 @@ footer {}
   position: fixed;
   right: 10px;
   z-index:1000001;
+  height: 100%;
   @media(max-width:767px){
       position: relative;
       right: auto;
