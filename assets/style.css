@@ -520,6 +520,7 @@ footer {}
 
 #cart-wrapper {
   padding: 10px;
+  overflow: auto;
   width:400px;
   position: fixed;
   right: 10px;
