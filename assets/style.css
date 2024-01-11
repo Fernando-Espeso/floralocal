@@ -375,8 +375,7 @@ order: -1;
       color: #fff;
       text-align: left;
       cursor: pointer;
-    width: 400px;
-      max-width: 100%;
+    min-width: 250px;
     }
 }
 li {
@@ -389,8 +388,7 @@ button {
       line-height: 1!important;
       text-align: left;
       cursor: pointer;
-      width: 400px;
-      max-width: 100%;
+      min-width: 250px;
 }
 .besttelen {
   padding: 15px 10px 10px 10px!important;
