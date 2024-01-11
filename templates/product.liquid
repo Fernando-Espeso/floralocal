@@ -86,16 +86,16 @@
   </p>
 
   <p class="cart-attribute__field">
-    <label class="show" for="NAME VON DIR">NAME VON DIR</label>
-    <textarea required placeholder="NAME VON DIR" id="name" name="properties[NAME VON DIR]" spellcheck="false" {{ cart.attributes["NAME VON DIR"] }}></textarea>
+    <label class="show" for="name">NAME VON DIR</label>
+    <textarea required placeholder="Name" id="name" name="properties[name]" spellcheck="false" {{ cart.attributes["name"] }}></textarea>
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="email">EMAIL VON DIR</label>
-    <textarea required placeholder="EMAIL VON DIR" id="email" name="properties[EMAIL VON DIR]" spellcheck="false" {{ cart.attributes["email"] }}></textarea>
+    <textarea required placeholder="Email" id="email" name="properties[Email]" spellcheck="false" {{ cart.attributes["email"] }}></textarea>
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="phone">TEL VON DIR</label>
-    <textarea required id="phone" placeholder="TEL VON DIR" name="properties[TEL VON DIR]"  spellcheck="false" {{ cart.attributes["name"] }}></textarea>
+    <textarea required id="phone" placeholder="Telefon" name="properties[Telefon]"  spellcheck="false" {{ cart.attributes["phone"] }}></textarea>
   </p>
   {% if product.available %}
   <button class="besttelen" id="produ" disabled type="submit" name="add">ZUM WARENKORB</button>
