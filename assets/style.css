@@ -457,6 +457,7 @@ div#bag {
 }
 .open span{
   float: right;
+  line-height: 0.8;
 }
 #main-collection.main>div:not(.events) {}
 
