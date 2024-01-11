@@ -539,7 +539,9 @@ footer {}
 #cart-wrapper {
   padding: 10px;
   overflow: auto;
-  width:400px;
+  position: absolute;
+  left: 300px;
+  width: auto;
   position: fixed;
   right: 10px;
   z-index:1000001;
