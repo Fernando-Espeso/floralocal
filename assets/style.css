@@ -369,9 +369,8 @@ order: -1;
   a {
       margin-top: 5px;
       display: inline-block;
-      padding: 10px!important;
+      padding: 15px 10px 10px 10px!important;
       line-height: 1!important;
-      padding-top: 5px;
       background-color:  black;
       color: #fff;
       text-align: left;
