@@ -296,7 +296,8 @@ footer span{
   grid-template-columns: repeat(15, 1fr);
 }
 input:disabled {
-  opacity: 0;
+  color: lightgray;
+  /* Add any other styles you want */
 }
 span.cart-total {
     margin-left: 10px;
