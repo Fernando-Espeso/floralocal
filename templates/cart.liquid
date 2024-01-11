@@ -15,7 +15,7 @@
                 <ul style="text-transform:uppercase;">
                   {% for option in item.options_with_values %}
                     {% if option.value != 'Default Title' %}
-                      <li>{{ option.name }}: {{ option.value }}</li>
+                      <li><span style="opacity:0.5;">{{ option.name }}</span>: {{ option.value }}</li>
                     {% endif %}
                   {% endfor %}
 
