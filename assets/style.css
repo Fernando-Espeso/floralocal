@@ -168,7 +168,7 @@ strong {
 ::placeholder {
   color: inherit;
   line-height: normal !important;
-  opacity: 0.5!important;
+  opacity: 0.3!important;
 }
 
 ::-webkit-scrollbar {
@@ -296,8 +296,7 @@ footer span{
   grid-template-columns: repeat(15, 1fr);
 }
 input:disabled {
-  color: lightgray;
-  /* Add any other styles you want */
+  opacity: 0;
 }
 span.cart-total {
     margin-left: 10px;
