@@ -126,6 +126,10 @@ select {
   user-select: none;
 }
 
+input[type="date"]{
+  padding: 0!important;
+}
+
 input[type="checkbox"],
 button,
 select {
