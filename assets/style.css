@@ -378,13 +378,13 @@ li {
 .besttelen {
     z-index: 1000;
     padding-bottom: 5px!important;
-    padding: 10px;
-    cursor: pointer;
-    text-align: left;
     width: 100%;
     button {
+      padding: 10px;
       background-color:  #ff004b;
       color: #fff;
+      text-align: left;
+      cursor: pointer;
     }
 }
 select {
