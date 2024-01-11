@@ -375,6 +375,7 @@ order: -1;
       color: #fff;
       text-align: left;
       cursor: pointer;
+    min-width: 250px;
     }
 }
 li {
@@ -390,7 +391,7 @@ li {
       line-height: 1!important;
       text-align: left;
       cursor: pointer;
-      min-width: 200px;
+      min-width: 250px;
     }
 }
 select {
