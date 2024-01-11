@@ -595,6 +595,7 @@ textarea{
   resize: none;
   border:0px;
   padding: 0!important;
+  height: 1em;
 }
 /* FONTS */
 
