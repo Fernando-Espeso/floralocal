@@ -399,9 +399,6 @@ li {
     1.5em 1.5em;
   background-repeat: no-repeat;
 }
-label {
-    display: none;
-}
 span#grey{
   color:grey!important;
 }
