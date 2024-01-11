@@ -375,7 +375,8 @@ order: -1;
       color: #fff;
       text-align: left;
       cursor: pointer;
-    min-width: 250px;
+    width: 400px;
+      max-width: 100%;
     }
 }
 li {
