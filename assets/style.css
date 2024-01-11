@@ -370,7 +370,7 @@ order: -1;
   background-color:  black;
   color: #fff;
   text-align: left;
-  width: 100%;
+  display: inline-block;
 }
 li {
     padding: 5px 0px;
@@ -383,7 +383,7 @@ li {
     color: #fff;
     cursor: pointer;
     text-align: left;
-    width: 100%;
+    display: inline-block;
 }
 select {
     text-transform: uppercase;
@@ -566,9 +566,6 @@ footer {}
     .info-text {
       margin-top: 1rem;
     }
-  }
-  button {
-    display: inline-block;
   }
 }
 
