@@ -567,6 +567,9 @@ footer {}
       margin-top: 1rem;
     }
   }
+  button {
+    width: auto;
+  }
 }
 
 #cart-wrapper .item {}
