@@ -97,7 +97,6 @@ html {
 input{
   background-color: transparent!important;
   padding: 5px 5px 5px 0px!important;
-  border-bottom: 1px solid black!important;
 }
 select{
     padding: 5px 5px 5px 0px!important;
@@ -592,6 +591,8 @@ textarea{
   resize: none;
   border:0px;
   padding: 0!important;
+    border-bottom: 1px solid black!important;
+
 }
 /* FONTS */
 
