@@ -391,6 +391,9 @@ li {
       text-align: left;
       line-height: 1!important;
       cursor: pointer;
+      display: flex; 
+      align-content: center;
+      justify-content: center;
     }
 }
 select {
