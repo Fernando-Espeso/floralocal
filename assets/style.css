@@ -399,7 +399,7 @@ li {
     1.5em 1.5em;
   background-repeat: no-repeat;
 }
-select:invalid { opacity: 0.3; }
+select:invalid { opacity: 0.3!important;color:green!important; }
 span#grey{
   color:grey!important;
 }
