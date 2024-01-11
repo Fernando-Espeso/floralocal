@@ -405,9 +405,6 @@ li {
     display: none;
   }
 }
-.cart-attribute__field {
-  margin-top: .5rem;
-}
 select:invalid { opacity: 0.3!important;color:green!important; }
 span#grey{
   color:grey!important;
