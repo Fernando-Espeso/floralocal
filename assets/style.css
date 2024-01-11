@@ -370,7 +370,7 @@ order: -1;
       margin-top: 5px;
       display: inline-block;
       padding: 10px!important;
-      line-height: 1;
+      line-height: 1!important;
       padding-top: 5px;
       background-color:  black;
       color: #fff;
