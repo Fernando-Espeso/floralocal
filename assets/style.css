@@ -168,7 +168,7 @@ strong {
 ::placeholder {
   color: inherit;
   line-height: normal !important;
-  opacity: 0.3!important;
+  opacity: 0.2!important;
 }
 
 ::-webkit-scrollbar {
