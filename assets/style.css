@@ -387,6 +387,7 @@ li {
       padding: 15px 10px 10px 10px!important;
       background-color:  #ff004b;
       color: #fff;
+      line-height: 1!important;
       text-align: left;
       cursor: pointer;
     }
