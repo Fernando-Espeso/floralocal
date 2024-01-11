@@ -471,7 +471,9 @@ img {
 
 button#add-to-cart {}
 
-button#produ {}
+button#produ {
+  margin-top: 1rem;
+}
 
 button#produ.active,
 button#produ:focus {}
