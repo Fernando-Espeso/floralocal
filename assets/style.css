@@ -365,7 +365,6 @@ order: -1;
 .clear{
   margin-top: 5px;
   z-index: 1000;
-  padding-bottom: 5px!important;
   text-align: left;
   width: 100%;
   a {
