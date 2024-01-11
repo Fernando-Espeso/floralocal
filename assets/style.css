@@ -539,17 +539,9 @@ footer {}
 #cart-wrapper {
   padding: 10px;
   overflow: auto;
-  width:400px;
-  position: fixed;
-  right: 10px;
   z-index:1000001;
   height: 100%;
   padding-bottom: 2rem;
-  @media(max-width:767px){
-      position: relative;
-      right: auto;
-      bottom: auto;
-  }
   .info-text {
     display: block;
     margin-bottom: .25rem;
