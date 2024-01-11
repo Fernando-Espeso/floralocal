@@ -399,6 +399,7 @@ li {
     1.5em 1.5em;
   background-repeat: no-repeat;
 }
+select:invalid { opacity: 0.3; }
 span#grey{
   color:grey!important;
 }
