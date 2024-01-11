@@ -399,6 +399,11 @@ li {
     1.5em 1.5em;
   background-repeat: no-repeat;
 }
+.selector-wrapper {
+  label {
+    display: none;
+  }
+}
 select:invalid { opacity: 0.3!important;color:green!important; }
 span#grey{
   color:grey!important;
