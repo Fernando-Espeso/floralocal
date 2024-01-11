@@ -363,11 +363,12 @@ order: -1;
     padding: 10px;
 }
 .clear{
-  margin-top: 5px;
   z-index: 1000;
   text-align: left;
   width: 100%;
   a {
+      margin-top: 5px;
+      display: inline-block;
       padding: 10px;
       background-color:  black;
       color: #fff;
