@@ -427,8 +427,12 @@ textarea#your-name {
   z-index:1000001;
 }
 div#bag {
-      display: none;
+    display: none;
     padding:10px 0px 0px 0px;
+    @media(min-width:1024px){
+      display: block;
+    }
+  
 }
 .open span{
   float: right;
