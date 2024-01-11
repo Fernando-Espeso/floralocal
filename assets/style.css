@@ -391,6 +391,8 @@ button {
       min-width: 250px;
 }
 .besttelen {
+  padding: 15px 10px 10px 10px!important;
+  line-height: 1!important;
     z-index: 1000;
     width: 100%;
     background-color:  #ff004b;
