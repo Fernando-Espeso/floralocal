@@ -400,6 +400,7 @@ li {
   background-repeat: no-repeat;
 }
 .selector-wrapper {
+  margin-top: 1rem;
   label {
     display: none;
   }
