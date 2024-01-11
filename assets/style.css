@@ -97,6 +97,7 @@ html {
 input{
   background-color: transparent!important;
   padding: 5px 5px 5px 0px!important;
+  border-bottom: 1px solid black;
 }
 select{
     padding: 5px 5px 5px 0px!important;
