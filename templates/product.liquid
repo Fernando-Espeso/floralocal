@@ -85,15 +85,15 @@
 
   <p class="cart-attribute__field">
     <label class="show" for="name">NAME</label>
-    <textarea required placeholder="Name" id="name" name="properties[name]" spellcheck="false" {{ cart.attributes["name"] }}></textarea>
+    <textarea required placeholder="BITTE NAME EINGEBEN" id="name" name="properties[name]" spellcheck="false" {{ cart.attributes["name"] }}></textarea>
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="email">EMAIL</label>
-    <textarea required placeholder="Email" id="email" name="properties[Email]" spellcheck="false" {{ cart.attributes["email"] }}></textarea>
+    <textarea required placeholder="BITTE EMAIL EINGEBEN" id="email" name="properties[Email]" spellcheck="false" {{ cart.attributes["email"] }}></textarea>
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="phone">TELEFON</label>
-    <textarea required id="phone" placeholder="Telefon" name="properties[Telefon]"  spellcheck="false" {{ cart.attributes["phone"] }}></textarea>
+    <textarea required id="phone" placeholder="BITTE TELEFON EINGEBEN" name="properties[Telefon]"  spellcheck="false" {{ cart.attributes["phone"] }}></textarea>
   </p>
   {% if product.available %}
   <button class="besttelen" id="produ" disabled type="submit" name="add">ZUM WARENKORB</button>
