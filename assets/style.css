@@ -400,7 +400,7 @@ li {
   background-repeat: no-repeat;
 }
 label {
-    font-size: 12px;
+    font-size: 10px!important;
 }
 span#grey{
   color:grey!important;
