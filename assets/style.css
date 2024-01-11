@@ -389,6 +389,7 @@ li {
       background-color:  #ff004b;
       color: #fff;
       text-align: left;
+      line-height: 1!important;
       cursor: pointer;
     }
 }
