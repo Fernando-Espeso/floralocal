@@ -402,11 +402,7 @@ select {
     1.5em 1.5em;
   background-repeat: no-repeat;
 }
-select + select {
-  margin-top: -5px;
-}
 .selector-wrapper {
-  margin-top: .5rem;
   label {
     display: none;
   }
