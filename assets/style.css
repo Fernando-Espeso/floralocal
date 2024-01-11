@@ -390,6 +390,7 @@ li {
       line-height: 1!important;
       text-align: left;
       cursor: pointer;
+      min-width: 200px;
     }
 }
 select {
