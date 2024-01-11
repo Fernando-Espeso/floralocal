@@ -388,7 +388,8 @@ button {
       line-height: 1!important;
       text-align: left;
       cursor: pointer;
-      min-width: 250px;
+      width: 400px;
+      max-width: 100%;
 }
 .besttelen {
   padding: 15px 10px 10px 10px!important;
