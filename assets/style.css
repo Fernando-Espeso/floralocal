@@ -381,6 +381,15 @@ order: -1;
 li {
     padding: 5px 0px;
 }
+button {
+  padding: 15px 10px 10px 10px!important;
+      background-color:  #ff004b;
+      color: #fff;
+      line-height: 1!important;
+      text-align: left;
+      cursor: pointer;
+      min-width: 250px;
+}
 .besttelen {
     z-index: 1000;
     width: 100%;
