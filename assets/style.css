@@ -366,11 +366,15 @@ order: -1;
   margin-top: 5px;
   z-index: 1000;
   padding-bottom: 5px!important;
-  padding: 10px;
-  background-color:  black;
-  color: #fff;
   text-align: left;
   width: 100%;
+  button {
+      padding: 10px;
+      background-color:  black;
+      color: #fff;
+      text-align: left;
+      cursor: pointer;
+    }
 }
 li {
     padding: 5px 0px;
@@ -385,10 +389,6 @@ li {
       color: #fff;
       text-align: left;
       cursor: pointer;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
     }
 }
 select {
