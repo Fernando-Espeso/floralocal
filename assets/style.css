@@ -370,7 +370,7 @@ order: -1;
       margin-top: 5px;
       display: inline-block;
       padding: 10px!important;
-      line-height: 1;
+      line-height: 1.5;
       background-color:  black;
       color: #fff;
       text-align: left;
@@ -389,11 +389,7 @@ li {
       background-color:  #ff004b;
       color: #fff;
       text-align: left;
-      line-height: 1!important;
       cursor: pointer;
-      display: flex; 
-      align-content: center;
-      justify-content: center;
     }
 }
 select {
