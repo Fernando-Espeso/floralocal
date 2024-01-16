@@ -159,7 +159,7 @@ select:disabled {
   opacity: 1;
   color: lightgray;
 }
-textarea:disabled {
+textarea:disabled, .hidden {
   display: none;
 }
 a.active{
