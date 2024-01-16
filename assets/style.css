@@ -130,6 +130,10 @@ input[type="date"]{
   padding: 0!important;
 }
 
+input[type="text"]{
+  border-bottom: 1px solid black;
+}
+
 input[type="checkbox"],
 button,
 select {
