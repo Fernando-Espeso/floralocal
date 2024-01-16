@@ -132,6 +132,7 @@ select {
 
 input[type="date"]{
   padding: 0!important;
+  margin-top: -5px;
 }
 
 input[type="checkbox"],
