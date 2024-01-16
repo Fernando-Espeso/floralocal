@@ -607,7 +607,7 @@ footer {}
 .variations {
   display: grid;
   & > * {
-    margin-top: .5rem;
+    margin-top: .6rem;
   }
 }
 
