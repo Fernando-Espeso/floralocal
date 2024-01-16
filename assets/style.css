@@ -130,7 +130,7 @@ input[type="date"]{
   padding: 0!important;
 }
 
-input[type="text"]{
+input[type="text"], textarea {
   border-bottom: 1px solid black;
 }
 
