@@ -67,24 +67,24 @@
     {% endfor %}
   </select>
   <p class="cart-attribute__field hidden no-margin">
-    <textarea placeholder="Kartentext" id="sentence" disabled name="properties[Kartentext]" spellcheck="false"></textarea>
+    <textarea placeholder="KARTENTEXT" id="sentence" disabled name="properties[Kartentext]" spellcheck="false"></textarea>
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="color">FARBWUNSCH</label>
-    <textarea placeholder="FARBWUNSCH" id="color" name="properties[FARBWUNSCH]"  spellcheck="false"></textarea>
+    <textarea placeholder="FARBWUNSCH" id="color" name="properties[Farbwunsch]"  spellcheck="false"></textarea>
   </p>
   <p style="order:-1" class="cart-attribute__field">
     <label class="show" for="address">LIEFERADRESSE</label>
-    <textarea required id="address" placeholder="STRASSE, PLZ, ORT" name="properties[LIEFERADRESSE]"   spellcheck="false"></textarea>
+    <textarea required id="address" placeholder="STRASSE, PLZ, ORT" name="properties[Lieferadresse]"   spellcheck="false"></textarea>
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="date">DATUM DER LIEFERUNG/ABHOLUNG</label>
-    <input required type="date" id="delivery-date" name="properties[DATUM]" value="2023-07-22" min="2023-01-01" max="2028-12-31">
+    <input required type="date" id="delivery-date" name="properties[Datum]" value="2023-07-22" min="2023-01-01" max="2028-12-31">
   </p>
 
   <p class="cart-attribute__field">
     <label class="show" for="name">NAME</label>
-    <textarea required placeholder="NAME" id="name" name="properties[name]" spellcheck="false" {{ cart.attributes["name"] }}></textarea>
+    <textarea required placeholder="NAME" id="name" name="properties[Name]" spellcheck="false" {{ cart.attributes["name"] }}></textarea>
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="email">EMAIL</label>
