@@ -179,9 +179,11 @@
   selector.on('change', function() {
     if (selector.val() === 'KEINE') {
       textarea.prop('disabled', true);
+      textarea.parents('.cart-attribute__field').addClass('hidden');
       textarea.val('');
     } else {
       textarea.prop('disabled', false);
+      textarea.parents('.cart-attribute__field').removeClass('hidden');
     }
   });
 });
