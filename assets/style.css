@@ -162,6 +162,9 @@ select:disabled {
 textarea:disabled, .hidden {
   display: none;
 }
+.no-padding {
+  padding: 0;
+}
 a.active{
   color: #ff004b;
 }
