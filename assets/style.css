@@ -598,7 +598,9 @@ footer {}
 
 .variations {
   display: grid;
-
+  & > * {
+    margin-top: .5rem;
+  }
 }
 
 .total {}
