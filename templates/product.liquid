@@ -50,7 +50,16 @@
           {%- elsif variants > 1 -%}
           class="product-variants"
           {%- endif -%}>
-          <div id="bag" >                       
+          <div id="bag" >
+            <div id="product-price"></div>
+                       {% if product.compare_at_price > product.price %}
+                          <span class="sale">ON SALE</span>
+                       {% else %}
+                       {% endif %}
+               {% if product.available %}
+                        {% else %}
+             <div class="sold-out">SOLD OUT</div>
+                        {% endif %}
            <div class="variations">
   <select id="product-select" name="id">
     {% for variant in product.variants %}
