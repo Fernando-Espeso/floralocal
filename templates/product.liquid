@@ -62,6 +62,12 @@
                         {% endif %}
            <div class="variations">
   <select id="product-select" name="id">
+
+    {% assign product_id = "8956837069095" | times: 1 %}
+    {% assign products_obj = collections.all.products | where: 'id', product_id %}
+    {% assign product = products_obj[0] %}
+    {{ product }}
+    
     {% for variant in product.variants %}
     <option value="{{ variant.id }}"></option>
     {% endfor %}
