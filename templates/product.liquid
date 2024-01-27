@@ -198,21 +198,23 @@
       textarea.parents('.cart-attribute__field').removeClass('hidden');
     }
   });
+
+  $('#product-actions').on('submit', function(event) {
+  if (selector.val() === '') {
+      $.ajax({
+        type: "POST",
+        url: '/cart/add.js',
+        data: {quantity: 1,id: selector.val()}, 
+        dataType: "json",
+        success: function(data) {
+           console.log('added gift card');
+        },
+        error: function() {
+          alert('error');
+        }
+      });
+    });
+  } 
 });
 
-$(document).ready(function() {
-  let addToCartForm = document.querySelector('form[action$="/cart/add"]');
-  let formData = new FormData(addToCartForm);
-  fetch(window.Shopify.routes.root + 'cart/add.js', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => {
-    console.log("now");
-    return response.json();
-  })
-  .catch((error) => {
-    console.error('Error:', error);
-  });
-});
 </script>
