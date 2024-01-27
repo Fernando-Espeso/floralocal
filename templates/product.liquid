@@ -135,6 +135,7 @@
   //PRODUCT FUNCTIONS
   var selectCallback = function(variant, selector){
     if(variant){
+      console.log(variant);
       jQuery('#produ').prop('disabled', false);
       if(variant.available){
         jQuery('#add-to-cart').prop('disabled', false).text('ADD TO CART');
