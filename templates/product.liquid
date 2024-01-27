@@ -67,6 +67,8 @@
        {% case product.id %}
           {% when 8956837069095 %}
              {% assign card = product %}
+                 {{ card }}
+                 {{ product }}
                 {% for variant in card.variants %}
                   <option value="{{ variant.id }}"></option>
                 {% endfor %}
