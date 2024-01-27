@@ -199,8 +199,7 @@
     }
   });
     
-  $('#product-actions').on('submit', function(event) {
-    alert(selector.val());
+  $('#produ').on('click', function(event) {
   if (selector.val() === '') {
       $.ajax({
         type: "POST",
@@ -208,15 +207,11 @@
         data: {quantity: 1,id: selector.val()}, 
         dataType: "json",
         success: function(data) {
-           alert(selector.val());
         },
         error: function() {
           alert('error');
         }
       });
-      $(this).submit();
-    } else {
-      $(this).submit();
     }
   });
 });
