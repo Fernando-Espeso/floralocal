@@ -608,6 +608,9 @@ footer {}
   display: grid;
   & > * {
     margin-top: .6rem;
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
 
