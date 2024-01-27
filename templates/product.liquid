@@ -62,11 +62,26 @@
                         {% endif %}
            <div class="variations">
 
+  {% if product.variants %}
   <select id="product-select" name="id">
-    {% for variant in card.variants %}
+    {% for variant in product.variants %}
     <option value="{{ variant.id }}"></option>
     {% endfor %}
   </select>
+  {% endif %}
+
+   <select id="product-select" name="id">
+    {% for product in collections.all.products %}
+       {% case product.id %}
+          {% when 8956837069095 %}
+             {% assign card = product %}
+                 {% for cardtype in card.variants %}
+                   <option value="{{ cardtype.id }}"></option>
+                {% endfor %}
+       {% endcase %}
+    {% endfor %}    
+  </select>
+             
   <p class="cart-attribute__field hidden no-margin">
     <textarea placeholder="KARTENTEXT" id="sentence" disabled name="properties[Kartentext]" spellcheck="false"></textarea>
   </p>
