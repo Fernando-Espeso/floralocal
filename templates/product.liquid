@@ -70,8 +70,6 @@
   </select>
   {% endif %}
 
-  <div class="cart-attribute__field">
-   <label class="show" for="color">GRUSSKARTE:</label>
    <select id="card-select" name="card">
     {% for product in collections.all.products %}
        {% case product.id %}
@@ -84,7 +82,7 @@
        {% endcase %}
     {% endfor %}    
   </select>
-  </div>
+             
   <p class="cart-attribute__field hidden no-margin">
     <textarea placeholder="KARTENTEXT" id="sentence" disabled name="properties[Kartentext]" spellcheck="false"></textarea>
   </p>
