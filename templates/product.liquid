@@ -62,12 +62,10 @@
                         {% endif %}
            <div class="variations">
 
-              {% assign card = all_products.grusskarte %}
 
-    test:{{ card }}
-    
+  {% assign card = all_products.grusskarte %}
   <select id="product-select" name="id">
-    {% for variant in product.variants %}
+    {% for variant in card.variants %}
     <option value="{{ variant.id }}"></option>
     {% endfor %}
   </select>
