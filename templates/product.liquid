@@ -61,17 +61,11 @@
              <div class="sold-out">SOLD OUT</div>
                         {% endif %}
            <div class="variations">
-    
+
   <select id="product-select" name="id">
-    {% for product in collections.all.products %}
-       {% case product.id %}
-          {% when 8956837069095 %}
-             {% assign card = product %}
-                 {% for cardtype in card.variants %}
-                   <option value="{{ cardtype.id }}"></option>
-                {% endfor %}
-       {% endcase %}
-    {% endfor %}    
+    {% for variant in card.variants %}
+    <option value="{{ variant.id }}"></option>
+    {% endfor %}
   </select>
   <p class="cart-attribute__field hidden no-margin">
     <textarea placeholder="KARTENTEXT" id="sentence" disabled name="properties[Kartentext]" spellcheck="false"></textarea>
@@ -135,7 +129,6 @@
   //PRODUCT FUNCTIONS
   var selectCallback = function(variant, selector){
     if(variant){
-      console.log(variant);
       jQuery('#produ').prop('disabled', false);
       if(variant.available){
         jQuery('#add-to-cart').prop('disabled', false).text('ADD TO CART');
