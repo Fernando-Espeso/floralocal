@@ -75,7 +75,7 @@
        {% case product.id %}
           {% when 8956837069095 %}
              {% assign card = product %}
-                 <option selected>KEINE GRUSSKARTE</option>
+                 <option value="" selected>KEINE GRUSSKARTE</option>
                  {% for cardtype in card.variants %}
                    <option value="{{ cardtype.id }}">{{ cardtype.title }}</option>
                 {% endfor %}
