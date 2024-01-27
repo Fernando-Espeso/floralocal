@@ -198,31 +198,26 @@
       textarea.parents('.cart-attribute__field').removeClass('hidden');
     }
   });
-
-
-    $('.add-to-cart').on('click', function(e){
-    e.preventDefault();
-    if( $('#personalize').prop("checked") == true ){
+    
+  $('#product-actions').on('submit', function(event) {
+    alert(selector.val());
+  if (selector.val() === '') {
       $.ajax({
         type: "POST",
         url: '/cart/add.js',
-        data: {quantity: 1,id: 39332170301484},   //this is the variant id of my product
+        data: {quantity: 1,id: selector.val()}, 
         dataType: "json",
         success: function(data) {
-          $('.product-single__form').submit();
+           alert(selector.val());
         },
         error: function() {
           alert('error');
         }
       });
+      $(this).submit();
     } else {
-      $(this).parents('form').submit();
+      $(this).submit();
     }
-  });
-    
-  $('#product-actions').on('submit', function(event) {
-    alert("oi");
- 
   });
 });
 
