@@ -61,12 +61,12 @@
              <div class="sold-out">SOLD OUT</div>
                         {% endif %}
            <div class="variations">
-  <select id="product-select" name="id">
 
-   {% assign card = all_products.grusskarte %}
+              {% assign card = all_products.grusskarte %}
 
     test:{{ card }}
     
+  <select id="product-select" name="id">
     {% for variant in product.variants %}
     <option value="{{ variant.id }}"></option>
     {% endfor %}
