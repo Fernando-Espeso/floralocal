@@ -61,24 +61,14 @@
              <div class="sold-out">SOLD OUT</div>
                         {% endif %}
            <div class="variations">
-
-              {% for product in collections.all.products %}
-       {% case product.id %}
-          {% when 8956837069095 %}
-             {% assign card = product %}
-                 {% for cardtype in card.variants %}
-                   {{ cardtype.id }}
-                {% endfor %}
-       {% endcase %}
-    {% endfor %}
     
   <select id="product-select" name="id">
     {% for product in collections.all.products %}
        {% case product.id %}
           {% when 8956837069095 %}
              {% assign card = product %}
-                {% for variant in card.variants %}
-                  <option value="{{ variant.id }}"></option>
+                 {% for cardtype in card.variants %}
+                   <option value="{{ cardtype.id }}"></option>
                 {% endfor %}
        {% endcase %}
     {% endfor %}    
