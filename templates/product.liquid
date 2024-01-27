@@ -66,7 +66,9 @@
        {% case product.id %}
           {% when 8956837069095 %}
              {% assign card = product %}
-                {{ card.variants }}
+                 {% for cardtype in card.variants %}
+                   {{ cardtype.id }}
+                {% endfor %}
        {% endcase %}
     {% endfor %}
     
