@@ -63,7 +63,9 @@
            <div class="variations">
   <select id="product-select" name="id">
 
- 
+   {% assign card = all_products.grusskarte %}
+
+    test:{{ card }}
     
     {% for variant in product.variants %}
     <option value="{{ variant.id }}"></option>
