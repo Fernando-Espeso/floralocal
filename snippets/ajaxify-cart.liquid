@@ -42,9 +42,7 @@ window.onload = function() {
     };
     var _init = function() {   
       $(document).ready(function() { 
-        alert("before");
         $(_config.addToCartFormSelector).submit(function(e) {   
-          alert("after");
           var selector = $('#card-select');
           alert(selector.val());
           if (selector.val() === '') {
