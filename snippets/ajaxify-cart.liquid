@@ -60,9 +60,12 @@
               type: 'post',
               data: {quantity: 1,id: parseInt(selector.val())}, 
               success: function(data) {
+                console.log(data);
+                console.log("oi");
               },
               error: function() {
-                alert('error');
+                console.log("e");
+                console.log(error);
               }
             });
           }
