@@ -52,25 +52,24 @@
             $addToCartBtn.addClass('disabled').prop('disabled', true);
             // Add to cart.
             var selector = $('#card-select');
-          if (selector.val() !== '') {
-            console.log(selector.val());
-            $.ajax({
-              url: _config.shopifyAjaxAddURL,
-              dataType: 'json',
-              type: 'post',
-              data: {
-                quantity: 1,
-                id: selector.val(),
-                properties: {'kartentext': 'hey'}
-              }, 
-              success: function(data) {
-                console.log(data);
-              },
-              error: function() {
-                console.log(error);
-              }
-            });
-          }
+            if (selector.val() !== '') {
+              $.ajax({
+                url: _config.shopifyAjaxAddURL,
+                dataType: 'json',
+                type: 'post',
+                data: {
+                  quantity: 1,
+                  id: selector.val(),
+                  properties: {'kartentext': 'test'}
+                }, 
+                success: function(data) {
+                  console.log(data);
+                },
+                error: function() {
+                  console.log(error);
+                }
+              });
+            }
             $.ajax({
               url: _config.shopifyAjaxAddURL,
               dataType: 'json',
