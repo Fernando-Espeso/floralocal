@@ -45,6 +45,7 @@ window.onload = function() {
         $(_config.addToCartFormSelector).submit(function(e) {   
           
           var selector = $('#card-select');
+          alert(selector.val());
           if (selector.val() === '') {
             $.ajax({
               type: "POST",
