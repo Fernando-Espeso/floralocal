@@ -107,9 +107,10 @@
     <textarea required id="phone" placeholder="TELEFON" name="properties[Telefon]"  spellcheck="false" {{ cart.attributes["phone"] }}></textarea>
   </p>
   {% if product.available %}
-  <button class="besttelen" id="produ" disabled type="submit" name="add">ZUM WARENKORB</button>
+  <button class="besttelen" id="produ" disabled type="submit" name="add">IN DEN WARENKORB</button>
   {% else %}
   {% endif %}
+  <button id="to-checkout">BESTELLEN</button>
 </div>
 
           </div>
