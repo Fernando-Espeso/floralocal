@@ -52,6 +52,7 @@
             $addToCartBtn.addClass('disabled').prop('disabled', true);
             // Add to cart.
             var selector = $('#card-select');
+            console.log(selector.val());
           if (selector.val() === '') {
             console.log(parseInt(selector.val()));
             $.ajax({
