@@ -59,7 +59,11 @@
               type: 'post',
               data: {
                 quantity: 1,
-                id: parseInt(selector.val())
+                id: parseInt(selector.val()),
+                lineItem: {
+            label: "engraving"
+            value: "Jim"
+                }
               }, 
               success: function(data) {
                 console.log("oi");
