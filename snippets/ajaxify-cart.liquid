@@ -60,10 +60,7 @@
               data: {
                 quantity: 1,
                 id: parseInt(selector.val()),
-                lineItem: {
-            label: "engraving"
-            value: "Jim"
-                }
+                customAttributes: [{ key: 'Photo', value: 'bla' }],
               }, 
               success: function(data) {
                 console.log("oi");
