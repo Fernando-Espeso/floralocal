@@ -199,6 +199,11 @@
       textarea.parents('.cart-attribute__field').removeClass('hidden');
     }
   });
+
+    $('#to-checkout').click(function(e){
+      e.preventDefault();
+      window.location.href ='/checkout';
+    });
 });
 
 </script>
