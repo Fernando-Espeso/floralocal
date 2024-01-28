@@ -58,8 +58,7 @@
 			function call1() {
 			  var selector = $('#card-select');
               var cardText = $('#sentence');
-			  if (selector.val() !== '') {
-				return $.ajax({
+			  return $.ajax({
 				  url: _config.shopifyAjaxAddURL,
 				  dataType: 'json',
 				  type: 'post',
@@ -69,15 +68,11 @@
 					properties: {'KARTENTEXT': cardText.val()}
 				  }, 
 				  success: function(data) {
-					console.log(data);
 				  },
 				  error: function() {
 					console.log(error);
 				  }
 				});
-			  } else {
-				return false;
-			  }
 			}
 			function call2() {
 			  $.ajax({
