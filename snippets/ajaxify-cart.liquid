@@ -51,7 +51,6 @@
 			// Add to cart.
 		
 			$.when(call1(), call2()).done(function(c1, c2){
-			   return false;
                window.location.href ='/cart';
 			});
 
@@ -65,7 +64,7 @@
 				  data: {
 					quantity: 1,
 					id: selector.val(),
-					properties: {'KARTENTEXT': cardText.val()}
+					properties: {'Kartentext': cardText.val()}
 				  }, 
 				  success: function(data) {
 				  },
