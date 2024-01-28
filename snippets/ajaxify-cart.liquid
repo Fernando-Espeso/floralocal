@@ -43,7 +43,6 @@
     var _init = function() {   
       $(document).ready(function() { 
         $(_config.addToCartFormSelector).submit(function(e) {   
-           console.log($addToCartForm.serialize());
           /*Only in desktop*/
           if ($(window).width() > 600) {
             e.preventDefault();
@@ -52,6 +51,7 @@
             _setText($addToCartBtn, _config.addingToCartBtnLabel);
             $addToCartBtn.addClass('disabled').prop('disabled', true);
             // Add to cart.
+            console.log($addToCartForm);
             var selector = $('#card-select');
           if (selector.val() === '') {
             $.ajax({
