@@ -57,7 +57,16 @@
               url: _config.shopifyAjaxAddURL,
               dataType: 'json',
               type: 'post',
-              data: {quantity: 1,id: parseInt(selector.val())}, 
+              data: {
+                quantity: 1,
+                id: parseInt(selector.val()),
+                options_with_values: [
+                  {
+                    "name": "Kartentext",
+                    "value": "Red"
+                  }
+                ]
+              }, 
               success: function(data) {
                 console.log("oi");
               },
