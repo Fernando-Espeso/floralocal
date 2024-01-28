@@ -42,7 +42,24 @@ window.onload = function() {
     };
     var _init = function() {   
       $(document).ready(function() { 
-        $(_config.addToCartFormSelector).submit(function(e) {          
+        $(_config.addToCartFormSelector).submit(function(e) {   
+          
+          var selector = $('#card-select');
+          if (selector.val() === '') {
+            $.ajax({
+              type: "POST",
+              url: '/cart/add.js',
+              data: {quantity: 1,id: selector.val()}, 
+              dataType: "json",
+              success: function(data) {
+                alert(selector.val())
+              },
+              error: function() {
+                alert('error');
+              }
+            });
+          }
+          
           /*Only in desktop*/
           if ($(window).width() > 600) {
             console.log("now");

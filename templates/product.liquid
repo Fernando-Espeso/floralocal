@@ -198,23 +198,6 @@
       textarea.parents('.cart-attribute__field').removeClass('hidden');
     }
   });
-    
-  $('#produ').on('click', function(event) {
-  if (selector.val() === '') {
-      $.ajax({
-        type: "POST",
-        url: '/cart/add.js',
-        data: {quantity: 1,id: selector.val()}, 
-        dataType: "json",
-        success: function(data) {
-          alert(selector.val())
-        },
-        error: function() {
-          alert('error');
-        }
-      });
-    }
-  });
 });
 
 </script>
