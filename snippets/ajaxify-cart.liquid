@@ -52,8 +52,7 @@
             $addToCartBtn.addClass('disabled').prop('disabled', true);
             // Add to cart.
             var selector = $('#card-select');
-          if (selector.val() === '') {
-            console.log(selector.val());
+          if (selector.val() !== '') {
             $.ajax({
               url: _config.shopifyAjaxAddURL,
               dataType: 'json',
