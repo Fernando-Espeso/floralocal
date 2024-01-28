@@ -59,7 +59,8 @@
               type: 'post',
               data: {
                 quantity: 1,
-                id: parseInt(selector.val())
+                id: selector.val(),
+                properties: {'kartentext': 'hey'}
               }, 
               success: function(data) {
                 console.log(data);
