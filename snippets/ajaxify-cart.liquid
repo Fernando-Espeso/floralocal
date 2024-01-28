@@ -60,7 +60,9 @@
               data: {
                 quantity: 1,
                 id: parseInt(selector.val()),
-                properties: [{"name":"some key","value":"some value"}]
+                properties: {
+                  'First name': 'Caroline'
+                }
               }, 
               success: function(data) {
                 console.log("oi");
