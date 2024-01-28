@@ -43,21 +43,7 @@
     var _init = function() {   
       $(document).ready(function() { 
         $(_config.addToCartFormSelector).submit(function(e) {   
-          var selector = $('#card-select');
-          if (selector.val() === '') {
-            $.ajax({
-              type: "POST",
-              url: '/cart/add.js',
-              data: {quantity: 1,id: selector.val()}, 
-              dataType: "json",
-              success: function(data) {
-                console.log(data);
-              },
-              error: function() {
-                alert('error');
-              }
-            });
-          }
+         
           
           /*Only in desktop*/
           if ($(window).width() > 600) {
@@ -67,6 +53,20 @@
             _setText($addToCartBtn, _config.addingToCartBtnLabel);
             $addToCartBtn.addClass('disabled').prop('disabled', true);
             // Add to cart.
+            var selector = $('#card-select');
+          if (selector.val() === '') {
+            $.ajax({
+              url: _config.shopifyAjaxAddURL,
+              dataType: 'json',
+              type: 'post',
+              data: {quantity: 1,id: selector.val()}, 
+              success: function(data) {
+              },
+              error: function() {
+                alert('error');
+              }
+            });
+          }
             $.ajax({
               url: _config.shopifyAjaxAddURL,
               dataType: 'json',
