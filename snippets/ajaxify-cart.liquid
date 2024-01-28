@@ -51,6 +51,7 @@
               data: {quantity: 1,id: selector.val()}, 
               dataType: "json",
               success: function(data) {
+                console.log(data);
               },
               error: function() {
                 alert('error');
@@ -60,7 +61,6 @@
           
           /*Only in desktop*/
           if ($(window).width() > 600) {
-            console.log("now");
             e.preventDefault();
             var $addToCartForm = $(this);
             var $addToCartBtn = $addToCartForm.find(_config.addToCartBtnSelector);
