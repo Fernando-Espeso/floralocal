@@ -53,6 +53,7 @@
             // Add to cart.
             var selector = $('#card-select');
           if (selector.val() !== '') {
+            console.log(selector.val());
             $.ajax({
               url: _config.shopifyAjaxAddURL,
               dataType: 'json',
