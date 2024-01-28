@@ -50,14 +50,13 @@
 			$addToCartBtn.addClass('disabled').prop('disabled', true);
 			// Add to cart.
 		
-			$.when(call1(), call2()).done(function(c1, c2){
+			$.when(call1(), call2()).then(function(c1, c2){
                window.location.href ='/cart';
 			});
 
 			function call1() {
 			  var selector = $('#card-select');
               var cardText = $('#sentence');
-              console.log(cardText.val());
 			  return $.ajax({
 				  url: _config.shopifyAjaxAddURL,
 				  dataType: 'json',
@@ -68,7 +67,6 @@
 					properties: {'Kartentext': cardText.val()}
 				  }, 
 				  success: function(data) {
-                    console.log(data);
 				  },
 				  error: function() {
 					console.log(error);
