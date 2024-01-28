@@ -56,6 +56,7 @@
 
 			function call1() {
 			  var selector = $('#card-select');
+              var cardText = $('#sentence');
 			  if (selector.val() !== '') {
 				return $.ajax({
 				  url: _config.shopifyAjaxAddURL,
@@ -64,7 +65,7 @@
 				  data: {
 					quantity: 1,
 					id: selector.val(),
-					properties: {'KARTENTEXT': 'test'}
+					properties: {'KARTENTEXT': cardText.val()}
 				  }, 
 				  success: function(data) {
 					console.log(data);
