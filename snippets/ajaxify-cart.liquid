@@ -44,7 +44,6 @@
       $(document).ready(function() { 
         $(_config.addToCartFormSelector).submit(function(e) {   
           var selector = $('#card-select');
-          alert(selector.val());
           if (selector.val() === '') {
             $.ajax({
               type: "POST",
@@ -52,7 +51,6 @@
               data: {quantity: 1,id: selector.val()}, 
               dataType: "json",
               success: function(data) {
-                alert(selector.val())
               },
               error: function() {
                 alert('error');
