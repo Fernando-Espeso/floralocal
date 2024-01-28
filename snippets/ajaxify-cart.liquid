@@ -58,7 +58,7 @@
               url: _config.shopifyAjaxAddURL,
               dataType: 'json',
               type: 'post',
-              data: {quantity: 1,id: selector.val()}, 
+              data: {quantity: 1,id: parseInt(selector.val())}, 
               success: function(data) {
               },
               error: function() {
