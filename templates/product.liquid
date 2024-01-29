@@ -71,15 +71,11 @@
   {% endif %}
 
    <select id="card-select" name="card">
-    {% for product in collections.all.products %}
-       {% case product.id %}
-          {% when 8956837069095 %}
-             {% assign card = product %}
-                 <option value="" selected>KEINE GRUSSKARTE</option>
-                 {% for cardtype in card.variants %}
-                   <option value="{{ cardtype.id }}">{{ cardtype.title }}</option>
-                {% endfor %}
-       {% endcase %}
+     <option value="" selected>KEINE GRUSSKARTE</option>
+    {% for card in collections.all.products %}
+       {% if card.type contains 'grusskarte' %}
+           <option value="{{ card.id }}">{{ card.title }}</option>
+       {% endif %}
     {% endfor %}    
   </select>
              
