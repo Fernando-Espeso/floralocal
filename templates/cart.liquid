@@ -14,7 +14,7 @@
                   <li>{{ item.product.type }}</li>
                   {% for option in item.options_with_values %}
                     {% if option.value != 'Default Title' %}
-                      <li>{{ option.name }}: {{ option.value }}</li>
+                      <li>{{ item.quantity }} x {{ option.name }}: {{ option.value }}</li>
                     {% endif %}
                   {% endfor %}
 
@@ -22,7 +22,7 @@
                     {% assign firstChar = prop[0] | slice: 0 %}
 
                     {% unless prop[1] == blank or firstChar == '_' %}
-                      <li>{{ prop[0] }}: {{ prop[1] }}</li>
+                      <li>{{ item.quantity }} x {{ prop[0] }}: {{ prop[1] }}</li>
                     {% endunless %}
                   {% endfor %}
                 </ul>
