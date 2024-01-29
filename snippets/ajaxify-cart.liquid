@@ -50,7 +50,7 @@
 			$addToCartBtn.addClass('disabled').prop('disabled', true);
 			// Add to cart.
 		
-			$.when(call1(), call2()).then(function(c1, c2){
+			$.when(call2(), call1()).then(function(c2, c1){
               setTimeout(function(){
                 window.location.href ='/cart';
               },100);
