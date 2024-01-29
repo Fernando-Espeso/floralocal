@@ -10,8 +10,8 @@
                 {% unless item.product.options contains 'Title' %}
                   <!--Variations-->
 
-
                 <ul style="text-transform:uppercase;">
+                  <li>{{ item.type }}</li>
                   {% for option in item.options_with_values %}
                     {% if option.value != 'Default Title' %}
                       <li>{{ option.name }}: {{ option.value }}</li>
