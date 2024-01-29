@@ -74,7 +74,9 @@
     {% for product in collections.all.products %}
       {% assign card = product %}
       {% if card.type contains 'grusskarte' %}
-             <option value="{{ card.id }}">{{ card.title }}</option>
+             {% for cardtype in card.variants %}
+               <option value="{{ cardtype.id }}">{{ cardtype.title }}</option>
+            {% endfor %}
         {% endif %}
     {% endfor %}    
   </select>
