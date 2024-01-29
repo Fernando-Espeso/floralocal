@@ -51,7 +51,9 @@
 			// Add to cart.
 		
 			$.when(call1(), call2()).then(function(c1, c2){
-               window.location.href ='/cart';
+              setTimeout(function(){
+                window.location.href ='/cart';
+              },100);
 			});
 
 			function call1() {
