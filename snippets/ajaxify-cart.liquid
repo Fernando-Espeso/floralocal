@@ -48,74 +48,46 @@
 			var $addToCartBtn = $addToCartForm.find(_config.addToCartBtnSelector);
 			_setText($addToCartBtn, _config.addingToCartBtnLabel);
 			$addToCartBtn.addClass('disabled').prop('disabled', true);
-			// Add to cart.
-		
-			$.when(call2()).then(function(c2){
-              setTimeout(function(){
-                window.location.href ='/cart';
-              },100);
-			});
-
-			function call1() {
-			  var selector = $('#card-select');
-              var cardText = $('#sentence');
-			  return $.ajax({
-				  url: _config.shopifyAjaxAddURL,
-				  dataType: 'json',
-				  type: 'post',
-				  data: {
-					quantity: 1,
-					id: selector.val(),
-					properties: {'Kartentext': cardText.val()}
-				  }, 
-				  success: function(data) {
-				  },
-				  error: function() {
-					console.log('error');
-				  }
-				});
-			}
-			function call2() {
-			  $.ajax({
-				url: _config.shopifyAjaxAddURL,
-				dataType: 'json',
-				type: 'post',
-				data: $addToCartForm.serialize(),
-				success: function(itemData) {
-				  // Re-enable add to cart button.
-				  window.setTimeout(function(){
-					$addToCartBtn.prop('disabled', false).removeClass('disabled');
-					//_setText($addToCartBtn,_config.addToCartBtnLabel);
-				  }, 500);
-				  // Update cart count and show cart link.
-				  $.getJSON(_config.shopifyAjaxCartURL, function(cart) {
-					if (_config.cartCountSelector && $(_config.cartCountSelector).length) {
-					  //Update count of items in the cart
-					  var value = $(_config.cartCountSelector).html() || '0';
-					  if(cart.item_count != 1){
-						  var items = '';
-					  }else{
-						  var items = '';
-					  }
-					  $('.cart-total').html(cart.item_count + items);
-					}
-				  });        
-				}, 
-				error: function(XMLHttpRequest) {
-				  var response = eval('(' + XMLHttpRequest.responseText + ')');
-				  response = response.description;
-				  if (response.slice(0,4) === 'All ') {                  
-					$addToCartBtn.prop('disabled', false);
-					_setText($addToCartBtn, _config.soldOutBtnLabel);
-					$addToCartBtn.prop('disabled',true);
-				  }
-				  else {                  
-					$addToCartBtn.prop('disabled', false).removeClass('disabled');
-					//_setText($addToCartBtn, _config.addToCartBtnLabel);
-				  } 
-				}
-			  });   
-			} 
+			// Add to cart.		
+            $.ajax({
+              url: _config.shopifyAjaxAddURL,
+              dataType: 'json',
+              type: 'post',
+              data: $addToCartForm.serialize(),
+              success: function(itemData) {
+                // Re-enable add to cart button.
+                window.setTimeout(function(){
+                  $addToCartBtn.prop('disabled', false).removeClass('disabled');
+                  //_setText($addToCartBtn,_config.addToCartBtnLabel);
+                }, 500);
+                // Update cart count and show cart link.
+                $.getJSON(_config.shopifyAjaxCartURL, function(cart) {
+                  if (_config.cartCountSelector && $(_config.cartCountSelector).length) {
+                    //Update count of items in the cart
+                    var value = $(_config.cartCountSelector).html() || '0';
+                    if(cart.item_count != 1){
+                        var items = '';
+                    }else{
+                        var items = '';
+                    }
+                    $('.cart-total').html(cart.item_count + items);
+                  }
+                });        
+              }, 
+              error: function(XMLHttpRequest) {
+                var response = eval('(' + XMLHttpRequest.responseText + ')');
+                response = response.description;
+                if (response.slice(0,4) === 'All ') {                  
+                  $addToCartBtn.prop('disabled', false);
+                  _setText($addToCartBtn, _config.soldOutBtnLabel);
+                  $addToCartBtn.prop('disabled',true);
+                }
+                else {                  
+                  $addToCartBtn.prop('disabled', false).removeClass('disabled');
+                  //_setText($addToCartBtn, _config.addToCartBtnLabel);
+                } 
+              }
+            });   
 		});
 	  });
 	};
