@@ -23,18 +23,7 @@
                 </ul>
 
      {% endunless %}
-     <div class="item-quantity">
-                    <span data-field="updates" class="quantity">
-                      <span>ANZAHL:</span>
-                    </span>
-                    <input type="hidden" step="1" max="9" value="{{ item.quantity }}" name="updates[]" class="inactive quantity-field align-center">
-                        <span class="quantity-wrap"></span>
-                        <span data-field="updates" class="quantity-button plus">
-                              {% if cart.items.available %}
-                              {% else %}
-                              {% endif %}
-                        </span>
-    </div>
+    
   </div>
   {% endfor %}
     <div class="total">
