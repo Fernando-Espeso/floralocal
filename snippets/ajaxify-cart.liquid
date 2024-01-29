@@ -57,16 +57,20 @@
 			function call1() {
 			  var selector = $('#card-select');
               var cardText = $('#sentence');
-              console.log(selector.val());
+              let formData = {
+               'items': [{
+                'id': selector.val(),
+                'quantity': 1,
+                'properties': {'Kartentext': cardText.val()}
+                }]
+              };
+
+              console.log(JSON.stringify(formData));
 			  return $.ajax({
 				  url: _config.shopifyAjaxAddURL,
 				  dataType: 'json',
 				  type: 'post',
-				  data: {
-					quantity: 1,
-					id: selector.val(),
-					properties: {'Kartentext': cardText.val()}
-				  }, 
+				  data: JSON.stringify(formData), 
 				  success: function(data) {
                     console.log(data);
 				  },
