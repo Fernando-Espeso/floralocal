@@ -1,6 +1,6 @@
 {% if cart.item_count > 0 %}
 <form id="cart-wrapper" action="/cart" method="post">
-      {{ cart.items }}
+      {{ cart.items.length }}
      {% for item in cart.items %}
               <div class="item">
                 <div  class="thumb" >
