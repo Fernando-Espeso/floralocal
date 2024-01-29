@@ -63,14 +63,16 @@
 				  type: 'post',
 				  data: {
 					quantity: 1,
-					id: parseInt(selector.val()),
+					id: selector.val(),
 					properties: {'Kartentext': cardText.val()}
 				  }, 
 				  success: function(data) {
                     console.log(data);
+                    console.log(selector.val());
 				  },
 				  error: function() {
 					console.log('error');
+                    console.log(selector.val());
 				  }
 				});
 			}
