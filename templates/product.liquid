@@ -63,14 +63,13 @@
            <div class="variations">
 
   {% if product.variants %}
-  <select id="product-select" name="items[0][id]">
+  <select id="product-select" name="items[0]id">
     {% for variant in product.variants %}
     <option value="{{ variant.id }}"></option>
     {% endfor %}
   </select>
   {% endif %}
-
-   <select id="card-select" name="items[1][id]">
+   <select id="card-select" name="items[1]id">
     <option value="" selected>KEINE GRUSSKARTE</option>
     {% for product in collections.all.products %}
       {% assign card = product %}
