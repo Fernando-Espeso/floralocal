@@ -576,9 +576,7 @@ footer {}
     margin-bottom: .25rem;
   }
   .item + .item {
-    .info-text {
       margin-top: 1rem;
-    }
   }
   .total {
     margin-bottom: 1rem;
