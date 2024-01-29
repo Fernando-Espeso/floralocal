@@ -72,7 +72,9 @@
                     }
                     $('.cart-total').html(cart.item_count + items);
                   }
-                });        
+                }); 
+                // redirect to cart view
+                window.location.href = "/cart";
               }, 
               error: function(XMLHttpRequest) {
                 var response = eval('(' + XMLHttpRequest.responseText + ')');
