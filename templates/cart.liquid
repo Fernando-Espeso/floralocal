@@ -8,6 +8,8 @@
                                     <span class="info-text">DEINE BESTELLUNG</span>
                                                  </div>
                 </div>
+                {% unless item.product.options contains 'Title' %}
+                  <!--Variations-->
 
 
                 <ul style="text-transform:uppercase;">
@@ -26,6 +28,7 @@
                   {% endfor %}
                 </ul>
 
+     {% endunless %}
      <!-- <div class="item-quantity">
                     <span data-field="updates" class="quantity-button minus">
                       <span>[ – ]</span>
