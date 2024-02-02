@@ -797,7 +797,7 @@ margin-left: 0px;
     border: none;
     margin-top: 2rem;
     .sls-option-container {
-      border-color: black;
+      border-color: black!important;
     }
   }
 }
