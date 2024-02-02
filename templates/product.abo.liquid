@@ -44,75 +44,7 @@
 
               </span></a></div>
       <div class="besttelen open">BESTELLEN <span>+</span></div>
-      <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
-          {%- if product.has_only_default_variant -%}
-          class="product-simple"
-          {%- elsif variants > 1 -%}
-          class="product-variants"
-          {%- endif -%}>
-          <div id="bag" >
-           <!-- <div id="product-price"></div> -->
-                       {% if product.compare_at_price > product.price %}
-                          <span class="sale">ON SALE</span>
-                       {% else %}
-                       {% endif %}
-               {% if product.available %}
-                        {% else %}
-             <div class="sold-out">SOLD OUT</div>
-                        {% endif %}
-           <div class="variations">
-
-  {% if product.variants %}
-  <select id="product-select" name="items[0]id">
-    {% for variant in product.variants %}
-    <option value="{{ variant.id }}"></option>
-    {% endfor %}
-  </select>
-  {% endif %}
-   <select id="card-select" name="items[1]id">
-    <option value="" selected>KEINE GRUSSKARTE</option>
-    {% for product in collections.all.products %}
-      {% assign card = product %}
-      {% if card.type contains 'grusskarte' %}
-             {% for cardtype in card.variants %}
-               <option value="{{ cardtype.id }}">{{ cardtype.title }}</option>
-            {% endfor %}
-        {% endif %}
-    {% endfor %}    
-  </select>
-             
-  <p class="cart-attribute__field hidden no-margin">
-    <textarea placeholder="KARTENTEXT" id="sentence" name="items[1]properties[Kartentext]" disabled spellcheck="false"></textarea>
-  </p>
-  <p class="cart-attribute__field">
-    <label class="show" for="color">FARBWUNSCH:</label>
-    <textarea placeholder="FARBWUNSCH" id="color" name="items[0]properties[Farbwunsch]"  spellcheck="false"></textarea>
-  </p>
-  <p class="cart-attribute__field">
-    <label class="show" for="date">DATUM DER LIEFERUNG/ABHOLUNG:</label>
-    <input required type="date" id="delivery-date" name="items[0]properties[Datum]" value="2023-07-22" min="2023-01-01" max="2028-12-31">
-  </p>
-  <p class="cart-attribute__field">
-    <label class="show" for="name">NAME:</label>
-    <textarea required placeholder="NAME" id="name" name="items[0]properties[Name]" spellcheck="false" {{ cart.attributes["name"] }}></textarea>
-  </p>
-  <p class="cart-attribute__field">
-    <label class="show" for="email">EMAIL:</label>
-    <textarea required placeholder="EMAIL" id="email" name="items[0]properties[Email]" spellcheck="false" {{ cart.attributes["email"] }}></textarea>
-  </p>
-  <p class="cart-attribute__field">
-    <label class="show" for="phone">TELEFON:</label>
-    <textarea required id="phone" placeholder="TELEFON" name="items[0]properties[Telefon]"  spellcheck="false" {{ cart.attributes["phone"] }}></textarea>
-  </p>
-  {% if product.available %}
-  <button class="besttelen" id="produ" disabled type="submit" name="add">IN DEN WARENKORB</button>
-  {% else %}
-  {% endif %}
-</div>
-
-          </div>
-
-    </form>
+      <div class="sealsubs-target-element" data-product="{{ product | json | escape }}" data-handle="{{ product.handle }}"></div>
     </div>
 
     <div class="gallery">
