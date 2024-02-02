@@ -170,21 +170,4 @@
     {% endfor %}
   });
 
-
-  $(document).ready(function() {
-  const selector = $('#card-select');
-  const textarea = $('#sentence');
-
-  selector.on('change', function() {
-    if (selector.val() === '') {
-      textarea.prop('disabled', true);
-      textarea.parents('.cart-attribute__field').addClass('hidden');
-      textarea.val('');
-    } else {
-      textarea.prop('disabled', false);
-      textarea.parents('.cart-attribute__field').removeClass('hidden');
-    }
-  });
-});
-
 </script>
