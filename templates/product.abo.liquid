@@ -128,6 +128,8 @@
 {% endif %}
 {% endfor %}
 
+{{ 'option_selection.js' | shopify_asset_url | script_tag }}
+
 <script>
   //PRODUCT FUNCTIONS
   var selectCallback = function(variant, selector){
