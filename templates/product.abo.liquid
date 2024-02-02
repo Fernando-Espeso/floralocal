@@ -44,8 +44,77 @@
 
               </span></a></div>
       <div class="besttelen open">BESTELLEN <span>+</span></div>
-      <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data">
-             <div class="sealsubs-target-element" data-product="{{ product | json | escape }}" data-handle="{{ product.handle }}"></div>
+      <form id="product-actions" action="/cart/add" method="post" enctype="multipart/form-data"
+          {%- if product.has_only_default_variant -%}
+          class="product-simple"
+          {%- elsif variants > 1 -%}
+          class="product-variants"
+          {%- endif -%}>
+
+          <div class="sealsubs-target-element" data-product="{{ product | json | escape }}" data-handle="{{ product.handle }}"></div>
+        
+          <div id="bag" >
+           <!-- <div id="product-price"></div> -->
+                       {% if product.compare_at_price > product.price %}
+                          <span class="sale">ON SALE</span>
+                       {% else %}
+                       {% endif %}
+               {% if product.available %}
+                        {% else %}
+             <div class="sold-out">SOLD OUT</div>
+                        {% endif %}
+           <div class="variations">
+
+  {% if product.variants %}
+  <select id="product-select" name="items[0]id">
+    {% for variant in product.variants %}
+    <option value="{{ variant.id }}"></option>
+    {% endfor %}
+  </select>
+  {% endif %}
+   <select id="card-select" name="items[1]id">
+    <option value="" selected>KEINE GRUSSKARTE</option>
+    {% for product in collections.all.products %}
+      {% assign card = product %}
+      {% if card.type contains 'grusskarte' %}
+             {% for cardtype in card.variants %}
+               <option value="{{ cardtype.id }}">{{ cardtype.title }}</option>
+            {% endfor %}
+        {% endif %}
+    {% endfor %}    
+  </select>
+             
+  <p class="cart-attribute__field hidden no-margin">
+    <textarea placeholder="KARTENTEXT" id="sentence" name="items[1]properties[Kartentext]" disabled spellcheck="false"></textarea>
+  </p>
+  <p class="cart-attribute__field">
+    <label class="show" for="color">FARBWUNSCH:</label>
+    <textarea placeholder="FARBWUNSCH" id="color" name="items[0]properties[Farbwunsch]"  spellcheck="false"></textarea>
+  </p>
+  <p class="cart-attribute__field">
+    <label class="show" for="date">DATUM DER LIEFERUNG/ABHOLUNG:</label>
+    <input required type="date" id="delivery-date" name="items[0]properties[Datum]" value="2023-07-22" min="2023-01-01" max="2028-12-31">
+  </p>
+  <p class="cart-attribute__field">
+    <label class="show" for="name">NAME:</label>
+    <textarea required placeholder="NAME" id="name" name="items[0]properties[Name]" spellcheck="false" {{ cart.attributes["name"] }}></textarea>
+  </p>
+  <p class="cart-attribute__field">
+    <label class="show" for="email">EMAIL:</label>
+    <textarea required placeholder="EMAIL" id="email" name="items[0]properties[Email]" spellcheck="false" {{ cart.attributes["email"] }}></textarea>
+  </p>
+  <p class="cart-attribute__field">
+    <label class="show" for="phone">TELEFON:</label>
+    <textarea required id="phone" placeholder="TELEFON" name="items[0]properties[Telefon]"  spellcheck="false" {{ cart.attributes["phone"] }}></textarea>
+  </p>
+  {% if product.available %}
+  <button class="besttelen" id="produ" disabled type="submit" name="add">IN DEN WARENKORB</button>
+  {% else %}
+  {% endif %}
+</div>
+
+          </div>
+
     </form>
     </div>
 
@@ -73,3 +142,63 @@
 {% endif %}
 {% endfor %}
 
+<script>
+  //PRODUCT FUNCTIONS
+  var selectCallback = function(variant, selector){
+    if(variant){
+      jQuery('#produ').prop('disabled', false);
+      if(variant.available){
+        jQuery('#add-to-cart').prop('disabled', false).text('ADD TO CART');
+      }else{
+        jQuery('#add-to-cart').prop('disabled', true).text('SOLD OUT');
+      }
+      if( variant.compare_at_price > variant.price ) {
+        {% if variant.price < variant.compare_at_price %} {{ variant.compare_at_price | money }}{% endif %}
+        jQuery('#product-price').html(Shopify.formatMoney(variant.price, "<span>{{ shop.money_format }}</span>") + " <s>" + Shopify.formatMoney(variant.compare_at_price, "{{ shop.money_format }}") + "</s>");
+      }else{
+        jQuery('#product-price').html(Shopify.formatMoney(variant.price, "{{ shop.money_format }}"));
+      }
+    }else{
+      jQuery('#produ').prop('disabled', true);
+      jQuery('#product-price').empty();
+      jQuery('#add-to-cart').prop('disabled', true).text('ADD TO CART');
+      {% if product.price_varies %}
+        jQuery('#product-price').html('{{ product.price_min | money }} – {{ product.price_max | money }}' );
+      {% else %}
+        jQuery('#product-price').html('{{ product.price | money }}');
+      {% endif %}
+    }
+  };
+
+  jQuery(function($) {
+    new Shopify.OptionSelectors('product-select', {
+      product: {{ product | json }},
+      onVariantSelected: selectCallback
+    });
+    {% assign count = -1 %}
+    {% for option in product.options %}
+    {% if product.options.first != 'Title' %}
+      {% assign count = count | plus: 1 %}
+      $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }}</option>");
+    {% endif %}
+    {% endfor %}
+  });
+
+
+  $(document).ready(function() {
+  const selector = $('#card-select');
+  const textarea = $('#sentence');
+
+  selector.on('change', function() {
+    if (selector.val() === '') {
+      textarea.prop('disabled', true);
+      textarea.parents('.cart-attribute__field').addClass('hidden');
+      textarea.val('');
+    } else {
+      textarea.prop('disabled', false);
+      textarea.parents('.cart-attribute__field').removeClass('hidden');
+    }
+  });
+});
+
+</script>
