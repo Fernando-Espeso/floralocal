@@ -82,14 +82,13 @@ Design by Matto studio
 	<div class="menu"  {%- if template == 'index' -%}id=""{%- endif -%}>
       <div class="center">
         <div class="floralokal"><a href="../pages/about" {% if template == 'page.about' %}class="active" {% endif %}>FLORAL LOKAL</a></div>
-        <div><a href="../products/straus-bestellen"    {% if product.handle == 'straus-bestellen' %}
-      class="active"
-    {% endif %} >Strauss bestellen</a></div>
-            
+        <div><a href="../products/straus-bestellen" {% if product.handle == 'straus-bestellen' %} class="active" {% endif %} >Floral Lokal Abo</a></div>
+        <div><a href="../products/floral-lokal-abo" {% if product.handle == 'floral-lokal-abo' %} class="active" {% endif %} >Strauss bestellen</a></div>    
         <div><a href="../pages/fest-hochzeit" {% if template == 'page.fest' %}class="active" {% endif %} >fest/hochzeit</a></div>
         <div><a href="../pages/kranz" {% if template == 'page.kranz' %}class="active" {% endif %} >Kranz</a></div>
         <div><a href="../pages/gastro" {% if template == 'page.gastro' %}class="active" {% endif %} >Gastro</a></div>
         <div><a href="../pages/krone" {% if template == 'page.crone' %}class="active" {% endif %} >Krone</a></div>
+        <div><a href="../pages/about" {% if product.handle == 'about' %} class="active" {% endif %} >Über uns</a></div>
     </div>
 </div>
 </header>
