@@ -793,8 +793,11 @@ margin-left: 0px;
 
 .sealsubs-target-element {
   .sealsubs-container {
-    color: black;
+    color: black!important;
     border: none;
     margin-top: 2rem;
+    .sls-option-container {
+      border-color: black;
+    }
   }
 }
