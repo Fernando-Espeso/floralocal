@@ -797,12 +797,13 @@ margin-left: 0px;
     border: none;
     margin-top: 2rem;
     .sls-option-container {
-      border-color: black!important;
+      border: none!important;
+      padding: 0!important;
     }
-          select {
-        padding: .5rem .5rem .2rem .5rem!important;
+  }
+}
+.sls-select, .sealsubs-container .sls-select-container select.sls-select {
+   padding: .5rem .5rem .2rem .5rem!important;
         border: none!important;
         border-bottom: 1px solid black!important;
-      }
-  }
 }
