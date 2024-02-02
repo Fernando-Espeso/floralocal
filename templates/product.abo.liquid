@@ -132,11 +132,10 @@
 
 <script>
 
-   $(document).ready(function() {
   if (typeof window.SealSubs !== 'undefined' && typeof window.SealSubs.refresh === 'function') {
+    console.log("oi");
 	window.SealSubs.refresh();
   }
-   });
   
   //PRODUCT FUNCTIONS
   var selectCallback = function(variant, selector){
