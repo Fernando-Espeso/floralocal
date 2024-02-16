@@ -70,7 +70,7 @@
   </select>
   {% endif %}
    <select id="card-select" name="items[1]id">
-    <option value="Keine Grusskarte" disabled>KEINE GRUSSKARTE</option>
+    <option value="" disabled>KEINE GRUSSKARTE</option>
     {% for product in collections.all.products %}
       {% assign card = product %}
       {% if card.type contains 'grusskarte' %}
