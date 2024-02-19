@@ -829,3 +829,6 @@ margin-left: 0px;
 .sealsubs-container {
   margin: 0!important;
 }
+.sealsubs-container + #bag {
+  margin-top: 0;
+}
