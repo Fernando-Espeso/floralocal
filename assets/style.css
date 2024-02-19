@@ -839,6 +839,6 @@ margin-left: 0px;
 .sls-more-info-text {
   margin-left: auto;
 }
-.sls-subscription-details-label {
+.sls-subscription-details-label a {
   font-size: 14px!important;
 }
