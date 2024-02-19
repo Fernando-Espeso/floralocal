@@ -817,3 +817,18 @@ margin-left: 0px;
 .sealsubs-target-element * {
   text-transform: uppercase!important;
 }
+.selling-plan-group-options-name-select {
+  display: flex;
+}
+.selling-plan-group-options-name-select {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sealsubs-container {
+  margin: 0;
+  & + #bag {
+    margin-top: 0;
+  }
+}
