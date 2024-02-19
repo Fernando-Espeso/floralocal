@@ -833,3 +833,9 @@ margin-left: 0px;
   margin-top: 0!important;
   padding-top: 0px!important;
 }
+.sls-more-info-container {
+  display: flex;
+}
+.sls-more-info-text {
+  margin-left: auto;
+}
