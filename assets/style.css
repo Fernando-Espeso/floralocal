@@ -791,3 +791,6 @@ margin-left: 0px;
 /*SMALL MOBILE*/
 @media (max-width: 320px) {}
 
+.abo-wrap {
+  margin-top: 1.5rem;
+}
