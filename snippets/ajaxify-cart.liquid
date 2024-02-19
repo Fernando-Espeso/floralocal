@@ -49,7 +49,8 @@
 			_setText($addToCartBtn, _config.addingToCartBtnLabel);
 			$addToCartBtn.addClass('disabled').prop('disabled', true);
 			// Add to cart.	
-            $.ajax({
+          console.log($addToCartForm.serialize());
+           /* $.ajax({
               url: _config.shopifyAjaxAddURL,
               dataType: 'json',
               type: 'post',
@@ -74,9 +75,7 @@
                   }
                 }); 
                 // redirect to cart view
-                // window.location.href = "/cart";
-                console.log(data);
-                console.log($addToCartForm.serialize());
+                window.location.href = "/cart";
               }, 
               error: function(XMLHttpRequest) {
                 var response = eval('(' + XMLHttpRequest.responseText + ')');
@@ -91,7 +90,8 @@
                   //_setText($addToCartBtn, _config.addToCartBtnLabel);
                 } 
               }
-            });   
+            });  
+        */
 		});
 	  });
 	};
