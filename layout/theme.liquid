@@ -198,7 +198,7 @@ Design by Matto studio
   {%- if template contains 'product' -%}
   {{ 'global-product.js' | asset_url | script_tag }}
 {%- endif -%}
-{%- if template == 'product' -%}
+{%- if template == 'product' or template == 'abo' -%}
   	{% render 'ajaxify-cart' %}
 {%- endif -%}
 {% render 'mws_apo_init' %}
