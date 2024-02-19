@@ -198,9 +198,6 @@ Design by Matto studio
   {%- if template contains 'product' -%}
   {{ 'global-product.js' | asset_url | script_tag }}
 {%- endif -%}
-{%- if template == 'product' -%}
-  	{% render 'ajaxify-cart' %}
-{%- endif -%}
 {% render 'mws_apo_init' %}
 
 </body>
