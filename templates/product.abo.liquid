@@ -54,7 +54,7 @@
 
           <div>
   {% for group in product.selling_plan_groups %}
-  <fieldset>
+  <fieldset class="abo-wrap">
     <legend {%- if hidelegend %} style="display: none;"{% endif %}>Abo auswählen</legend>
     <select id="selling-plan" name="items[0]selling_plan">
     {% for selling_plan in group.selling_plans %}
