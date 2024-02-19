@@ -827,8 +827,5 @@ margin-left: 0px;
   align-items: center;
 }
 .sealsubs-container {
-  margin: 0;
-  & + #bag {
-    margin-top: 0;
-  }
+  margin: 0!important;
 }
