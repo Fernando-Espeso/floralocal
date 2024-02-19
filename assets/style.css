@@ -811,5 +811,5 @@ margin-left: 0px;
   display: none;
 }
 .sls-purchase-options-container {
-  border: none;
+  border: none!important;
 }
