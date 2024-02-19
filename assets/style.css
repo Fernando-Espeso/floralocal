@@ -820,3 +820,9 @@ margin-left: 0px;
 .selling-plan-group-options-name-select {
   display: flex;
 }
+.selling-plan-group-options-name-select {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
