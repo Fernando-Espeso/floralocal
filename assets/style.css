@@ -828,7 +828,4 @@ margin-left: 0px;
 }
 .sealsubs-container {
   margin: 0;
-  & + #bag {
-    margin-top: 0;
-  }
 }
