@@ -57,6 +57,7 @@
   {% for group in product.selling_plan_groups %}
   <fieldset>
     <legend {%- if hidelegend %} style="display: none;"{% endif %}>Pick a subscription</legend>
+    {{ product.requires_selling_plan }}
     {% unless product.requires_selling_plan %}
       <input type="radio" name="selling_plan" value="" id="selling_plan_onetime"> <label for="selling_plan_onetime">One-time purchase</label><br>
     {% endunless %}
