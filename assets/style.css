@@ -808,7 +808,7 @@ margin-left: 0px;
         border-bottom: 1px solid black!important;
 }
 .sls-selling-plan-group-price sls-total-price sls-price-container {
-  display: none;
+  display: none!important;
 }
 .sls-purchase-options-container {
   border: none!important;
