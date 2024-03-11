@@ -71,7 +71,6 @@
   {% endif %}
    <select id="card-select" name="items[1]id">
     <option value="" disabled selected>GRUSSKARTE</option>
-    <option value="">KEINE GRUSSKARTE</option>
     {% for product in collections.all.products %}
       {% assign card = product %}
       {% if card.type contains 'grusskarte' %}
