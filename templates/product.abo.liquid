@@ -96,7 +96,9 @@
         {% endif %}
     {% endfor %}    
   </select>
-
+   <p class="cart-attribute__field hidden no-margin">
+    <textarea placeholder="KARTENTEXT" id="sentence" name="items[1]properties[Kartentext]" disabled spellcheck="false"></textarea>
+  </p>           
   <p class="cart-attribute__field">
     <label class="show" for="date">DATUM DER LIEFERUNG/ABHOLUNG:</label>
     <input required type="date" id="delivery-date" name="items[0]properties[Datum]" value="2023-07-22" min="2023-01-01" max="2028-12-31">
