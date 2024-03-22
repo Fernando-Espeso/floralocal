@@ -32,7 +32,7 @@
       <div class="pri">{{ cart.total_price | money }}</div>
     </div>
       <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
-
+      <input type="hidden" name="checkout[step] value="contact_information">
     <div>
       <label for="customerAddress1">Versandsadresse</label>
       <input type="text" name="checkout[shipping_address][address1]" autocomplete="off" id="customerAddress1">
