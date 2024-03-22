@@ -92,18 +92,7 @@
     <label class="show" for="date">DATUM DER LIEFERUNG/ABHOLUNG:</label>
     <input required type="date" id="delivery-date" name="items[0]properties[Datum]" value="2023-07-22" min="2023-01-01" max="2028-12-31">
   </p>
-  <p class="cart-attribute__field">
-    <label class="show" for="name">NAME:</label>
-    <textarea required placeholder="NAME" id="name" name="items[0]properties[Name]" spellcheck="false" {{ cart.attributes["name"] }}></textarea>
-  </p>
-  <p class="cart-attribute__field">
-    <label class="show" for="email">EMAIL:</label>
-    <textarea required placeholder="EMAIL" id="email" name="items[0]properties[Email]" spellcheck="false" {{ cart.attributes["email"] }}></textarea>
-  </p>
-  <p class="cart-attribute__field">
-    <label class="show" for="phone">TELEFON:</label>
-    <textarea required id="phone" placeholder="TELEFON" name="items[0]properties[Telefon]"  spellcheck="false" {{ cart.attributes["phone"] }}></textarea>
-  </p>
+
   {% if product.available %}
   <button class="besttelen" id="produ" disabled type="submit" name="add">IN DEN WARENKORB</button>
   {% else %}
