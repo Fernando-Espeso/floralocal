@@ -32,11 +32,14 @@
       <div class="pri">{{ cart.total_price | money }}</div>
     </div>
       <input id="update-cart" type="submit" name="update" value="Update cart" style="display: none" />
-      <input type="hidden" name="checkout[step] value="contact_information">
     <div>
       <label for="customerAddress1">Versandsadresse</label>
       <input type="text" name="checkout[shipping_address][address1]" autocomplete="off" id="customerAddress1">
     </div>
+  <div>
+  <label for="shipping_phone">Mobile Number</label>
+  <input type="text" id="shipping_phone" name="checkout[shipping_phone]" value="{{ cart.shipping_phone }}" required>
+</div>
   
     <div>
       <button id="checkout" type="submit" name="checkout">
