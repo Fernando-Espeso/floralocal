@@ -85,7 +85,7 @@
   </select>
   {% endif %}
   <select id="card-select" name="items[1]id">
-    <option value="" disabled selected>GRUSSKARTE</option>
+    <option value="" disabled selected>GRUSSKARTE 1. Lieferung</option>
     {% for product in collections.all.products %}
       {% assign card = product %}
       {% if card.type contains 'grusskarte' %}
