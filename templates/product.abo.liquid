@@ -102,7 +102,7 @@
     <label class="show" for="date">DATUM DER ERSTEN LIEFERUNG/ABHOLUNG:</label>
     {% assign days = 1 | times: 86400 %}
     {% assign year = 360 | times: 86400 %}
-    <input required type="date" id="delivery-date" name="items[0]properties[Datum]" value="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" min="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" max="{{ "now" | date: "%s" | plus: year | date: "%Y-%m-%d" }}">
+    <input required type="date" id="delivery-date" name="items[0]properties[Datum der ersten Lieferung/Abholung]" value="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" min="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" max="{{ "now" | date: "%s" | plus: year | date: "%Y-%m-%d" }}">
   </p>
  
   {% if product.available %}
