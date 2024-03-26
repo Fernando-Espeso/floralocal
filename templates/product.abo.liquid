@@ -68,10 +68,11 @@
           </div>
             -->
             <div>
+              {{ group.selling_plans }}
             <fieldset class="abo-wrap">
               <legend {%- if hidelegend %} style="display: none;"{% endif %}>Abo auswählen</legend>
               <select id="selling-plan" name="items[0]selling_plan">
-              {% for selling_plan in group.selling_plans[0] %}
+              {% for selling_plan in group.selling_plans %}
               <option value="{{ selling_plan.id }}">{{ selling_plan.name }}</option>
               {% endfor %}
               </select>
