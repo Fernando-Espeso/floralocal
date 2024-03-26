@@ -23,9 +23,6 @@
 }
 </style>
 
-    {{ 'bsub.js' | asset_url | script_tag }} 
-{{ 'bsub.css' | asset_url | stylesheet_tag }}
-    
 <div class="grid_info">
 <div class="title">
   <div>{{ product.title }}</div>
@@ -56,10 +53,7 @@
           {%- endif -%}>
         
           <div id="bag" >
-
-            {% render 'bsub-widget' %}
-
-          <!--
+            
           <div>
             {% for group in product.selling_plan_groups %}
             <fieldset class="abo-wrap">
@@ -72,7 +66,6 @@
             </fieldset>
             {% endfor %}
           </div>
-            -->
             
            <!-- <div id="product-price"></div> -->
                        {% if product.compare_at_price > product.price %}
@@ -201,7 +194,6 @@
     {% endfor %}
   });
 
-  /*
   $(document).ready(function() {
   const selector = $('#card-select');
   const textarea = $('#sentence');
@@ -217,7 +209,6 @@
     }
   });
 });
-  */
 
 </script>
 {% render 'ajaxify-cart' %}
