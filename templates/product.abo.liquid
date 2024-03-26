@@ -22,6 +22,10 @@
 
 }
 </style>
+
+    {{ 'bsub.js' | asset_url | script_tag }} 
+{{ 'bsub.css' | asset_url | stylesheet_tag }}
+    
 <div class="grid_info">
 <div class="title">
   <div>{{ product.title }}</div>
