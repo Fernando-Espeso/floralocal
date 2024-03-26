@@ -450,7 +450,13 @@
     "blocks": {
       "341186785192672687": {
         "type": "shopify:\/\/apps\/seal-subscriptions\/blocks\/subscription-script-append\/13b25004-a140-4ab7-b5fe-29918f759699",
-        "disabled": true,
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "5557296251606798448": {
+        "type": "shopify:\/\/apps\/bold-subscriptions\/blocks\/bsub-embed\/9ceb49f0-5fe5-4b5e-943d-f8af8985167d",
+        "disabled": false,
         "settings": {
         }
       }
