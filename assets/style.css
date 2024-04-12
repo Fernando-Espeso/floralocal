@@ -269,6 +269,7 @@ footer {
   left: 10px;
   z-index:10000;
   font-size: 10px!important;
+  line-height: 1;
 }
 footer span,
 footer span a {
