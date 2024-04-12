@@ -192,6 +192,9 @@ strong {
 }
 .info_content {
     width:calc(100% - 420px);
+    h3 {
+      margin: 1.5rem 0 .5rem 0;
+    }
 }
 .project_info {
     width: 60%;
