@@ -51,6 +51,10 @@
           {%- elsif variants > 1 -%}
           class="product-variants"
           {%- endif -%}>
+
+           <p class="cart-attribute__field">
+      LAUFZEIT DER ABOS IST 1 JAHR.
+   </p>
         
           <div id="bag" >
 
@@ -107,9 +111,6 @@
     {% assign year = 360 | times: 86400 %}
     <input required type="date" id="delivery-date" name="items[0]properties[Datum der 1. Lieferung]" value="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" min="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" max="{{ "now" | date: "%s" | plus: year | date: "%Y-%m-%d" }}">
   </p>
-   <p class="cart-attribute__field">
-      LAUFZEIT DER ABOS IST 1 JAHR.
-   </p>
   <!--
    <p class="cart-attribute__field">
     <label class="show" for="aboend">ABO ENDE:</label>
