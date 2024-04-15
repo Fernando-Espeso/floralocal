@@ -196,7 +196,7 @@
     {% for option in product.options %}
     {% if product.options.first != 'Title' %}
       {% assign count = count | plus: 1 %}
-      $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }}</option>");
+      $("#product-select-option-{{ count }}").prepend("<option value='' disabled selected>{{ product.options[count] | upcase }} auswählen</option>");
     {% endif %}
     {% endfor %}
   });
