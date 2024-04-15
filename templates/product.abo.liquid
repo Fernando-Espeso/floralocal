@@ -51,10 +51,6 @@
           {%- elsif variants > 1 -%}
           class="product-variants"
           {%- endif -%}>
-
-           <p class="cart-attribute__field">
-      LAUFZEIT DER ABOS IST 1 JAHR.
-   </p>
         
           <div id="bag" >
 
@@ -91,6 +87,9 @@
     {% endfor %}
   </select>
   {% endif %}
+  <p class="cart-attribute__field">
+    LAUFZEIT DER ABOS IST 1 JAHR.
+  </p>
   <select id="card-select" name="items[1]id">
     <option value="" disabled selected>GRUSSKARTE 1. Lieferung</option>
     {% for product in collections.all.products %}
