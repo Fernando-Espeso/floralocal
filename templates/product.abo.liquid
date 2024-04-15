@@ -53,7 +53,8 @@
           {%- endif -%}>
         
           <div id="bag" >
-            
+
+          <!--
           <div>
             {% for group in product.selling_plan_groups %}
             <fieldset class="abo-wrap">
@@ -66,6 +67,7 @@
             </fieldset>
             {% endfor %}
           </div>
+          -->
             
            <!-- <div id="product-price"></div> -->
                        {% if product.compare_at_price > product.price %}
@@ -105,6 +107,7 @@
     {% assign year = 360 | times: 86400 %}
     <input required type="date" id="delivery-date" name="items[0]properties[Datum der 1. Lieferung]" value="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" min="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" max="{{ "now" | date: "%s" | plus: year | date: "%Y-%m-%d" }}">
   </p>
+  <!--
    <p class="cart-attribute__field">
     <label class="show" for="aboend">ABO ENDE:</label>
     <select id="card-select" name="items[0]properties[Abo Ende]">
@@ -114,6 +117,7 @@
     {% endfor %}    
   </select>
   </p>
+  -->
  
   {% if product.available %}
   <button class="besttelen" id="produ" disabled type="submit" name="add">IN DEN WARENKORB</button>
