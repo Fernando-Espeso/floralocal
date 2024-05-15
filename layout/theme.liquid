@@ -1,12 +1,4 @@
 <!DOCTYPE html>
-<!--
-
-{% echo shop.name %}
-Design by Matto studio
-
-{{ 'now' | date: "%Y" }}
-
--->
 <html lang="{{ shop.locale }}">
 <head>
   <meta charset="UTF-8">
@@ -23,7 +15,7 @@ Design by Matto studio
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <link rel="canonical" href="{{ canonical_url }}" />
   {%- if settings.favicon.size > 0 -%}
-<link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}">  {%- endif -%}
+  <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}">  {%- endif -%}
   {%- if page_description -%}
     <meta name="description" content="{{ page_description | escape }}" />
   {%- else -%}
