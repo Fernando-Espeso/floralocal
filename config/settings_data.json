@@ -1,7 +1,8 @@
 {
   "current": {
     "favicon": "shopify:\/\/shop_images\/favicon.png",
-    "checkout_logo_image": "shopify:\/\/shop_images\/floralokal.png",
+    "checkout_accent_color": "#ff004b",
+    "checkout_button_color": "#ff004b",
     "sections": {
       "home_news": {
         "type": "home_news",
