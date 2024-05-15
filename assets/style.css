@@ -540,7 +540,7 @@ button#checkout:focus {}
   height: 100%;
   object-fit: cover;
   @media(max-width:767px){
-    object-position: center;
+    object-position: 30%;
   }
 }
 .grid_info{
