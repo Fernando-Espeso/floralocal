@@ -196,9 +196,10 @@
   productSelector.on('change', function() {
     if (this.value === '4x pro Jahr. In jeder Jahreszeit einen Strauss') {
       durationSelector.val("1 Jahr");
-      // durationSelector.prop('disabled', true);
+      durationSelector.prop('disabled', true);
+      selectCallback;
     } else {
-       // durationSelector.prop('disabled', false);
+       durationSelector.prop('disabled', false);
     }
   });
     
