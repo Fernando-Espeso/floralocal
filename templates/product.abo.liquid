@@ -148,6 +148,7 @@
 <script>
   //PRODUCT FUNCTIONS
   var selectCallback = function(variant, selector){
+    console.log(variant, selector);
     if(variant){
       jQuery('#produ').prop('disabled', false);
       if(variant.available){
@@ -197,7 +198,6 @@
     if (this.value === '4x pro Jahr. In jeder Jahreszeit einen Strauss') {
       durationSelector.val("1 Jahr");
       durationSelector.prop('disabled', true);
-      selectCallback();
     } else {
        durationSelector.prop('disabled', false);
     }
