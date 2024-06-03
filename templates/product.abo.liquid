@@ -197,6 +197,7 @@
   productSelector.on('change', function() {
     if (this.value === '4x pro Jahr. In jeder Jahreszeit einen Strauss') {
       durationSelector.val("1 Jahr");
+      durationSelector.dispatchEvent(new Event('change'));
       durationSelector.prop('disabled', true);
     } else {
        durationSelector.prop('disabled', false);
