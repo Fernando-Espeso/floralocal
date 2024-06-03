@@ -190,7 +190,15 @@
   $(document).ready(function() {
   const selector = $('#card-select');
   const textarea = $('#sentence');
+  const productSelector = $("#product-select-option-1");
+  const durationSelector = $("#product-select-option-2");
 
+  productSelector.on('change', function() {
+    if (selector.val() === '4x pro Jahr. In jeder Jahreszeit einen Strauss') {
+      durationSelector.val("1 Jahr");
+    } 
+  });
+    
   selector.on('change', function() {
     if (selector.val() === '') {
       textarea.prop('disabled', true);
