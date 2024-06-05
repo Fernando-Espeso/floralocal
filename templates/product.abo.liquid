@@ -213,6 +213,16 @@
       textarea.parents('.cart-attribute__field').removeClass('hidden');
     }
   });
+
+    const picker = document.getElementById('delivery-date');
+    picker.addEventListener('input', function(e){
+    var day = new Date(this.value).getUTCDay();
+    if([0].includes(day)){
+      e.preventDefault();
+      this.value = '';
+      alert('Bitte ein Datum von Mo-Sa auswählen');
+    }
+      
 });
 
 </script>
