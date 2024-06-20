@@ -178,7 +178,6 @@ a.active{
 }
 a:hover{
   color: #ff004b;
-  -webkit-text-fill-color: #ff004b;
 }
 strong {
     line-height: 12px;
