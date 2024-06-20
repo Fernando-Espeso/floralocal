@@ -274,7 +274,12 @@ a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
-  padding-top: 6px;
+}
+
+.menu a,
+p a {
+    padding-top: 6px;
+
 }
 
 /* MAIN */
