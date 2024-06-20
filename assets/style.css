@@ -178,6 +178,7 @@ a.active{
 }
 a:hover{
   color: #ff004b;
+  -webkit-text-fill-color: #ff004b;
 }
 strong {
     line-height: 12px;
@@ -268,10 +269,6 @@ header {
   top: 0px;
   left: 0px;
   position: fixed;
-
-  a {
-    display: block;
-  }
 }
 .baggie{
   margin-bottom: 10px;
