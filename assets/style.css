@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "UniversPro75Black";
-  src: url("{{font.woff2|file_url}}") format("woff2"), url("{{font.woff|file_url}}") format("woff");
+  src: url({{'font.woff2'|file_url}}) format("woff2"), url({{'font.woff'|file_url}}) format("woff");
 }
 
 #preview-bar-iframe,
