@@ -2,6 +2,13 @@
 
 /* Global Styles */
 
+/* FONTS */
+
+@font-face {
+  font-family: "UniversPro75Black";
+  src: url("{{ 'font.woff2' | asset_url }}") format('woff2'), url("{{ 'font.woff' | asset_url }}") format('woff');
+}
+
 #preview-bar-iframe,
 .collection-digital-goods-vat-tax,
 .collection-monarch-regular,
@@ -638,13 +645,6 @@ textarea{
   padding: 0!important;
   height: 1.2em;
 }
-/* FONTS */
-
-@font-face {
-  font-family: "UniversPro75Black";
-  src: url("{{ 'font.woff2' | asset_url }}") format('woff2'), url("{{ 'font.woff' | asset_url }}") format('woff');
-}
-
 
 @font-face {
   font-family: 'UniversLTStd';
