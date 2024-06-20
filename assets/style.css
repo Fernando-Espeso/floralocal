@@ -642,7 +642,7 @@ textarea{
 
 @font-face {
   font-family: "UniversPro75Black";
-  src: url('font.woff2') format('woff2'), url('font.woff') format('woff');
+  src: url("{{ 'font.woff2' | asset_url }}") format('woff2'), url("{{ 'font.woff' | asset_url }}") format('woff');
 }
 
 
