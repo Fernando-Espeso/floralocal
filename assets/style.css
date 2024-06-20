@@ -223,7 +223,7 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   height: 100%;
   margin: auto;
@@ -519,7 +519,7 @@ button#checkout:focus {}
 
 .home_img {
   z-index: 0;
-  height: 100vh;
+  height: 100dvh;
   background-color: #fff;
   position: fixed;
   width: 100vw;
