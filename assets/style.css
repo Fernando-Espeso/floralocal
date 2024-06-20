@@ -17,7 +17,7 @@
 }
 
 :root{
-  --main:"UniversLTStd";
+  --main:"UniversPro75Black";
   --M: 16px;
 }
 .afrange{
@@ -639,6 +639,12 @@ textarea{
   height: 1.2em;
 }
 /* FONTS */
+
+@font-face {
+  font-family: "UniversPro75Black";
+  src: url('font.woff2') format('woff2'), url('font.woff') format('woff');
+}
+
 
 @font-face {
   font-family: 'UniversLTStd';
