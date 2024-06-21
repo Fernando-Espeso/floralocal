@@ -93,7 +93,7 @@
     {% assign days = 1 | times: 86400 %}
     {% assign year = 360 | times: 86400 %}
     <input required type="date" id="delivery-date" name="items[0]properties[Datum Lieferung/Abholung]" value="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" min="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" max="{{ "now" | date: "%s" | plus: year | date: "%Y-%m-%d" }}">
-    <div id="date-feedback" style="display:none;">Bitte wähle einen Tag von Mo-Sa aus.</div>
+    <div id="date-feedback" style="display:none;margin-top:0;">Bitte wähle einen Tag von Mo-Sa aus.</div>
   </p>
 
   {% if product.available %}
