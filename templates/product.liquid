@@ -190,7 +190,7 @@
   });
 
     const picker = document.getElementById('delivery-date');
-      picker.addEventListener('input', function(e){
+    picker.addEventListener('input', function(e){
       var day = new Date(this.value).getUTCDay();
       let tomorrow = new Date();
       tomorrow.setUTCDate(tomorrow.getUTCDate() + 1);
@@ -200,10 +200,8 @@
         $("#date-feedback").show();
       } else {
          $("#date-feedback").hide();
-      }
- 
-      
-});
+      }     
+    });
     
 });
 
