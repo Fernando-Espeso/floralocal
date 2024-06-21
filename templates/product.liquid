@@ -196,7 +196,7 @@
       tomorrow.setUTCDate(tomorrow.getUTCDate() + 1);
       if([0].includes(day)){
         e.preventDefault();
-        this.value = tomorrow;
+        this.valueAsDate = tomorrow;
         $("#date-feedback").show();
       } else {
          $("#date-feedback").hide();
