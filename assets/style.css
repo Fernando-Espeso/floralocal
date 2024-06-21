@@ -163,7 +163,7 @@ input[type="date"]{
   }
   &:after {
     position: absolute;
-    right: -25px;
+    right: -22px;
     top: 0px;
     content: "";
     display: inline-block;
