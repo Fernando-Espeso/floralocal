@@ -158,8 +158,8 @@ input[type="date"]{
   margin-top: -5px;
   position: relative;
   overflow: visible;
-  line-height: 1!important;
-  height: 25px;
+  line-height: 1.5!important;
+  height: 30px;
   &::-webkit-calendar-picker-indicator {
     display: none;
   }
