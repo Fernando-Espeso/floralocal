@@ -192,9 +192,11 @@
     const picker = document.getElementById('delivery-date');
       picker.addEventListener('input', function(e){
       var day = new Date(this.value).getUTCDay();
+      let tomorrow = new Date();
+      tomorrow.setUTCDate(tomorrow.getUTCDate() + 1);
       if([0].includes(day)){
         e.preventDefault();
-        this.value = '';
+        this.value = tomorrow;
         $("#date-feedback").show();
       } else {
          $("#date-feedback").hide();
