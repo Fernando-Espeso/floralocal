@@ -92,7 +92,7 @@
     <label class="show" for="date">DATUM DER LIEFERUNG/ABHOLUNG:</label>
     {% assign days = 1 | times: 86400 %}
     {% assign year = 360 | times: 86400 %}
-    <input required data-input id="delivery-date" name="items[0]properties[Datum Lieferung/Abholung]" value="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" min="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" max="{{ "now" | date: "%s" | plus: year | date: "%Y-%m-%d" }}">
+    <input required data-input type="date" id="delivery-date" name="items[0]properties[Datum Lieferung/Abholung]" value="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" min="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" max="{{ "now" | date: "%s" | plus: year | date: "%Y-%m-%d" }}">
   </p>
 
   {% if product.available %}
@@ -197,7 +197,7 @@
       alert('Bitte ein Datum von Mo-Sa auswählen');
     }
 
-    
+    /*
     $("#delivery-date").flatpickr({
     enableTime: true,
     dateFormat: "d-m-Y",
@@ -211,7 +211,7 @@
     "locale": {
         "firstDayOfWeek": 1 // set start day of week to Monday
     }
-    
+    */
 });
       
 });
