@@ -190,16 +190,16 @@
   });
 
     const picker = document.getElementById('delivery-date');
-    picker.addEventListener('input', function(e){
-    var day = new Date(this.value).getUTCDay();
-    if([0].includes(day)){
-      e.preventDefault();
-      this.value = '';
-      $("#date-feedback").show();
-    } else {
-       $("#date-feedback").hide();
-    }
-});
+      picker.addEventListener('input', function(e){
+      var day = new Date(this.value).getUTCDay();
+      if([0].includes(day)){
+        e.preventDefault();
+        this.value = '';
+        $("#date-feedback").show();
+      } else {
+         $("#date-feedback").hide();
+      }
+    });
       
 });
     
