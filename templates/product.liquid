@@ -194,7 +194,7 @@
       var day = new Date(this.value).getUTCDay();
       if([0].includes(day)){
         e.preventDefault();
-        this.value = {{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }};
+        this.value = '';
         $("#date-feedback").show();
       } else {
          $("#date-feedback").hide();
