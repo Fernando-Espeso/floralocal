@@ -156,6 +156,7 @@ select {
 input[type="date"]{
   padding: 0!important;
   margin-top: -5px;
+  position: relative;
   &::-webkit-calendar-picker-indicator {
     display: none;
   }
