@@ -158,7 +158,7 @@ input[type="date"]{
   margin-top: -5px;
   position: relative;
   overflow: visible;
-  line-height: 1.5!important;
+  height: 25px;
   &::-webkit-calendar-picker-indicator {
     display: none;
   }
