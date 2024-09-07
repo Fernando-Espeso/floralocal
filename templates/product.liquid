@@ -19,6 +19,9 @@
     top: 10px;
     right: 10px;
 }
+  .remove-card {
+    display: none;
+  }
 
 }
 </style>
@@ -69,6 +72,7 @@
     {% endfor %}
   </select>
   {% endif %}
+   <div class="remove-card">&times;</div>
    <select id="card-select" name="items[1]id">
     <option value="" disabled selected>GRUSSKARTE</option>
     {% for product in collections.all.products %}
