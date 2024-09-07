@@ -6,9 +6,6 @@
     display: grid;
 
 }
-.remove-card {
-  display: none;
-}
 @media (max-width: 1200px) {
 
 
@@ -73,7 +70,6 @@
     {% endfor %}
   </select>
   {% endif %}
-   <div class="remove-card">&times;</div>
    <select id="card-select" name="items[1]id">
     <option value="" disabled selected>GRUSSKARTE</option>
     {% for product in collections.all.products %}
@@ -140,6 +136,7 @@
   //PRODUCT FUNCTIONS
   var selectCallback = function(variant, selector){
     if(variant){
+      console.log(variant);
       jQuery('#produ').prop('disabled', false);
       if(variant.available){
         jQuery('#add-to-cart').prop('disabled', false).text('ADD TO CART');
