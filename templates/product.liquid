@@ -181,13 +181,13 @@
 
   selector.on('change', function() {
     var opt= selector[0].options[0];
-     console.log(opt.value, opt.text);
     if (selector.val() === '') {
-      console.log("now");
+      opt.text = "GRUSSKARTE";
       textarea.prop('disabled', true);
       textarea.parents('.cart-attribute__field').addClass('hidden');
       textarea.val('');
     } else {
+      opt.text = "KEINE GRUSSKARTE";
       textarea.prop('disabled', false);
       textarea.parents('.cart-attribute__field').removeClass('hidden');
     }
