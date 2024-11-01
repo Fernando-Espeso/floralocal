@@ -64,7 +64,7 @@
            <div class="variations">
 
   {% if product.variants %}
-    {{ product.variants }}
+    {{ dump(product.variants) }}
   <select id="product-select" name="items[0]id">
     {% for variant in product.variants %}
     <option value="{{ variant.id }}"></option>
