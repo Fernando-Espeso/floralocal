@@ -71,7 +71,7 @@
   </select>
   {% endif %}
    <select id="card-select" name="items[1]id">
-    <option value="" disabled selected>Issu Issu Kerzen und Halter</option>
+    <option value="" disabled selected>+ Issu Issu Kerzen und Halter</option>
     {% for product in collections.all.products %}
       {% assign card = product %}
       {% if card.type contains 'kerzenhalter' %}
