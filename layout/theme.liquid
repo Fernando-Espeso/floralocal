@@ -35,7 +35,7 @@
   {%- if template == "cart" and cart.item_count > 0 -%}
   {{ 'global-cart.js' | asset_url | script_tag }}
   {%- endif -%}
-  {%- if template == 'product' -%}
+  {%- if template == 'product' or template == 'product.kranz' -%}
   {{ '//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js' | script_tag }}
   <link rel="preload" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
