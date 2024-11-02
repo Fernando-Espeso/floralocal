@@ -71,7 +71,7 @@
   </select>
   {% endif %}
    <select id="card-select" name="items[1]id">
-    <option value="" disabled selected>+ Issu Issu Kerzen und Halter</option>
+    <option value="" disabled selected>+4 Issu Issu Kerzen und Halter</option>
     {% for product in collections.all.products %}
       {% assign card = product %}
       {% if card.type contains 'kerzenhalter' %}
@@ -178,7 +178,7 @@
   selector.on('change', function() {
     var opt= selector[0].options[0];
     if (selector.val() === '') {
-      opt.text = "+ Issu Issu Kerzen und Halter";
+      opt.text = "+4 Issu Issu Kerzen und Halter";
       opt.disabled = true;
     } else {
       opt.text = "Keine Kerzen und Halter";
