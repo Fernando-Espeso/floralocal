@@ -57,7 +57,6 @@
               data: $addToCartForm.serialize(),
               success: function(itemData) {
                 // Re-enable add to cart button.
-                console.log(itemData);
                 window.setTimeout(function(){
                   $addToCartBtn.prop('disabled', false).removeClass('disabled');
                   //_setText($addToCartBtn,_config.addToCartBtnLabel);
@@ -76,7 +75,8 @@
                   }
                 }); 
                 // redirect to cart view
-                window.location.href = "/cart/checkout";
+                console.log(itemData);
+                //window.location.href = "/cart/checkout";
               }, 
               error: function(XMLHttpRequest) {
                 var response = eval('(' + XMLHttpRequest.responseText + ')');
