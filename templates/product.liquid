@@ -184,12 +184,14 @@
       opt.text = "GRUSSKARTE";
       opt.disabled = true;
       textarea.prop('disabled', true);
+      textarea.removeAttribute('required');
       textarea.parents('.cart-attribute__field').addClass('hidden');
       textarea.val('');
     } else {
       opt.text = "KEINE GRUSSKARTE";
       opt.disabled = false;
       textarea.prop('disabled', false);
+      textarea.prop('required', true);
       textarea.parents('.cart-attribute__field').removeClass('hidden');
     }
   });
