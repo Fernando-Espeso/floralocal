@@ -215,7 +215,7 @@
     }
   });    
 
-
+  /*
     const picker = document.getElementById('delivery-date');
     picker.addEventListener('input', function(e){
       var day = new Date(this.value).getUTCDay();
@@ -229,6 +229,33 @@
          $("#date-feedback").hide();
       }     
     });
+
+  */
+
+  const picker = document.getElementById('delivery-date');
+    const submitBtn = document.getElementById('produ'); // This is your button ID
+
+    picker.addEventListener('input', function(e){
+        // We use getDay() for local time which is more reliable for the user's current view
+        var dateParts = this.value.split('-');
+        var selectedDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+        var day = selectedDate.getDay(); 
+
+        if(day === 0) { // 0 is Sunday
+            this.setCustomValidity('Sonntage sind nicht möglich.'); // Browser-level block
+            $("#date-feedback").show();
+            submitBtn.disabled = true;  // Manually disable the button
+            submitBtn.style.opacity = "0.5"; // Visual cue for mobile
+            submitBtn.style.pointerEvents = "none"; // Hard block for mobile taps
+        } else {
+            this.setCustomValidity(''); // Clear the error
+            $("#date-feedback").hide();
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = "1";
+            submitBtn.style.pointerEvents = "auto";
+        }
+    });
+    if (picker.value !== "") { picker.dispatchEvent(new Event('input')); }
 
     
 });
