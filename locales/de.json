@@ -1,2 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
+  "shopify": {
+    "checkout": {
+      "thank_you": {
+        "order_status_confirmed_order_with_email_pick_up": "Dein Strauss ist am gewählten Datum ab Ladenöffnung zur Abholung bereit.",
+        "thank_you_confirmed_order_with_email_pick_up": "Dein Strauss ist am gewählten Datum ab Ladenöffnung zur Abholung bereit."
+      }
+    }
+  }
 }
