@@ -12,7 +12,13 @@
     "checkout": {
       "thank_you": {
         "order_status_confirmed_order_with_email_pick_up": "Dein Strauss ist am gewählten Datum ab Ladenöffnung zur Abholung bereit.",
-        "thank_you_confirmed_order_with_email_pick_up": "Dein Strauss ist am gewählten Datum ab Ladenöffnung zur Abholung bereit."
+        "thank_you_confirmed_order_with_email_pick_up": "Dein Strauss ist am gewählten Datum ab Ladenöffnung zur Abholung bereit.",
+        "thank_you_confirmed_order_with_phone": "Du erhältst zur Bestätigung in Kürze eine E-Mail mit deiner Bestellnummer.",
+        "order_status_confirmed_order_with_phone": "Du erhältst zur Bestätigung in Kürze eine E-Mail mit deiner Bestellnummer.",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Du erhältst Versandaktualisierungen per E-Mail.",
+        "order_status_confirmed_order_with_phone_pick_up": "Dein Strauss ist am gewählten Datum ab Ladenöffnung zur Abholung bereit.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Dein Strauss ist am gewählten Datum ab Ladenöffnung zur Abholung bereit.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Dein Strauss ist am gewählten Datum ab Ladenöffnung zur Abholung bereit."
       }
     }
   }
