@@ -26,6 +26,11 @@
 <div class="grid_info">
 <div class="title">
   <div>{{ product.title }}</div>
+
+  <div class="mothersday-banner" style="margin:10px 0;padding:10px 12px;background:#fff4f6;border:1px solid #ffd1da;border-radius:8px;font-weight:600;">
+    Wir liefern auch am Muttertag Sonntag 10. Mai!
+  </div>
+  
 </div>
 <div class="information">
     <div class="project_info">
@@ -215,26 +220,44 @@
   const picker = document.getElementById('delivery-date');
     const submitBtn = document.getElementById('produ'); // This is your button ID
 
-    picker.addEventListener('input', function(e){
-        // We use getDay() for local time which is more reliable for the user's current view
-        var dateParts = this.value.split('-');
-        var selectedDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
-        var day = selectedDate.getDay(); 
+    picker.addEventListener('input', function () {
+  if (!this.value) return;
 
-        if(day === 0) { // 0 is Sunday
-            this.setCustomValidity('Sonntage sind nicht möglich.'); // Browser-level block
-            $("#date-feedback").show();
-            submitBtn.disabled = true;  // Manually disable the button
-            submitBtn.style.opacity = "0.5"; // Visual cue for mobile
-            submitBtn.style.pointerEvents = "none"; // Hard block for mobile taps
-        } else {
-            this.setCustomValidity(''); // Clear the error
-            $("#date-feedback").hide();
-            submitBtn.disabled = false;
-            submitBtn.style.opacity = "1";
-            submitBtn.style.pointerEvents = "auto";
-        }
-    });
+  // Parse YYYY-MM-DD as a LOCAL date (avoid timezone shifting)
+  const [y, m, d] = this.value.split('-').map(Number);
+  const selectedDate = new Date(y, m - 1, d);
+  const day = selectedDate.getDay(); // 0 = Sunday
+
+  // Compute "next Sunday" from today (local)
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const nextSunday = new Date(today);
+  nextSunday.setDate(today.getDate() + ((7 - today.getDay()) % 7 || 7)); // always the NEXT Sunday, not today
+
+  const toYMD = (dt) => {
+    const yy = dt.getFullYear();
+    const mm = String(dt.getMonth() + 1).padStart(2, '0');
+    const dd = String(dt.getDate()).padStart(2, '0');
+    return `${yy}-${mm}-${dd}`;
+  };
+
+  const isNextSunday = (this.value === toYMD(nextSunday));
+
+  // Block Sundays EXCEPT next Sunday
+  if (day === 0 && !isNextSunday) {
+    this.setCustomValidity('Sonntage sind nicht möglich.');
+    $("#date-feedback").show();
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = "0.5";
+    submitBtn.style.pointerEvents = "none";
+  } else {
+    this.setCustomValidity('');
+    $("#date-feedback").hide();
+    submitBtn.disabled = false;
+    submitBtn.style.opacity = "1";
+    submitBtn.style.pointerEvents = "auto";
+  }
+});
     if (picker.value !== "") { picker.dispatchEvent(new Event('input')); }
     
 });
