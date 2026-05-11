@@ -94,10 +94,6 @@
     {% assign year = 360 | times: 86400 %}
     <input style="cursor:pointer;" required type="date" id="delivery-date" name="items[0]properties[Datum Lieferung/Abholung]" value="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" min="{{ "now" | date: "%s" | plus: days | date: "%Y-%m-%d" }}" max="{{ "now" | date: "%s" | plus: year | date: "%Y-%m-%d" }}">
 
-    <div style="margin-top:0;font-size:12px!important;color:#ff004b;">
-      Wir liefern auch am Muttertag Sonntag 10. Mai!
-    </div>
-
     <div id="date-feedback" style="display:none;margin-top:0;font-size:12px!important;">Bitte wähle einen Tag von Mo-Sa aus.</div>
   </p>
 
@@ -201,59 +197,18 @@
     }
   });
 
-  /*
-    const picker = document.getElementById('delivery-date');
-    picker.addEventListener('input', function(e){
-      var day = new Date(this.value).getUTCDay();
-      let tomorrow = new Date();
-      tomorrow.setUTCDate(tomorrow.getUTCDate() + 1);
-      if([0].includes(day)){
-        e.preventDefault();
-        this.valueAsDate = tomorrow;
-        $("#date-feedback").show();
-      } else {
-         $("#date-feedback").hide();
-      }
-    });
-  */
-
-  // Date picker — Sundays allowed for now
+  // Date picker — Sundays blocked
   const picker = document.getElementById('delivery-date');
   const submitBtn = document.getElementById('produ'); // add-to-cart button
 
-  const hideFeedback = () => {
-    try { $("#date-feedback").hide(); } catch (e) {}
-  };
-
-  picker.addEventListener('input', function () {
-    // Allow all days (including Sunday)
-    this.setCustomValidity('');
-    hideFeedback();
-    submitBtn.disabled = false;
-    submitBtn.style.opacity = "1";
-    submitBtn.style.pointerEvents = "auto";
-  });
-
-  // Open native picker reliably on tap/click
-  picker.addEventListener('click', function () {
-    if (typeof this.showPicker === 'function') this.showPicker();
-  });
-
-  // Re-run validation on load if there is already a value
-  if (picker.value !== "") {
-    picker.dispatchEvent(new Event('input'));
-  }
-
-  /*
-  // OLD CODE (Sunday blocked) — keep for later re-enable
-  picker.addEventListener('input', function(e){
+  picker.addEventListener('input', function (e) {
     if (!this.value) return;
 
     var dateParts = this.value.split('-');
     var selectedDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
     var day = selectedDate.getDay();
 
-    if(day === 0) { // 0 is Sunday
+    if (day === 0) { // 0 is Sunday
       this.setCustomValidity('Sonntage sind nicht möglich.');
       $("#date-feedback").show();
       submitBtn.disabled = true;
@@ -267,7 +222,16 @@
       submitBtn.style.pointerEvents = "auto";
     }
   });
-  */
+
+  // Open native picker reliably on tap/click
+  picker.addEventListener('click', function () {
+    if (typeof this.showPicker === 'function') this.showPicker();
+  });
+
+  // Re-run validation on load if there is already a value
+  if (picker.value !== "") {
+    picker.dispatchEvent(new Event('input'));
+  }
 
 });
 
