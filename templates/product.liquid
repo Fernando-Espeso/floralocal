@@ -82,7 +82,8 @@
     {% endfor %}
   </select>
   <p class="cart-attribute__field hidden no-margin">
-    <textarea placeholder="KARTENTEXT HIER EINGEBEN" id="sentence" name="items[1]properties[Kartentext]" disabled spellcheck="false"></textarea>
+    <textarea placeholder="KARTENTEXT HIER EINGEBEN" id="sentence" name="items[1]properties[Kartentext]" maxlength="200" disabled spellcheck="false"></textarea>
+    <small id="sentence-counter" style="display:block;font-size:12px;opacity:0.7;margin-top:2px;">0 / 200 Zeichen</small>
   </p>
   <p class="cart-attribute__field">
     <label class="show" for="color">FARBWUNSCH:</label>
@@ -179,6 +180,17 @@
   const selector = $('#card-select');
   const textarea = $('#sentence');
 
+  // Live character counter for the greeting card text
+  const MAX_KARTENTEXT = 200;
+  const counter = $('#sentence-counter');
+  const updateCounter = () => {
+    const len = (textarea.val() || '').length;
+    counter.text(len + ' / ' + MAX_KARTENTEXT + ' Zeichen');
+    counter.css('color', len >= MAX_KARTENTEXT ? '#c00' : '');
+  };
+  textarea.on('input', updateCounter);
+  updateCounter();
+
   selector.on('change', function() {
     var opt= selector[0].options[0];
     if (selector.val() === '') {
@@ -188,6 +200,7 @@
       textarea.removeAttribute('required');
       textarea.parents('.cart-attribute__field').addClass('hidden');
       textarea.val('');
+      updateCounter();
     } else {
       opt.text = "KEINE GRUSSKARTE";
       opt.disabled = false;
